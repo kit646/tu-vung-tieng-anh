@@ -165,6 +165,11 @@ export function renderWordDetailView(container, route) {
           formatUnitLabel(word.book_level, word.book_unit)
         )})</div>
         <p>${escapeHtml(word.book_definition_en)}</p>
+        ${
+          word.book_definition_vi
+            ? `<p class="translation-vi">${escapeHtml(word.book_definition_vi)}</p>`
+            : ""
+        }
       </div>`
       : "";
 
@@ -212,6 +217,11 @@ export function renderWordDetailView(container, route) {
           <div class="detail-block">
             <div class="detail-label">${escapeHtml(I18N.wordDetail.definitionEnLabel)}</div>
             <p>${escapeHtml(word.definition_en)}</p>
+            ${
+              word.definition_vi
+                ? `<p class="translation-vi">${escapeHtml(word.definition_vi)}</p>`
+                : ""
+            }
           </div>
           ${bookExtraHtml}
 
@@ -221,10 +231,14 @@ export function renderWordDetailView(container, route) {
             )}</div>
             <ul class="example-list">
               ${examples
-                .map(
-                  (ex) => `
+                .map((ex, idx) => {
+                  const exVi = word.examples_vi?.[idx] || "";
+                  return `
                 <li class="example-item">
-                  <span class="example-sentence">${escapeHtml(ex)}</span>
+                  <div class="example-text-group">
+                    <span class="example-sentence">${escapeHtml(ex)}</span>
+                    ${exVi ? `<span class="translation-vi">${escapeHtml(exVi)}</span>` : ""}
+                  </div>
                   ${
                     speechAvailable
                       ? `<button type="button" class="btn-icon" data-speak-example="${escapeHtml(
@@ -234,8 +248,8 @@ export function renderWordDetailView(container, route) {
                         )}</button>`
                       : ""
                   }
-                </li>`
-                )
+                </li>`;
+                })
                 .join("")}
             </ul>
           </div>

@@ -223,8 +223,20 @@ function renderCardStageHtml() {
     ? `
       <div class="flashcard-meaning">${escapeHtml(word.meaning_vi)}</div>
       <p class="flashcard-def">${escapeHtml(word.definition_en)}</p>
+      ${
+        word.definition_vi
+          ? `<p class="translation-vi">${escapeHtml(word.definition_vi)}</p>`
+          : ""
+      }
       <div class="flashcard-example-box">
-        <span class="example-sentence">${escapeHtml(word.example)}</span>
+        <div class="example-text-group">
+          <span class="example-sentence">${escapeHtml(word.example)}</span>
+          ${
+            word.example_vi
+              ? `<span class="translation-vi">${escapeHtml(word.example_vi)}</span>`
+              : ""
+          }
+        </div>
         ${speakExBtn}
       </div>`
     : `
@@ -235,8 +247,20 @@ function renderCardStageHtml() {
         ${speakWordBtn}
       </div>
       <p class="flashcard-def">${escapeHtml(word.definition_en)}</p>
+      ${
+        word.definition_vi
+          ? `<p class="translation-vi">${escapeHtml(word.definition_vi)}</p>`
+          : ""
+      }
       <div class="flashcard-example-box">
-        <span class="example-sentence">${escapeHtml(word.example)}</span>
+        <div class="example-text-group">
+          <span class="example-sentence">${escapeHtml(word.example)}</span>
+          ${
+            word.example_vi
+              ? `<span class="translation-vi">${escapeHtml(word.example_vi)}</span>`
+              : ""
+          }
+        </div>
         ${speakExBtn}
       </div>`;
 

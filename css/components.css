@@ -792,6 +792,20 @@
   color: var(--text-primary);
 }
 
+.example-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.translation-vi {
+  margin-top: var(--space-1);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
 .study-tip-box {
   margin-top: var(--space-3);
   padding: var(--space-3) var(--space-4);
