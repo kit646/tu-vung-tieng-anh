@@ -1,0 +1,128 @@
+/* Design Tokens — Light & Dark Themes (WCAG AA Verified) */
+:root {
+  /* Surfaces */
+  --bg-canvas: #F7F8FA;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #EEF1F6;
+  --border-subtle: #DCE1EA;
+  --border-strong: #8B95A7;
+
+  /* Typography colors */
+  --text-primary: #161B26;
+  --text-secondary: #475266;
+  --text-muted: #5F6B7F;
+
+  /* Primary Accent */
+  --accent: #1D4ED8;
+  --accent-btn-bg: #1D4ED8;
+  --accent-hover: #1E40AF;
+  --accent-active: #1E3A8A;
+  --accent-soft: #EFF6FF;
+  --accent-text: #1E40AF;
+
+  /* Semantic States (SRS & Feedback) */
+  --success: #15803D;
+  --success-soft: #F0FDF4;
+  --success-border: #86EFAC;
+  --success-text: #166534;
+
+  --warning: #B45309;
+  --warning-soft: #FFFBEB;
+  --warning-border: #FCD34D;
+  --warning-text: #92400E;
+
+  --danger: #B91C1C;
+  --danger-soft: #FEF2F2;
+  --danger-border: #FCA5A5;
+  --danger-text: #991B1B;
+
+  --focus-ring: #2563EB;
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+
+  /* Spacing & Touch Targets */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  --tap-min: 44px;
+
+  /* Radii & Shadows */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+
+  /* Motion */
+  --duration-fast: 150ms;
+  --duration-normal: 220ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-theme="dark"] {
+  --bg-canvas: #0F141F;
+  --bg-surface: #182030;
+  --bg-subtle: #222D42;
+  --border-subtle: #2D3A52;
+  --border-strong: #6B7A96;
+
+  --text-primary: #F1F5F9;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+
+  --accent: #3B82F6;
+  --accent-btn-bg: #2563EB;
+  --accent-hover: #1D4ED8;
+  --accent-active: #1E40AF;
+  --accent-soft: #1E2E4A;
+  --accent-text: #93C5FD;
+
+  --success: #16A34A;
+  --success-soft: #132B21;
+  --success-border: #22C55E;
+  --success-text: #86EFAC;
+
+  --warning: #D97706;
+  --warning-soft: #2E2212;
+  --warning-border: #F59E0B;
+  --warning-text: #FCD34D;
+
+  --danger: #DC2626;
+  --danger-soft: #32181C;
+  --danger-border: #F87171;
+  --danger-text: #FCA5A5;
+
+  --focus-ring: #60A5FA;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.36);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+  }
+}

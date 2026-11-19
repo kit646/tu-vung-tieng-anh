@@ -1,0 +1,830 @@
+[
+  {
+    "level": "A1",
+    "unit": 1,
+    "title": "Unit 1 | Greetings and People",
+    "page": 4,
+    "study_tip": "Say each new word three times aloud, then use it in a sentence about your own life.",
+    "words": [
+      {
+        "word": "hello",
+        "pos": "interj",
+        "definition_en": "a word you say when you meet someone.",
+        "example": "Hello, my name is Anna."
+      },
+      {
+        "word": "goodbye",
+        "pos": "interj",
+        "definition_en": "a word you say when you leave.",
+        "example": "Goodbye! See you tomorrow."
+      },
+      {
+        "word": "friend",
+        "pos": "noun",
+        "definition_en": "a person you like and know well.",
+        "example": "My friend lives next door."
+      },
+      {
+        "word": "name",
+        "pos": "noun",
+        "definition_en": "the word people call you.",
+        "example": "What is your name?"
+      },
+      {
+        "word": "teacher",
+        "pos": "noun",
+        "definition_en": "a person who helps you learn at school.",
+        "example": "The teacher writes on the board."
+      },
+      {
+        "word": "student",
+        "pos": "noun",
+        "definition_en": "a person who studies at school or university.",
+        "example": "She is a student at a big school."
+      },
+      {
+        "word": "neighbour",
+        "pos": "noun",
+        "definition_en": "a person who lives near you.",
+        "example": "Our neighbour has a small dog."
+      },
+      {
+        "word": "please",
+        "pos": "adv",
+        "definition_en": "a polite word used when you ask for something.",
+        "example": "Can I have some water, please?"
+      },
+      {
+        "word": "thanks",
+        "pos": "interj",
+        "definition_en": "a word you say to show you are grateful.",
+        "example": "Thanks for your help."
+      },
+      {
+        "word": "welcome",
+        "pos": "verb",
+        "definition_en": "to greet a guest in a friendly way.",
+        "example": "We welcome you to our home."
+      }
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": 2,
+    "title": "Unit 2 | Family",
+    "page": 7,
+    "study_tip": "Write new words on small cards: the word on one side, the meaning on the other.",
+    "words": [
+      {
+        "word": "mother",
+        "pos": "noun",
+        "definition_en": "your female parent.",
+        "example": "My mother cooks dinner every night."
+      },
+      {
+        "word": "father",
+        "pos": "noun",
+        "definition_en": "your male parent.",
+        "example": "My father drives to work."
+      },
+      {
+        "word": "sister",
+        "pos": "noun",
+        "definition_en": "a girl who has the same parents as you.",
+        "example": "My sister is two years older than me."
+      },
+      {
+        "word": "brother",
+        "pos": "noun",
+        "definition_en": "a boy who has the same parents as you.",
+        "example": "My brother plays football."
+      },
+      {
+        "word": "grandmother",
+        "pos": "noun",
+        "definition_en": "the mother of your mother or father.",
+        "example": "My grandmother tells great stories."
+      },
+      {
+        "word": "grandfather",
+        "pos": "noun",
+        "definition_en": "the father of your mother or father.",
+        "example": "My grandfather has a big garden."
+      },
+      {
+        "word": "uncle",
+        "pos": "noun",
+        "definition_en": "the brother of your mother or father.",
+        "example": "My uncle visits us at Christmas."
+      },
+      {
+        "word": "aunt",
+        "pos": "noun",
+        "definition_en": "the sister of your mother or father.",
+        "example": "My aunt lives in Spain."
+      },
+      {
+        "word": "cousin",
+        "pos": "noun",
+        "definition_en": "the child of your uncle or aunt.",
+        "example": "My cousin is the same age as me."
+      },
+      {
+        "word": "baby",
+        "pos": "noun",
+        "definition_en": "a very young child.",
+        "example": "The baby is sleeping now."
+      }
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": 3,
+    "title": "Unit 3 | Food and Drink",
+    "page": 10,
+    "study_tip": "Group words by topic. Your brain remembers connected words more easily.",
+    "words": [
+      {
+        "word": "bread",
+        "pos": "noun",
+        "definition_en": "a food made from flour and baked.",
+        "example": "I eat bread with butter for breakfast."
+      },
+      {
+        "word": "cheese",
+        "pos": "noun",
+        "definition_en": "a yellow or white food made from milk.",
+        "example": "Do you want cheese on your pizza?"
+      },
+      {
+        "word": "apple",
+        "pos": "noun",
+        "definition_en": "a round fruit that is red, green or yellow.",
+        "example": "She eats an apple every day."
+      },
+      {
+        "word": "rice",
+        "pos": "noun",
+        "definition_en": "small white grains that you cook and eat.",
+        "example": "We have chicken and rice for lunch."
+      },
+      {
+        "word": "soup",
+        "pos": "noun",
+        "definition_en": "a hot liquid food.",
+        "example": "The soup is too hot to eat."
+      },
+      {
+        "word": "chicken",
+        "pos": "noun",
+        "definition_en": "a bird kept for its meat and eggs.",
+        "example": "My mother cooks chicken on Sundays."
+      },
+      {
+        "word": "vegetable",
+        "pos": "noun",
+        "definition_en": "a plant you eat, such as a carrot.",
+        "example": "Carrots are my favourite vegetable."
+      },
+      {
+        "word": "juice",
+        "pos": "noun",
+        "definition_en": "a drink made from fruit.",
+        "example": "I would like orange juice, please."
+      },
+      {
+        "word": "hungry",
+        "pos": "adj",
+        "definition_en": "wanting to eat food.",
+        "example": "I am hungry because I missed lunch."
+      },
+      {
+        "word": "delicious",
+        "pos": "adj",
+        "definition_en": "tasting very good.",
+        "example": "This cake is delicious!"
+      }
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": 4,
+    "title": "Home and Rooms",
+    "page": 13,
+    "study_tip": "Review new words after 1 day, 3 days, 1 week and 1 month (spaced repetition).",
+    "words": [
+      {
+        "word": "kitchen",
+        "pos": "noun",
+        "definition_en": "the room where you cook food.",
+        "example": "We cook dinner in the kitchen."
+      },
+      {
+        "word": "bedroom",
+        "pos": "noun",
+        "definition_en": "the room where you sleep.",
+        "example": "My bedroom has a small window."
+      },
+      {
+        "word": "bathroom",
+        "pos": "noun",
+        "definition_en": "the room where you wash.",
+        "example": "There is a shower in the bathroom."
+      },
+      {
+        "word": "garden",
+        "pos": "noun",
+        "definition_en": "a place outside a house with grass and flowers.",
+        "example": "The children play in the garden."
+      },
+      {
+        "word": "window",
+        "pos": "noun",
+        "definition_en": "a glass opening in a wall.",
+        "example": "Please open the window."
+      },
+      {
+        "word": "door",
+        "pos": "noun",
+        "definition_en": "something you open to enter a room.",
+        "example": "Close the door when you leave."
+      },
+      {
+        "word": "sofa",
+        "pos": "noun",
+        "definition_en": "a soft seat for two or three people.",
+        "example": "We watch TV on the sofa."
+      },
+      {
+        "word": "table",
+        "pos": "noun",
+        "definition_en": "a piece of furniture with a flat top.",
+        "example": "The plates are on the table."
+      },
+      {
+        "word": "chair",
+        "pos": "noun",
+        "definition_en": "a seat for one person.",
+        "example": "He sits on a hard chair."
+      },
+      {
+        "word": "lamp",
+        "pos": "noun",
+        "definition_en": "a light you can move from place to place.",
+        "example": "Turn on the lamp, it is dark."
+      }
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": 5,
+    "title": "Daily Routines",
+    "page": 16,
+    "study_tip": "Learn the whole phrase, not just the word: note which words usually go with it.",
+    "words": [
+      {
+        "word": "wake",
+        "pos": "verb",
+        "definition_en": "to stop sleeping.",
+        "example": "I wake at seven o'clock every day."
+      },
+      {
+        "word": "wash",
+        "pos": "verb",
+        "definition_en": "to clean with water.",
+        "example": "I wash my face in the morning."
+      },
+      {
+        "word": "dress",
+        "pos": "verb",
+        "definition_en": "to put clothes on.",
+        "example": "The children dress before breakfast."
+      },
+      {
+        "word": "brush",
+        "pos": "verb",
+        "definition_en": "to clean with a brush.",
+        "example": "Brush your teeth twice a day."
+      },
+      {
+        "word": "study",
+        "pos": "verb",
+        "definition_en": "to learn about a subject.",
+        "example": "I study English after dinner."
+      },
+      {
+        "word": "cook",
+        "pos": "verb",
+        "definition_en": "to prepare food with heat.",
+        "example": "My dad likes to cook on Saturdays."
+      },
+      {
+        "word": "clean",
+        "pos": "verb",
+        "definition_en": "to remove dirt from a place.",
+        "example": "We clean the house on Sunday."
+      },
+      {
+        "word": "sleep",
+        "pos": "verb",
+        "definition_en": "to rest with your eyes closed at night.",
+        "example": "Babies sleep a lot."
+      },
+      {
+        "word": "relax",
+        "pos": "verb",
+        "definition_en": "to rest and feel calm.",
+        "example": "I relax with a book in the evening."
+      },
+      {
+        "word": "leave",
+        "pos": "verb",
+        "definition_en": "to go away from a place.",
+        "example": "I leave home at eight o'clock."
+      }
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": 6,
+    "title": "Time and Days",
+    "page": 19,
+    "study_tip": "Try to use each new word in a short conversation or message today.",
+    "words": [
+      {
+        "word": "morning",
+        "pos": "noun",
+        "definition_en": "the early part of the day.",
+        "example": "I drink coffee in the morning."
+      },
+      {
+        "word": "afternoon",
+        "pos": "noun",
+        "definition_en": "the time between lunch and evening.",
+        "example": "We play football in the afternoon."
+      },
+      {
+        "word": "evening",
+        "pos": "noun",
+        "definition_en": "the time between afternoon and night.",
+        "example": "We eat dinner in the evening."
+      },
+      {
+        "word": "week",
+        "pos": "noun",
+        "definition_en": "a period of seven days.",
+        "example": "There are seven days in a week."
+      },
+      {
+        "word": "today",
+        "pos": "adv",
+        "definition_en": "on this day.",
+        "example": "Today is Monday."
+      },
+      {
+        "word": "tomorrow",
+        "pos": "adv",
+        "definition_en": "on the day after today.",
+        "example": "I will see you tomorrow."
+      },
+      {
+        "word": "yesterday",
+        "pos": "adv",
+        "definition_en": "on the day before today.",
+        "example": "Yesterday it rained all day."
+      },
+      {
+        "word": "weekend",
+        "pos": "noun",
+        "definition_en": "Saturday and Sunday.",
+        "example": "We go to the beach at the weekend."
+      },
+      {
+        "word": "month",
+        "pos": "noun",
+        "definition_en": "one of the twelve parts of a year.",
+        "example": "January is the first month of the year."
+      },
+      {
+        "word": "birthday",
+        "pos": "noun",
+        "definition_en": "the day each year when you were born.",
+        "example": "Her birthday is in May."
+      }
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": 7,
+    "title": "Unit 7 | Clothes and Shopping",
+    "page": 23,
+    "study_tip": "Draw a quick picture next to a word. Images help memory.",
+    "words": [
+      {
+        "word": "jacket",
+        "pos": "noun",
+        "definition_en": "a short coat.",
+        "example": "Take a jacket, it is cold outside."
+      },
+      {
+        "word": "trousers",
+        "pos": "noun",
+        "definition_en": "clothing that covers your legs.",
+        "example": "These trousers are too long for me."
+      },
+      {
+        "word": "scarf",
+        "pos": "noun",
+        "definition_en": "a long piece of cloth worn around the neck.",
+        "example": "She wore a warm scarf in winter."
+      },
+      {
+        "word": "pocket",
+        "pos": "noun",
+        "definition_en": "a small bag sewn into clothes.",
+        "example": "I put my keys in my pocket."
+      },
+      {
+        "word": "expensive",
+        "pos": "adj",
+        "definition_en": "costing a lot of money.",
+        "example": "That watch is too expensive for me."
+      },
+      {
+        "word": "cheap",
+        "pos": "adj",
+        "definition_en": "costing little money.",
+        "example": "The tickets were cheap, only five euros."
+      },
+      {
+        "word": "customer",
+        "pos": "noun",
+        "definition_en": "a person who buys things in a shop.",
+        "example": "The customer asked for a bigger size."
+      },
+      {
+        "word": "receipt",
+        "pos": "noun",
+        "definition_en": "a paper that shows you paid for something.",
+        "example": "Keep the receipt in case you want to return it."
+      },
+      {
+        "word": "discount",
+        "pos": "noun",
+        "definition_en": "a reduction in the usual price.",
+        "example": "They give a ten percent discount to students."
+      },
+      {
+        "word": "fit",
+        "pos": "verb",
+        "definition_en": "to be the right size for someone.",
+        "example": "This shirt does not fit me."
+      }
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": 8,
+    "title": "Unit 8 | Travel and Transport",
+    "page": 26,
+    "study_tip": "Notice the part of speech: knowing noun, verb or adjective helps you use it correctly.",
+    "words": [
+      {
+        "word": "passport",
+        "pos": "noun",
+        "definition_en": "an official document that lets you travel to other countries.",
+        "example": "Don't forget your passport at the airport."
+      },
+      {
+        "word": "ticket",
+        "pos": "noun",
+        "definition_en": "a piece of paper that lets you travel or enter a place.",
+        "example": "I bought a train ticket online."
+      },
+      {
+        "word": "luggage",
+        "pos": "noun",
+        "definition_en": "the bags you take when you travel.",
+        "example": "Our luggage was very heavy."
+      },
+      {
+        "word": "airport",
+        "pos": "noun",
+        "definition_en": "a place where planes arrive and leave.",
+        "example": "We arrived at the airport two hours early."
+      },
+      {
+        "word": "platform",
+        "pos": "noun",
+        "definition_en": "the place in a station where you get on a train.",
+        "example": "The train leaves from platform four."
+      },
+      {
+        "word": "journey",
+        "pos": "noun",
+        "definition_en": "a trip from one place to another.",
+        "example": "The journey to the coast takes three hours."
+      },
+      {
+        "word": "delay",
+        "pos": "noun",
+        "definition_en": "a time when something happens later than planned.",
+        "example": "There was a long delay because of the fog."
+      },
+      {
+        "word": "reservation",
+        "pos": "noun",
+        "definition_en": "an arrangement to keep a room or table for you.",
+        "example": "I made a reservation at the hotel."
+      },
+      {
+        "word": "tourist",
+        "pos": "noun",
+        "definition_en": "a person who visits a place on holiday.",
+        "example": "The tourist took photos of the old castle."
+      },
+      {
+        "word": "map",
+        "pos": "noun",
+        "definition_en": "a drawing of an area that shows roads and places.",
+        "example": "We used a map to find the museum."
+      }
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": 9,
+    "title": "Unit 9 | Weather and Seasons",
+    "page": 29,
+    "study_tip": "Read a short text on this topic and underline the new words you meet.",
+    "words": [
+      {
+        "word": "sunny",
+        "pos": "adj",
+        "definition_en": "with a lot of sun.",
+        "example": "It is a sunny day, let's go outside."
+      },
+      {
+        "word": "cloudy",
+        "pos": "adj",
+        "definition_en": "covered with clouds.",
+        "example": "The sky is cloudy this morning."
+      },
+      {
+        "word": "windy",
+        "pos": "adj",
+        "definition_en": "with a lot of wind.",
+        "example": "It was too windy to fly a kite."
+      },
+      {
+        "word": "rainy",
+        "pos": "adj",
+        "definition_en": "with a lot of rain.",
+        "example": "Bring a coat on a rainy day."
+      },
+      {
+        "word": "storm",
+        "pos": "noun",
+        "definition_en": "very bad weather with strong wind and rain.",
+        "example": "The storm broke several trees."
+      },
+      {
+        "word": "temperature",
+        "pos": "noun",
+        "definition_en": "how hot or cold something is.",
+        "example": "The temperature fell below zero last night."
+      },
+      {
+        "word": "freezing",
+        "pos": "adj",
+        "definition_en": "extremely cold.",
+        "example": "It is freezing outside, so wear gloves."
+      },
+      {
+        "word": "umbrella",
+        "pos": "noun",
+        "definition_en": "an object that keeps rain off you.",
+        "example": "Take an umbrella because it may rain."
+      },
+      {
+        "word": "forecast",
+        "pos": "noun",
+        "definition_en": "a report about what the weather will be.",
+        "example": "The forecast says snow tomorrow."
+      },
+      {
+        "word": "season",
+        "pos": "noun",
+        "definition_en": "one of the four parts of the year.",
+        "example": "Summer is my favourite season."
+      }
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": 10,
+    "title": "Unit 10 | Body and Health",
+    "page": 32,
+    "study_tip": "Test yourself by covering the meaning column and recalling each definition.",
+    "words": [
+      {
+        "word": "headache",
+        "pos": "noun",
+        "definition_en": "a pain in your head.",
+        "example": "I have a headache, so I am going to lie down."
+      },
+      {
+        "word": "fever",
+        "pos": "noun",
+        "definition_en": "a high body temperature when you are ill.",
+        "example": "The child has a fever and needs rest."
+      },
+      {
+        "word": "cough",
+        "pos": "verb",
+        "definition_en": "to push air out of your throat with a noise.",
+        "example": "He began to cough at night."
+      },
+      {
+        "word": "medicine",
+        "pos": "noun",
+        "definition_en": "something you take to get better.",
+        "example": "Take this medicine twice a day."
+      },
+      {
+        "word": "pharmacy",
+        "pos": "noun",
+        "definition_en": "a shop that sells medicine.",
+        "example": "The pharmacy closes at six."
+      },
+      {
+        "word": "appointment",
+        "pos": "noun",
+        "definition_en": "a planned time to see a doctor.",
+        "example": "I have an appointment at ten."
+      },
+      {
+        "word": "healthy",
+        "pos": "adj",
+        "definition_en": "good for your body.",
+        "example": "Fruit is a healthy snack."
+      },
+      {
+        "word": "exercise",
+        "pos": "noun",
+        "definition_en": "physical activity that keeps you fit.",
+        "example": "Daily exercise is good for your heart."
+      },
+      {
+        "word": "tired",
+        "pos": "adj",
+        "definition_en": "needing rest or sleep.",
+        "example": "I feel tired after the long walk."
+      },
+      {
+        "word": "stomach",
+        "pos": "noun",
+        "definition_en": "the part of your body where food goes.",
+        "example": "My stomach hurts after dinner."
+      }
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": 11,
+    "title": "Unit 11 | Hobbies and Free Time",
+    "page": 35,
+    "study_tip": "Say each new word three times aloud, then use it in a sentence about your own life.",
+    "words": [
+      {
+        "word": "hobby",
+        "pos": "noun",
+        "definition_en": "something you enjoy doing in your free time.",
+        "example": "My hobby is photography."
+      },
+      {
+        "word": "collect",
+        "pos": "verb",
+        "definition_en": "to gather things you like.",
+        "example": "He likes to collect old coins."
+      },
+      {
+        "word": "paint",
+        "pos": "verb",
+        "definition_en": "to make a picture with colours.",
+        "example": "She likes to paint landscapes."
+      },
+      {
+        "word": "concert",
+        "pos": "noun",
+        "definition_en": "a live music performance.",
+        "example": "We went to a concert last night."
+      },
+      {
+        "word": "gym",
+        "pos": "noun",
+        "definition_en": "a place where you do exercise.",
+        "example": "I go to the gym after work."
+      },
+      {
+        "word": "swimming",
+        "pos": "noun",
+        "definition_en": "the sport of moving through water.",
+        "example": "Swimming is good for your back."
+      },
+      {
+        "word": "invite",
+        "pos": "verb",
+        "definition_en": "to ask someone to come to an event.",
+        "example": "I want to invite you to my party."
+      },
+      {
+        "word": "match",
+        "pos": "noun",
+        "definition_en": "a game between two teams.",
+        "example": "The match starts at three."
+      },
+      {
+        "word": "photograph",
+        "pos": "noun",
+        "definition_en": "a picture made with a camera.",
+        "example": "This photograph shows our trip to Rome."
+      },
+      {
+        "word": "festival",
+        "pos": "noun",
+        "definition_en": "a special event with music or food.",
+        "example": "The town has a music festival every summer."
+      }
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": 12,
+    "title": "Unit 12 | Town and Directions",
+    "page": 38,
+    "study_tip": "Write new words on small cards: the word on one side, the meaning on the other.",
+    "words": [
+      {
+        "word": "corner",
+        "pos": "noun",
+        "definition_en": "the place where two streets meet.",
+        "example": "Turn left at the corner."
+      },
+      {
+        "word": "crossroads",
+        "pos": "noun",
+        "definition_en": "a place where two roads cross.",
+        "example": "Stop at the crossroads and look both ways."
+      },
+      {
+        "word": "bridge",
+        "pos": "noun",
+        "definition_en": "a structure that lets you cross a river.",
+        "example": "The bridge connects the two parts of town."
+      },
+      {
+        "word": "traffic",
+        "pos": "noun",
+        "definition_en": "cars and other vehicles on a road.",
+        "example": "The traffic is terrible at eight o'clock."
+      },
+      {
+        "word": "pavement",
+        "pos": "noun",
+        "definition_en": "the path at the side of a road.",
+        "example": "Walk on the pavement, not in the road."
+      },
+      {
+        "word": "straight",
+        "pos": "adv",
+        "definition_en": "in a line without turning.",
+        "example": "Go straight for two hundred metres."
+      },
+      {
+        "word": "opposite",
+        "pos": "prep",
+        "definition_en": "on the other side of.",
+        "example": "The bank is opposite the post office."
+      },
+      {
+        "word": "nearby",
+        "pos": "adv",
+        "definition_en": "close to where you are.",
+        "example": "Is there a bank nearby?"
+      },
+      {
+        "word": "direction",
+        "pos": "noun",
+        "definition_en": "the way you go to reach a place.",
+        "example": "We went in the wrong direction."
+      },
+      {
+        "word": "suburb",
+        "pos": "noun",
+        "definition_en": "an area of houses on the edge of a city.",
+        "example": "They live in a quiet suburb."
+      }
+    ]
+  }
+]

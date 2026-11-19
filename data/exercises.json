@@ -1,0 +1,5052 @@
+{
+  "units": [
+    {
+      "level": "A1",
+      "unit": 1,
+      "pages": [
+        5,
+        6
+      ],
+      "unit_meta": {
+        "level": "A1",
+        "unit": 1,
+        "title": "Unit 1 | Greetings and People",
+        "topic": "Chào hỏi & con người",
+        "study_tip": "Say each new word three times aloud, then use it in a sentence about your own life.",
+        "page": 4
+      },
+      "A": {
+        "instruction": "Match each word with its meaning. Write the correct letter next to each word.",
+        "items": [
+          {
+            "id": "ex-u1-a-1",
+            "word_id": "a1-u1-hello",
+            "num": 1,
+            "word": "hello",
+            "definition": "a. a person who lives near you",
+            "answer": "c. a word you say when you meet someone",
+            "answer_letter": "c"
+          },
+          {
+            "id": "ex-u1-a-2",
+            "word_id": "a1-u1-goodbye",
+            "num": 2,
+            "word": "goodbye",
+            "definition": "b. a polite word used when you ask for something",
+            "answer": "d. a word you say when you leave",
+            "answer_letter": "d"
+          },
+          {
+            "id": "ex-u1-a-3",
+            "word_id": "a1-u1-friend",
+            "num": 3,
+            "word": "friend",
+            "definition": "c. a word you say when you meet someone",
+            "answer": "i. a person you like and know well",
+            "answer_letter": "i"
+          },
+          {
+            "id": "ex-u1-a-4",
+            "word_id": "a1-u1-name",
+            "num": 4,
+            "word": "name",
+            "definition": "d. a word you say when you leave",
+            "answer": "f. the word people call you",
+            "answer_letter": "f"
+          },
+          {
+            "id": "ex-u1-a-5",
+            "word_id": "a1-u1-teacher",
+            "num": 5,
+            "word": "teacher",
+            "definition": "e. a person who helps you learn at school",
+            "answer": "e. a person who helps you learn at school",
+            "answer_letter": "e"
+          },
+          {
+            "id": "ex-u1-a-6",
+            "word_id": "a1-u1-student",
+            "num": 6,
+            "word": "student",
+            "definition": "f. the word people call you",
+            "answer": "j. a person who studies at school or university",
+            "answer_letter": "j"
+          },
+          {
+            "id": "ex-u1-a-7",
+            "word_id": "a1-u1-neighbour",
+            "num": 7,
+            "word": "neighbour",
+            "definition": "g. a word you say to show you are grateful",
+            "answer": "a. a person who lives near you",
+            "answer_letter": "a"
+          },
+          {
+            "id": "ex-u1-a-8",
+            "word_id": "a1-u1-please",
+            "num": 8,
+            "word": "please",
+            "definition": "h. to greet a guest in a friendly way",
+            "answer": "b. a polite word used when you ask for something",
+            "answer_letter": "b"
+          },
+          {
+            "id": "ex-u1-a-9",
+            "word_id": "a1-u1-thanks",
+            "num": 9,
+            "word": "thanks",
+            "definition": "i. a person you like and know well",
+            "answer": "g. a word you say to show you are grateful",
+            "answer_letter": "g"
+          },
+          {
+            "id": "ex-u1-a-10",
+            "word_id": "a1-u1-welcome",
+            "num": 10,
+            "word": "welcome",
+            "definition": "j. a person who studies at school or university",
+            "answer": "h. to greet a guest in a friendly way",
+            "answer_letter": "h"
+          }
+        ]
+      },
+      "B": {
+        "instruction": "Complete each sentence with a word from the box.",
+        "word_bank": [
+          "friend",
+          "goodbye",
+          "hello",
+          "name",
+          "neighbour",
+          "please",
+          "student",
+          "teacher",
+          "thanks",
+          "welcome"
+        ],
+        "items": [
+          {
+            "id": "ex-u1-b-1",
+            "word_id": "a1-u1-welcome",
+            "num": 1,
+            "sentence": "We ____ you to our home.",
+            "answer": "welcome"
+          },
+          {
+            "id": "ex-u1-b-2",
+            "word_id": "a1-u1-name",
+            "num": 2,
+            "sentence": "What is your ____?",
+            "answer": "name"
+          },
+          {
+            "id": "ex-u1-b-3",
+            "word_id": "a1-u1-thanks",
+            "num": 3,
+            "sentence": "____ for your help.",
+            "answer": "thanks"
+          },
+          {
+            "id": "ex-u1-b-4",
+            "word_id": "a1-u1-please",
+            "num": 4,
+            "sentence": "Can I have some water, ____?",
+            "answer": "please"
+          },
+          {
+            "id": "ex-u1-b-5",
+            "word_id": "a1-u1-goodbye",
+            "num": 5,
+            "sentence": "____! See you tomorrow.",
+            "answer": "goodbye"
+          },
+          {
+            "id": "ex-u1-b-6",
+            "word_id": "a1-u1-neighbour",
+            "num": 6,
+            "sentence": "Our ____ has a small dog.",
+            "answer": "neighbour"
+          },
+          {
+            "id": "ex-u1-b-7",
+            "word_id": "a1-u1-student",
+            "num": 7,
+            "sentence": "She is a ____ at a big school.",
+            "answer": "student"
+          },
+          {
+            "id": "ex-u1-b-8",
+            "word_id": "a1-u1-hello",
+            "num": 8,
+            "sentence": "____, my name is Anna.",
+            "answer": "hello"
+          },
+          {
+            "id": "ex-u1-b-9",
+            "word_id": "a1-u1-friend",
+            "num": 9,
+            "sentence": "My ____ lives next door.",
+            "answer": "friend"
+          },
+          {
+            "id": "ex-u1-b-10",
+            "word_id": "a1-u1-teacher",
+            "num": 10,
+            "sentence": "The ____ writes on the board.",
+            "answer": "teacher"
+          }
+        ]
+      },
+      "C": {
+        "instruction": "Choose the word that matches the meaning.",
+        "items": [
+          {
+            "id": "ex-u1-c-1",
+            "word_id": "a1-u1-neighbour",
+            "num": 1,
+            "question": "a person who lives near you.",
+            "options": [
+              "a) student",
+              "b) goodbye",
+              "c) please",
+              "d) neighbour"
+            ],
+            "answer": "d) neighbour",
+            "answer_word": "neighbour"
+          },
+          {
+            "id": "ex-u1-c-2",
+            "word_id": "a1-u1-hello",
+            "num": 2,
+            "question": "a word you say when you meet someone.",
+            "options": [
+              "a) welcome",
+              "b) hello",
+              "c) teacher",
+              "d) thanks"
+            ],
+            "answer": "b) hello",
+            "answer_word": "hello"
+          },
+          {
+            "id": "ex-u1-c-3",
+            "word_id": "a1-u1-welcome",
+            "num": 3,
+            "question": "to greet a guest in a friendly way.",
+            "options": [
+              "a) hello",
+              "b) goodbye",
+              "c) welcome",
+              "d) teacher"
+            ],
+            "answer": "c) welcome",
+            "answer_word": "welcome"
+          },
+          {
+            "id": "ex-u1-c-4",
+            "word_id": "a1-u1-teacher",
+            "num": 4,
+            "question": "a person who helps you learn at school.",
+            "options": [
+              "a) teacher",
+              "b) please",
+              "c) student",
+              "d) friend"
+            ],
+            "answer": "a) teacher",
+            "answer_word": "teacher"
+          },
+          {
+            "id": "ex-u1-c-5",
+            "word_id": "a1-u1-please",
+            "num": 5,
+            "question": "a polite word used when you ask for something.",
+            "options": [
+              "a) goodbye",
+              "b) teacher",
+              "c) please",
+              "d) neighbour"
+            ],
+            "answer": "c) please",
+            "answer_word": "please"
+          },
+          {
+            "id": "ex-u1-c-6",
+            "word_id": "a1-u1-friend",
+            "num": 6,
+            "question": "a person you like and know well.",
+            "options": [
+              "a) goodbye",
+              "b) teacher",
+              "c) neighbour",
+              "d) friend"
+            ],
+            "answer": "d) friend",
+            "answer_word": "friend"
+          },
+          {
+            "id": "ex-u1-c-7",
+            "word_id": "a1-u1-thanks",
+            "num": 7,
+            "question": "a word you say to show you are grateful.",
+            "options": [
+              "a) neighbour",
+              "b) teacher",
+              "c) welcome",
+              "d) thanks"
+            ],
+            "answer": "d) thanks",
+            "answer_word": "thanks"
+          },
+          {
+            "id": "ex-u1-c-8",
+            "word_id": "a1-u1-name",
+            "num": 8,
+            "question": "the word people call you.",
+            "options": [
+              "a) student",
+              "b) neighbour",
+              "c) please",
+              "d) name"
+            ],
+            "answer": "d) name",
+            "answer_word": "name"
+          },
+          {
+            "id": "ex-u1-c-9",
+            "word_id": "a1-u1-goodbye",
+            "num": 9,
+            "question": "a word you say when you leave.",
+            "options": [
+              "a) welcome",
+              "b) friend",
+              "c) goodbye",
+              "d) neighbour"
+            ],
+            "answer": "c) goodbye",
+            "answer_word": "goodbye"
+          },
+          {
+            "id": "ex-u1-c-10",
+            "word_id": "a1-u1-student",
+            "num": 10,
+            "question": "a person who studies at school or university.",
+            "options": [
+              "a) please",
+              "b) hello",
+              "c) welcome",
+              "d) student"
+            ],
+            "answer": "d) student",
+            "answer_word": "student"
+          }
+        ]
+      },
+      "D": {
+        "instruction": "Unscramble the letters to make words from this unit.",
+        "items": [
+          {
+            "id": "ex-u1-d-1",
+            "word_id": "a1-u1-friend",
+            "num": 1,
+            "scrambled": "N F I D R E",
+            "hint": "(noun) a person you like and know well",
+            "answer": "friend"
+          },
+          {
+            "id": "ex-u1-d-2",
+            "word_id": "a1-u1-student",
+            "num": 2,
+            "scrambled": "N T U T E D S",
+            "hint": "(noun) a person who studies at school or university",
+            "answer": "student"
+          },
+          {
+            "id": "ex-u1-d-3",
+            "word_id": "a1-u1-goodbye",
+            "num": 3,
+            "scrambled": "O Y D O G B E",
+            "hint": "(interj) a word you say when you leave",
+            "answer": "goodbye"
+          },
+          {
+            "id": "ex-u1-d-4",
+            "word_id": "a1-u1-neighbour",
+            "num": 4,
+            "scrambled": "G I B R U N O E H",
+            "hint": "(noun) a person who lives near you",
+            "answer": "neighbour"
+          },
+          {
+            "id": "ex-u1-d-5",
+            "word_id": "a1-u1-teacher",
+            "num": 5,
+            "scrambled": "T E C H A R E",
+            "hint": "(noun) a person who helps you learn at school",
+            "answer": "teacher"
+          },
+          {
+            "id": "ex-u1-d-6",
+            "word_id": "a1-u1-welcome",
+            "num": 6,
+            "scrambled": "W L C O E E M",
+            "hint": "(verb) to greet a guest in a friendly way",
+            "answer": "welcome"
+          }
+        ]
+      },
+      "E": {
+        "id": "ex-u1-e-1",
+        "instruction": "Write your own sentences using three words from this unit.",
+        "prompts": [
+          "Write your own sentences using three words from this unit."
+        ]
+      }
+    },
+    {
+      "level": "A1",
+      "unit": 2,
+      "pages": [
+        8,
+        9
+      ],
+      "unit_meta": {
+        "level": "A1",
+        "unit": 2,
+        "title": "Unit 2 | Family",
+        "topic": "Gia đình",
+        "study_tip": "Write new words on small cards: the word on one side, the meaning on the other.",
+        "page": 7
+      },
+      "A": {
+        "instruction": "Match each word with its meaning. Write the correct letter next to each word.",
+        "items": [
+          {
+            "id": "ex-u2-a-1",
+            "word_id": "a1-u2-mother",
+            "num": 1,
+            "word": "mother",
+            "definition": "a. the brother of your mother or father",
+            "answer": "j. your female parent",
+            "answer_letter": "j"
+          },
+          {
+            "id": "ex-u2-a-2",
+            "word_id": "a1-u2-father",
+            "num": 2,
+            "word": "father",
+            "definition": "b. the mother of your mother or father",
+            "answer": "c. your male parent",
+            "answer_letter": "c"
+          },
+          {
+            "id": "ex-u2-a-3",
+            "word_id": "a2-u6-sister",
+            "num": 3,
+            "word": "sister",
+            "definition": "c. your male parent",
+            "answer": "e. a girl who has the same parents as you",
+            "answer_letter": "e"
+          },
+          {
+            "id": "ex-u2-a-4",
+            "word_id": "a2-u6-brother",
+            "num": 4,
+            "word": "brother",
+            "definition": "d. the child of your uncle or aunt",
+            "answer": "h. a boy who has the same parents as you",
+            "answer_letter": "h"
+          },
+          {
+            "id": "ex-u2-a-5",
+            "word_id": "a2-u6-grandmother",
+            "num": 5,
+            "word": "grandmother",
+            "definition": "e. a girl who has the same parents as you",
+            "answer": "b. the mother of your mother or father",
+            "answer_letter": "b"
+          },
+          {
+            "id": "ex-u2-a-6",
+            "word_id": "a2-u6-grandfather",
+            "num": 6,
+            "word": "grandfather",
+            "definition": "f. a very young child",
+            "answer": "g. the father of your mother or father",
+            "answer_letter": "g"
+          },
+          {
+            "id": "ex-u2-a-7",
+            "word_id": "a2-u6-uncle",
+            "num": 7,
+            "word": "uncle",
+            "definition": "g. the father of your mother or father",
+            "answer": "a. the brother of your mother or father",
+            "answer_letter": "a"
+          },
+          {
+            "id": "ex-u2-a-8",
+            "word_id": "a2-u1-aunt",
+            "num": 8,
+            "word": "aunt",
+            "definition": "h. a boy who has the same parents as you",
+            "answer": "i. the sister of your mother or father",
+            "answer_letter": "i"
+          },
+          {
+            "id": "ex-u2-a-9",
+            "word_id": "a2-u6-cousin",
+            "num": 9,
+            "word": "cousin",
+            "definition": "i. the sister of your mother or father",
+            "answer": "d. the child of your uncle or aunt",
+            "answer_letter": "d"
+          },
+          {
+            "id": "ex-u2-a-10",
+            "word_id": "a1-u2-baby",
+            "num": 10,
+            "word": "baby",
+            "definition": "j. your female parent",
+            "answer": "f. a very young child",
+            "answer_letter": "f"
+          }
+        ]
+      },
+      "B": {
+        "instruction": "Complete each sentence with a word from the box.",
+        "word_bank": [
+          "aunt",
+          "baby",
+          "brother",
+          "cousin",
+          "father",
+          "grandfather",
+          "grandmother",
+          "mother",
+          "sister",
+          "uncle"
+        ],
+        "items": [
+          {
+            "id": "ex-u2-b-1",
+            "word_id": "a2-u6-grandmother",
+            "num": 1,
+            "sentence": "My ____ tells great stories.",
+            "answer": "grandmother"
+          },
+          {
+            "id": "ex-u2-b-2",
+            "word_id": "a2-u1-aunt",
+            "num": 2,
+            "sentence": "My ____ lives in Spain.",
+            "answer": "aunt"
+          },
+          {
+            "id": "ex-u2-b-3",
+            "word_id": "a2-u6-uncle",
+            "num": 3,
+            "sentence": "My ____ visits us at Christmas.",
+            "answer": "uncle"
+          },
+          {
+            "id": "ex-u2-b-4",
+            "word_id": "a1-u2-baby",
+            "num": 4,
+            "sentence": "The ____ is sleeping now.",
+            "answer": "baby"
+          },
+          {
+            "id": "ex-u2-b-5",
+            "word_id": "a2-u6-grandfather",
+            "num": 5,
+            "sentence": "My ____ has a big garden.",
+            "answer": "grandfather"
+          },
+          {
+            "id": "ex-u2-b-6",
+            "word_id": "a2-u6-brother",
+            "num": 6,
+            "sentence": "My ____ plays football.",
+            "answer": "brother"
+          },
+          {
+            "id": "ex-u2-b-7",
+            "word_id": "a2-u6-sister",
+            "num": 7,
+            "sentence": "My ____ is two years older than me.",
+            "answer": "sister"
+          },
+          {
+            "id": "ex-u2-b-8",
+            "word_id": "a1-u2-mother",
+            "num": 8,
+            "sentence": "My ____ cooks dinner every night.",
+            "answer": "mother"
+          },
+          {
+            "id": "ex-u2-b-9",
+            "word_id": "a1-u2-father",
+            "num": 9,
+            "sentence": "My ____ drives to work.",
+            "answer": "father"
+          },
+          {
+            "id": "ex-u2-b-10",
+            "word_id": "a2-u6-cousin",
+            "num": 10,
+            "sentence": "My ____ is the same age as me.",
+            "answer": "cousin"
+          }
+        ]
+      },
+      "C": {
+        "instruction": "Choose the word that matches the meaning.",
+        "items": [
+          {
+            "id": "ex-u2-c-1",
+            "word_id": "a2-u6-uncle",
+            "num": 1,
+            "question": "the brother of your mother or father.",
+            "options": [
+              "a) grandmother",
+              "b) uncle",
+              "c) grandfather",
+              "d) brother"
+            ],
+            "answer": "b) uncle",
+            "answer_word": "uncle"
+          },
+          {
+            "id": "ex-u2-c-2",
+            "word_id": "a2-u6-brother",
+            "num": 2,
+            "question": "a boy who has the same parents as you.",
+            "options": [
+              "a) brother",
+              "b) father",
+              "c) aunt",
+              "d) grandfather"
+            ],
+            "answer": "a) brother",
+            "answer_word": "brother"
+          },
+          {
+            "id": "ex-u2-c-3",
+            "word_id": "a1-u2-baby",
+            "num": 3,
+            "question": "a very young child.",
+            "options": [
+              "a) uncle",
+              "b) cousin",
+              "c) brother",
+              "d) baby"
+            ],
+            "answer": "d) baby",
+            "answer_word": "baby"
+          },
+          {
+            "id": "ex-u2-c-4",
+            "word_id": "a2-u6-cousin",
+            "num": 4,
+            "question": "the child of your uncle or aunt.",
+            "options": [
+              "a) mother",
+              "b) grandfather",
+              "c) cousin",
+              "d) grandmother"
+            ],
+            "answer": "c) cousin",
+            "answer_word": "cousin"
+          },
+          {
+            "id": "ex-u2-c-5",
+            "word_id": "a2-u6-grandfather",
+            "num": 5,
+            "question": "the father of your mother or father.",
+            "options": [
+              "a) uncle",
+              "b) mother",
+              "c) sister",
+              "d) grandfather"
+            ],
+            "answer": "d) grandfather",
+            "answer_word": "grandfather"
+          },
+          {
+            "id": "ex-u2-c-6",
+            "word_id": "a2-u6-sister",
+            "num": 6,
+            "question": "a girl who has the same parents as you.",
+            "options": [
+              "a) mother",
+              "b) grandmother",
+              "c) sister",
+              "d) cousin"
+            ],
+            "answer": "c) sister",
+            "answer_word": "sister"
+          },
+          {
+            "id": "ex-u2-c-7",
+            "word_id": "a2-u6-grandmother",
+            "num": 7,
+            "question": "the mother of your mother or father.",
+            "options": [
+              "a) baby",
+              "b) grandmother",
+              "c) uncle",
+              "d) cousin"
+            ],
+            "answer": "b) grandmother",
+            "answer_word": "grandmother"
+          },
+          {
+            "id": "ex-u2-c-8",
+            "word_id": "a2-u1-aunt",
+            "num": 8,
+            "question": "the sister of your mother or father.",
+            "options": [
+              "a) sister",
+              "b) aunt",
+              "c) cousin",
+              "d) mother"
+            ],
+            "answer": "b) aunt",
+            "answer_word": "aunt"
+          },
+          {
+            "id": "ex-u2-c-9",
+            "word_id": "a1-u2-father",
+            "num": 9,
+            "question": "your male parent.",
+            "options": [
+              "a) uncle",
+              "b) father",
+              "c) sister",
+              "d) cousin"
+            ],
+            "answer": "b) father",
+            "answer_word": "father"
+          },
+          {
+            "id": "ex-u2-c-10",
+            "word_id": "a1-u2-mother",
+            "num": 10,
+            "question": "your female parent.",
+            "options": [
+              "a) baby",
+              "b) cousin",
+              "c) mother",
+              "d) uncle"
+            ],
+            "answer": "c) mother",
+            "answer_word": "mother"
+          }
+        ]
+      },
+      "D": {
+        "instruction": "Unscramble the letters to make words from this unit.",
+        "items": [
+          {
+            "id": "ex-u2-d-1",
+            "word_id": "a2-u6-brother",
+            "num": 1,
+            "scrambled": "T R B E O H R",
+            "hint": "(noun) a boy who has the same parents as you",
+            "answer": "brother"
+          },
+          {
+            "id": "ex-u2-d-2",
+            "word_id": "a2-u6-grandfather",
+            "num": 2,
+            "scrambled": "R T G N R A D F E H A",
+            "hint": "(noun) the father of your mother or father",
+            "answer": "grandfather"
+          },
+          {
+            "id": "ex-u2-d-3",
+            "word_id": "a1-u2-mother",
+            "num": 3,
+            "scrambled": "T O H R M E",
+            "hint": "(noun) your female parent",
+            "answer": "mother"
+          },
+          {
+            "id": "ex-u2-d-4",
+            "word_id": "a2-u6-grandmother",
+            "num": 4,
+            "scrambled": "D O H A N T M G R R E",
+            "hint": "(noun) the mother of your mother or father",
+            "answer": "grandmother"
+          },
+          {
+            "id": "ex-u2-d-5",
+            "word_id": "a1-u2-father",
+            "num": 5,
+            "scrambled": "R E A T F H",
+            "hint": "(noun) your male parent",
+            "answer": "father"
+          },
+          {
+            "id": "ex-u2-d-6",
+            "word_id": "a2-u6-sister",
+            "num": 6,
+            "scrambled": "E S S I R T",
+            "hint": "(noun) a girl who has the same parents as you",
+            "answer": "sister"
+          }
+        ]
+      },
+      "E": {
+        "id": "ex-u2-e-1",
+        "instruction": "Write your own sentences using three words from this unit.",
+        "prompts": [
+          "Write your own sentences using three words from this unit."
+        ]
+      }
+    },
+    {
+      "level": "A1",
+      "unit": 3,
+      "pages": [
+        11,
+        12
+      ],
+      "unit_meta": {
+        "level": "A1",
+        "unit": 3,
+        "title": "Unit 3 | Food and Drink",
+        "topic": "Đồ ăn & thức uống",
+        "study_tip": "Group words by topic. Your brain remembers connected words more easily.",
+        "page": 10
+      },
+      "A": {
+        "instruction": "Match each word with its meaning. Write the correct letter next to each word.",
+        "items": [
+          {
+            "id": "ex-u3-a-1",
+            "word_id": "a1-u3-bread",
+            "num": 1,
+            "word": "bread",
+            "definition": "a. a round fruit that is red, green or yellow",
+            "answer": "e. a food made from flour and baked",
+            "answer_letter": "e"
+          },
+          {
+            "id": "ex-u3-a-2",
+            "word_id": "a1-u3-cheese",
+            "num": 2,
+            "word": "cheese",
+            "definition": "b. a plant you eat, such as a carrot",
+            "answer": "i. a yellow or white food made from milk",
+            "answer_letter": "i"
+          },
+          {
+            "id": "ex-u3-a-3",
+            "word_id": "a1-u3-apple",
+            "num": 3,
+            "word": "apple",
+            "definition": "c. small white grains that you cook and eat",
+            "answer": "a. a round fruit that is red, green or yellow",
+            "answer_letter": "a"
+          },
+          {
+            "id": "ex-u3-a-4",
+            "word_id": "a1-u3-rice",
+            "num": 4,
+            "word": "rice",
+            "definition": "d. wanting to eat food",
+            "answer": "c. small white grains that you cook and eat",
+            "answer_letter": "c"
+          },
+          {
+            "id": "ex-u3-a-5",
+            "word_id": "a1-u3-soup",
+            "num": 5,
+            "word": "soup",
+            "definition": "e. a food made from flour and baked",
+            "answer": "h. a hot liquid food",
+            "answer_letter": "h"
+          },
+          {
+            "id": "ex-u3-a-6",
+            "word_id": "a2-u4-chicken",
+            "num": 6,
+            "word": "chicken",
+            "definition": "f. a drink made from fruit",
+            "answer": "j. a bird kept for its meat and eggs",
+            "answer_letter": "j"
+          },
+          {
+            "id": "ex-u3-a-7",
+            "word_id": "a1-u3-vegetable",
+            "num": 7,
+            "word": "vegetable",
+            "definition": "g. tasting very good",
+            "answer": "b. a plant you eat, such as a carrot",
+            "answer_letter": "b"
+          },
+          {
+            "id": "ex-u3-a-8",
+            "word_id": "a1-u3-juice",
+            "num": 8,
+            "word": "juice",
+            "definition": "h. a hot liquid food",
+            "answer": "f. a drink made from fruit",
+            "answer_letter": "f"
+          },
+          {
+            "id": "ex-u3-a-9",
+            "word_id": "a1-u3-hungry",
+            "num": 9,
+            "word": "hungry",
+            "definition": "i. a yellow or white food made from milk",
+            "answer": "d. wanting to eat food",
+            "answer_letter": "d"
+          },
+          {
+            "id": "ex-u3-a-10",
+            "word_id": "a1-u3-delicious",
+            "num": 10,
+            "word": "delicious",
+            "definition": "j. a bird kept for its meat and eggs",
+            "answer": "g. tasting very good",
+            "answer_letter": "g"
+          }
+        ]
+      },
+      "B": {
+        "instruction": "Complete each sentence with a word from the box.",
+        "word_bank": [
+          "apple",
+          "bread",
+          "cheese",
+          "chicken",
+          "delicious",
+          "hungry",
+          "juice",
+          "rice",
+          "soup",
+          "vegetable"
+        ],
+        "items": [
+          {
+            "id": "ex-u3-b-1",
+            "word_id": "a1-u3-bread",
+            "num": 1,
+            "sentence": "I eat ____ with butter for breakfast.",
+            "answer": "bread"
+          },
+          {
+            "id": "ex-u3-b-2",
+            "word_id": "a1-u3-rice",
+            "num": 2,
+            "sentence": "We have chicken and ____ for lunch.",
+            "answer": "rice"
+          },
+          {
+            "id": "ex-u3-b-3",
+            "word_id": "a2-u4-chicken",
+            "num": 3,
+            "sentence": "My mother cooks ____ on Sundays.",
+            "answer": "chicken"
+          },
+          {
+            "id": "ex-u3-b-4",
+            "word_id": "a1-u3-soup",
+            "num": 4,
+            "sentence": "The ____ is too hot to eat.",
+            "answer": "soup"
+          },
+          {
+            "id": "ex-u3-b-5",
+            "word_id": "a1-u3-apple",
+            "num": 5,
+            "sentence": "She eats an ____ every day.",
+            "answer": "apple"
+          },
+          {
+            "id": "ex-u3-b-6",
+            "word_id": "a1-u3-cheese",
+            "num": 6,
+            "sentence": "Do you want ____ on your pizza?",
+            "answer": "cheese"
+          },
+          {
+            "id": "ex-u3-b-7",
+            "word_id": "a1-u3-vegetable",
+            "num": 7,
+            "sentence": "Carrots are my favourite ____.",
+            "answer": "vegetable"
+          },
+          {
+            "id": "ex-u3-b-8",
+            "word_id": "a1-u3-juice",
+            "num": 8,
+            "sentence": "I would like orange ____, please.",
+            "answer": "juice"
+          },
+          {
+            "id": "ex-u3-b-9",
+            "word_id": "a1-u3-delicious",
+            "num": 9,
+            "sentence": "This cake is ____!",
+            "answer": "delicious"
+          },
+          {
+            "id": "ex-u3-b-10",
+            "word_id": "a1-u3-hungry",
+            "num": 10,
+            "sentence": "I am ____ because I missed lunch.",
+            "answer": "hungry"
+          }
+        ]
+      },
+      "C": {
+        "instruction": "Choose the word that matches the meaning.",
+        "items": [
+          {
+            "id": "ex-u3-c-1",
+            "word_id": "a1-u3-cheese",
+            "num": 1,
+            "question": "a yellow or white food made from milk.",
+            "options": [
+              "a) cheese",
+              "b) hungry",
+              "c) soup",
+              "d) apple"
+            ],
+            "answer": "a) cheese",
+            "answer_word": "cheese"
+          },
+          {
+            "id": "ex-u3-c-2",
+            "word_id": "a1-u3-delicious",
+            "num": 2,
+            "question": "tasting very good.",
+            "options": [
+              "a) apple",
+              "b) rice",
+              "c) delicious",
+              "d) hungry"
+            ],
+            "answer": "c) delicious",
+            "answer_word": "delicious"
+          },
+          {
+            "id": "ex-u3-c-3",
+            "word_id": "a1-u3-vegetable",
+            "num": 3,
+            "question": "a plant you eat, such as a carrot.",
+            "options": [
+              "a) juice",
+              "b) vegetable",
+              "c) chicken",
+              "d) apple"
+            ],
+            "answer": "b) vegetable",
+            "answer_word": "vegetable"
+          },
+          {
+            "id": "ex-u3-c-4",
+            "word_id": "a1-u3-apple",
+            "num": 4,
+            "question": "a round fruit that is red, green or yellow.",
+            "options": [
+              "a) hungry",
+              "b) apple",
+              "c) cheese",
+              "d) juice"
+            ],
+            "answer": "b) apple",
+            "answer_word": "apple"
+          },
+          {
+            "id": "ex-u3-c-5",
+            "word_id": "a1-u3-bread",
+            "num": 5,
+            "question": "a food made from flour and baked.",
+            "options": [
+              "a) soup",
+              "b) bread",
+              "c) vegetable",
+              "d) apple"
+            ],
+            "answer": "b) bread",
+            "answer_word": "bread"
+          },
+          {
+            "id": "ex-u3-c-6",
+            "word_id": "a2-u4-chicken",
+            "num": 6,
+            "question": "a bird kept for its meat and eggs.",
+            "options": [
+              "a) chicken",
+              "b) delicious",
+              "c) bread",
+              "d) apple"
+            ],
+            "answer": "a) chicken",
+            "answer_word": "chicken"
+          },
+          {
+            "id": "ex-u3-c-7",
+            "word_id": "a1-u3-hungry",
+            "num": 7,
+            "question": "wanting to eat food.",
+            "options": [
+              "a) hungry",
+              "b) apple",
+              "c) chicken",
+              "d) juice"
+            ],
+            "answer": "a) hungry",
+            "answer_word": "hungry"
+          },
+          {
+            "id": "ex-u3-c-8",
+            "word_id": "a1-u3-juice",
+            "num": 8,
+            "question": "a drink made from fruit.",
+            "options": [
+              "a) apple",
+              "b) hungry",
+              "c) juice",
+              "d) bread"
+            ],
+            "answer": "c) juice",
+            "answer_word": "juice"
+          },
+          {
+            "id": "ex-u3-c-9",
+            "word_id": "a1-u3-soup",
+            "num": 9,
+            "question": "a hot liquid food.",
+            "options": [
+              "a) bread",
+              "b) hungry",
+              "c) rice",
+              "d) soup"
+            ],
+            "answer": "d) soup",
+            "answer_word": "soup"
+          },
+          {
+            "id": "ex-u3-c-10",
+            "word_id": "a1-u3-rice",
+            "num": 10,
+            "question": "small white grains that you cook and eat.",
+            "options": [
+              "a) bread",
+              "b) soup",
+              "c) rice",
+              "d) chicken"
+            ],
+            "answer": "c) rice",
+            "answer_word": "rice"
+          }
+        ]
+      },
+      "D": {
+        "instruction": "Unscramble the letters to make words from this unit.",
+        "items": [
+          {
+            "id": "ex-u3-d-1",
+            "word_id": "a1-u3-cheese",
+            "num": 1,
+            "scrambled": "E S E H C E",
+            "hint": "(noun) a yellow or white food made from milk",
+            "answer": "cheese"
+          },
+          {
+            "id": "ex-u3-d-2",
+            "word_id": "a1-u3-delicious",
+            "num": 2,
+            "scrambled": "C D E O U S L I I",
+            "hint": "(adj) tasting very good",
+            "answer": "delicious"
+          },
+          {
+            "id": "ex-u3-d-3",
+            "word_id": "a1-u3-vegetable",
+            "num": 3,
+            "scrambled": "L G E B A T E V E",
+            "hint": "(noun) a plant you eat, such as a carrot",
+            "answer": "vegetable"
+          },
+          {
+            "id": "ex-u3-d-4",
+            "word_id": "a1-u3-bread",
+            "num": 4,
+            "scrambled": "R B A E D",
+            "hint": "(noun) a food made from flour and baked",
+            "answer": "bread"
+          },
+          {
+            "id": "ex-u3-d-5",
+            "word_id": "a1-u3-hungry",
+            "num": 5,
+            "scrambled": "U G R N Y H",
+            "hint": "(adj) wanting to eat food",
+            "answer": "hungry"
+          },
+          {
+            "id": "ex-u3-d-6",
+            "word_id": "a2-u4-chicken",
+            "num": 6,
+            "scrambled": "H C E I K C N",
+            "hint": "(noun) a bird kept for its meat and eggs",
+            "answer": "chicken"
+          }
+        ]
+      },
+      "E": {
+        "id": "ex-u3-e-1",
+        "instruction": "Write your own sentences using three words from this unit.",
+        "prompts": [
+          "Write your own sentences using three words from this unit."
+        ]
+      }
+    },
+    {
+      "level": "A1",
+      "unit": 4,
+      "pages": [
+        14,
+        15
+      ],
+      "unit_meta": {
+        "level": "A1",
+        "unit": 4,
+        "title": "Home and Rooms",
+        "topic": "Nhà cửa & phòng ốc",
+        "study_tip": "Review new words after 1 day, 3 days, 1 week and 1 month (spaced repetition).",
+        "page": 13
+      },
+      "A": {
+        "instruction": "Match each word with its meaning. Write the correct letter next to each word.",
+        "items": [
+          {
+            "id": "ex-u4-a-1",
+            "word_id": "a1-u4-kitchen",
+            "num": 1,
+            "word": "kitchen",
+            "definition": "a. a place outside a house with grass and flowers",
+            "answer": "c. the room where you cook food",
+            "answer_letter": "c"
+          },
+          {
+            "id": "ex-u4-a-2",
+            "word_id": "a1-u4-bedroom",
+            "num": 2,
+            "word": "bedroom",
+            "definition": "b. a soft seat for two or three people",
+            "answer": "h. the room where you sleep",
+            "answer_letter": "h"
+          },
+          {
+            "id": "ex-u4-a-3",
+            "word_id": "a1-u4-bathroom",
+            "num": 3,
+            "word": "bathroom",
+            "definition": "c. the room where you cook food",
+            "answer": "d. the room where you wash",
+            "answer_letter": "d"
+          },
+          {
+            "id": "ex-u4-a-4",
+            "word_id": "a1-u4-garden",
+            "num": 4,
+            "word": "garden",
+            "definition": "d. the room where you wash",
+            "answer": "a. a place outside a house with grass and flowers",
+            "answer_letter": "a"
+          },
+          {
+            "id": "ex-u4-a-5",
+            "word_id": "a1-u4-window",
+            "num": 5,
+            "word": "window",
+            "definition": "e. a light you can move from place to place",
+            "answer": "i. a glass opening in a wall",
+            "answer_letter": "i"
+          },
+          {
+            "id": "ex-u4-a-6",
+            "word_id": "a1-u4-door",
+            "num": 6,
+            "word": "door",
+            "definition": "f. something you open to enter a room",
+            "answer": "f. something you open to enter a room",
+            "answer_letter": "f"
+          },
+          {
+            "id": "ex-u4-a-7",
+            "word_id": "a2-u5-sofa",
+            "num": 7,
+            "word": "sofa",
+            "definition": "g. a piece of furniture with a flat top",
+            "answer": "b. a soft seat for two or three people",
+            "answer_letter": "b"
+          },
+          {
+            "id": "ex-u4-a-8",
+            "word_id": "a1-u4-table",
+            "num": 8,
+            "word": "table",
+            "definition": "h. the room where you sleep",
+            "answer": "g. a piece of furniture with a flat top",
+            "answer_letter": "g"
+          },
+          {
+            "id": "ex-u4-a-9",
+            "word_id": "a1-u4-chair",
+            "num": 9,
+            "word": "chair",
+            "definition": "i. a glass opening in a wall",
+            "answer": "j. a seat for one person",
+            "answer_letter": "j"
+          },
+          {
+            "id": "ex-u4-a-10",
+            "word_id": "a2-u5-lamp",
+            "num": 10,
+            "word": "lamp",
+            "definition": "j. a seat for one person",
+            "answer": "e. a light you can move from place to place",
+            "answer_letter": "e"
+          }
+        ]
+      },
+      "B": {
+        "instruction": "Complete each sentence with a word from the box.",
+        "word_bank": [
+          "bathroom",
+          "bedroom",
+          "chair",
+          "door",
+          "garden",
+          "kitchen",
+          "lamp",
+          "sofa",
+          "table",
+          "window"
+        ],
+        "items": [
+          {
+            "id": "ex-u4-b-1",
+            "word_id": "a1-u4-chair",
+            "num": 1,
+            "sentence": "He sits on a hard ____.",
+            "answer": "chair"
+          },
+          {
+            "id": "ex-u4-b-2",
+            "word_id": "a1-u4-bathroom",
+            "num": 2,
+            "sentence": "There is a shower in the ____.",
+            "answer": "bathroom"
+          },
+          {
+            "id": "ex-u4-b-3",
+            "word_id": "a1-u4-door",
+            "num": 3,
+            "sentence": "Close the ____ when you leave.",
+            "answer": "door"
+          },
+          {
+            "id": "ex-u4-b-4",
+            "word_id": "a1-u4-garden",
+            "num": 4,
+            "sentence": "The children play in the ____.",
+            "answer": "garden"
+          },
+          {
+            "id": "ex-u4-b-5",
+            "word_id": "a1-u4-window",
+            "num": 5,
+            "sentence": "Please open the ____.",
+            "answer": "window"
+          },
+          {
+            "id": "ex-u4-b-6",
+            "word_id": "a1-u4-table",
+            "num": 6,
+            "sentence": "The plates are on the ____.",
+            "answer": "table"
+          },
+          {
+            "id": "ex-u4-b-7",
+            "word_id": "a1-u4-bedroom",
+            "num": 7,
+            "sentence": "My ____ has a small window.",
+            "answer": "bedroom"
+          },
+          {
+            "id": "ex-u4-b-8",
+            "word_id": "a2-u5-sofa",
+            "num": 8,
+            "sentence": "We watch TV on the ____.",
+            "answer": "sofa"
+          },
+          {
+            "id": "ex-u4-b-9",
+            "word_id": "a1-u4-kitchen",
+            "num": 9,
+            "sentence": "We cook dinner in the ____.",
+            "answer": "kitchen"
+          },
+          {
+            "id": "ex-u4-b-10",
+            "word_id": "a2-u5-lamp",
+            "num": 10,
+            "sentence": "Turn on the ____, it is dark.",
+            "answer": "lamp"
+          }
+        ]
+      },
+      "C": {
+        "instruction": "Choose the word that matches the meaning.",
+        "items": [
+          {
+            "id": "ex-u4-c-1",
+            "word_id": "a2-u5-lamp",
+            "num": 1,
+            "question": "a light you can move from place to place.",
+            "options": [
+              "a) door",
+              "b) window",
+              "c) sofa",
+              "d) lamp"
+            ],
+            "answer": "d) lamp",
+            "answer_word": "lamp"
+          },
+          {
+            "id": "ex-u4-c-2",
+            "word_id": "a1-u4-bathroom",
+            "num": 2,
+            "question": "the room where you wash.",
+            "options": [
+              "a) window",
+              "b) bathroom",
+              "c) kitchen",
+              "d) sofa"
+            ],
+            "answer": "b) bathroom",
+            "answer_word": "bathroom"
+          },
+          {
+            "id": "ex-u4-c-3",
+            "word_id": "a2-u5-sofa",
+            "num": 3,
+            "question": "a soft seat for two or three people.",
+            "options": [
+              "a) table",
+              "b) garden",
+              "c) lamp",
+              "d) sofa"
+            ],
+            "answer": "d) sofa",
+            "answer_word": "sofa"
+          },
+          {
+            "id": "ex-u4-c-4",
+            "word_id": "a1-u4-garden",
+            "num": 4,
+            "question": "a place outside a house with grass and flowers.",
+            "options": [
+              "a) lamp",
+              "b) window",
+              "c) table",
+              "d) garden"
+            ],
+            "answer": "d) garden",
+            "answer_word": "garden"
+          },
+          {
+            "id": "ex-u4-c-5",
+            "word_id": "a1-u4-chair",
+            "num": 5,
+            "question": "a seat for one person.",
+            "options": [
+              "a) window",
+              "b) lamp",
+              "c) chair",
+              "d) kitchen"
+            ],
+            "answer": "c) chair",
+            "answer_word": "chair"
+          },
+          {
+            "id": "ex-u4-c-6",
+            "word_id": "a1-u4-kitchen",
+            "num": 6,
+            "question": "the room where you cook food.",
+            "options": [
+              "a) bathroom",
+              "b) garden",
+              "c) bedroom",
+              "d) kitchen"
+            ],
+            "answer": "d) kitchen",
+            "answer_word": "kitchen"
+          },
+          {
+            "id": "ex-u4-c-7",
+            "word_id": "a1-u4-window",
+            "num": 7,
+            "question": "a glass opening in a wall.",
+            "options": [
+              "a) garden",
+              "b) chair",
+              "c) window",
+              "d) door"
+            ],
+            "answer": "c) window",
+            "answer_word": "window"
+          },
+          {
+            "id": "ex-u4-c-8",
+            "word_id": "a1-u4-bedroom",
+            "num": 8,
+            "question": "the room where you sleep.",
+            "options": [
+              "a) sofa",
+              "b) bedroom",
+              "c) kitchen",
+              "d) table"
+            ],
+            "answer": "b) bedroom",
+            "answer_word": "bedroom"
+          },
+          {
+            "id": "ex-u4-c-9",
+            "word_id": "a1-u4-door",
+            "num": 9,
+            "question": "something you open to enter a room.",
+            "options": [
+              "a) window",
+              "b) bedroom",
+              "c) kitchen",
+              "d) door"
+            ],
+            "answer": "d) door",
+            "answer_word": "door"
+          },
+          {
+            "id": "ex-u4-c-10",
+            "word_id": "a1-u4-table",
+            "num": 10,
+            "question": "a piece of furniture with a flat top.",
+            "options": [
+              "a) bedroom",
+              "b) table",
+              "c) window",
+              "d) garden"
+            ],
+            "answer": "b) table",
+            "answer_word": "table"
+          }
+        ]
+      },
+      "D": {
+        "instruction": "Unscramble the letters to make words from this unit.",
+        "items": [
+          {
+            "id": "ex-u4-d-1",
+            "word_id": "a1-u4-bedroom",
+            "num": 1,
+            "scrambled": "B R O E D M O",
+            "hint": "(noun) the room where you sleep",
+            "answer": "bedroom"
+          },
+          {
+            "id": "ex-u4-d-2",
+            "word_id": "a1-u4-kitchen",
+            "num": 2,
+            "scrambled": "N C I E K H T",
+            "hint": "(noun) the room where you cook food",
+            "answer": "kitchen"
+          },
+          {
+            "id": "ex-u4-d-3",
+            "word_id": "a1-u4-garden",
+            "num": 3,
+            "scrambled": "E N G D A R",
+            "hint": "(noun) a place outside a house with grass and flowers",
+            "answer": "garden"
+          },
+          {
+            "id": "ex-u4-d-4",
+            "word_id": "a1-u4-table",
+            "num": 4,
+            "scrambled": "A E L T B",
+            "hint": "(noun) a piece of furniture with a flat top",
+            "answer": "table"
+          },
+          {
+            "id": "ex-u4-d-5",
+            "word_id": "a1-u4-window",
+            "num": 5,
+            "scrambled": "O N D W W I",
+            "hint": "(noun) a glass opening in a wall",
+            "answer": "window"
+          },
+          {
+            "id": "ex-u4-d-6",
+            "word_id": "a1-u4-bathroom",
+            "num": 6,
+            "scrambled": "B O T H A O R M",
+            "hint": "(noun) the room where you wash",
+            "answer": "bathroom"
+          }
+        ]
+      },
+      "E": {
+        "id": "ex-u4-e-1",
+        "instruction": "Write your own sentences using three words from this unit.",
+        "prompts": [
+          "Write your own sentences using three words from this unit."
+        ]
+      }
+    },
+    {
+      "level": "A1",
+      "unit": 5,
+      "pages": [
+        17,
+        18
+      ],
+      "unit_meta": {
+        "level": "A1",
+        "unit": 5,
+        "title": "Daily Routines",
+        "topic": "Thói quen hằng ngày",
+        "study_tip": "Learn the whole phrase, not just the word: note which words usually go with it.",
+        "page": 16
+      },
+      "A": {
+        "instruction": "Match each word with its meaning. Write the correct letter next to each word.",
+        "items": [
+          {
+            "id": "ex-u5-a-1",
+            "word_id": "a1-u5-wake",
+            "num": 1,
+            "word": "wake",
+            "definition": "a. to rest with your eyes closed at night",
+            "answer": "i. to stop sleeping",
+            "answer_letter": "i"
+          },
+          {
+            "id": "ex-u5-a-2",
+            "word_id": "a1-u5-wash",
+            "num": 2,
+            "word": "wash",
+            "definition": "b. to put clothes on",
+            "answer": "j. to clean with water",
+            "answer_letter": "j"
+          },
+          {
+            "id": "ex-u5-a-3",
+            "word_id": "a1-u5-dress",
+            "num": 3,
+            "word": "dress",
+            "definition": "c. to clean with a brush",
+            "answer": "b. to put clothes on",
+            "answer_letter": "b"
+          },
+          {
+            "id": "ex-u5-a-4",
+            "word_id": "a1-u5-brush",
+            "num": 4,
+            "word": "brush",
+            "definition": "d. to prepare food with heat",
+            "answer": "c. to clean with a brush",
+            "answer_letter": "c"
+          },
+          {
+            "id": "ex-u5-a-5",
+            "word_id": "a1-u5-study",
+            "num": 5,
+            "word": "study",
+            "definition": "e. to learn about a subject",
+            "answer": "e. to learn about a subject",
+            "answer_letter": "e"
+          },
+          {
+            "id": "ex-u5-a-6",
+            "word_id": "a1-u5-cook",
+            "num": 6,
+            "word": "cook",
+            "definition": "f. to go away from a place",
+            "answer": "d. to prepare food with heat",
+            "answer_letter": "d"
+          },
+          {
+            "id": "ex-u5-a-7",
+            "word_id": "a1-u5-clean",
+            "num": 7,
+            "word": "clean",
+            "definition": "g. to remove dirt from a place",
+            "answer": "g. to remove dirt from a place",
+            "answer_letter": "g"
+          },
+          {
+            "id": "ex-u5-a-8",
+            "word_id": "a1-u5-sleep",
+            "num": 8,
+            "word": "sleep",
+            "definition": "h. to rest and feel calm",
+            "answer": "a. to rest with your eyes closed at night",
+            "answer_letter": "a"
+          },
+          {
+            "id": "ex-u5-a-9",
+            "word_id": "a1-u5-relax",
+            "num": 9,
+            "word": "relax",
+            "definition": "i. to stop sleeping",
+            "answer": "h. to rest and feel calm",
+            "answer_letter": "h"
+          },
+          {
+            "id": "ex-u5-a-10",
+            "word_id": "a1-u5-leave",
+            "num": 10,
+            "word": "leave",
+            "definition": "j. to clean with water",
+            "answer": "f. to go away from a place",
+            "answer_letter": "f"
+          }
+        ]
+      },
+      "B": {
+        "instruction": "Complete each sentence with a word from the box.",
+        "word_bank": [
+          "brush",
+          "clean",
+          "cook",
+          "dress",
+          "leave",
+          "relax",
+          "sleep",
+          "study",
+          "wake",
+          "wash"
+        ],
+        "items": [
+          {
+            "id": "ex-u5-b-1",
+            "word_id": "a1-u5-study",
+            "num": 1,
+            "sentence": "I ____ English after dinner.",
+            "answer": "study"
+          },
+          {
+            "id": "ex-u5-b-2",
+            "word_id": "a1-u5-relax",
+            "num": 2,
+            "sentence": "I ____ with a book in the evening.",
+            "answer": "relax"
+          },
+          {
+            "id": "ex-u5-b-3",
+            "word_id": "a1-u5-wash",
+            "num": 3,
+            "sentence": "I ____ my face in the morning.",
+            "answer": "wash"
+          },
+          {
+            "id": "ex-u5-b-4",
+            "word_id": "a1-u5-wake",
+            "num": 4,
+            "sentence": "I ____ at seven o'clock every day.",
+            "answer": "wake"
+          },
+          {
+            "id": "ex-u5-b-5",
+            "word_id": "a1-u5-clean",
+            "num": 5,
+            "sentence": "We ____ the house on Sunday.",
+            "answer": "clean"
+          },
+          {
+            "id": "ex-u5-b-6",
+            "word_id": "a1-u5-sleep",
+            "num": 6,
+            "sentence": "Babies ____ a lot.",
+            "answer": "sleep"
+          },
+          {
+            "id": "ex-u5-b-7",
+            "word_id": "a1-u5-dress",
+            "num": 7,
+            "sentence": "The children ____ before breakfast.",
+            "answer": "dress"
+          },
+          {
+            "id": "ex-u5-b-8",
+            "word_id": "a1-u5-cook",
+            "num": 8,
+            "sentence": "My dad likes to ____ on Saturdays.",
+            "answer": "cook"
+          },
+          {
+            "id": "ex-u5-b-9",
+            "word_id": "a1-u5-leave",
+            "num": 9,
+            "sentence": "I ____ home at eight o'clock.",
+            "answer": "leave"
+          },
+          {
+            "id": "ex-u5-b-10",
+            "word_id": "a1-u5-brush",
+            "num": 10,
+            "sentence": "____ your teeth twice a day.",
+            "answer": "brush"
+          }
+        ]
+      },
+      "C": {
+        "instruction": "Choose the word that matches the meaning.",
+        "items": [
+          {
+            "id": "ex-u5-c-1",
+            "word_id": "a1-u5-clean",
+            "num": 1,
+            "question": "to remove dirt from a place.",
+            "options": [
+              "a) clean",
+              "b) wake",
+              "c) study",
+              "d) leave"
+            ],
+            "answer": "a) clean",
+            "answer_word": "clean"
+          },
+          {
+            "id": "ex-u5-c-2",
+            "word_id": "a1-u5-study",
+            "num": 2,
+            "question": "to learn about a subject.",
+            "options": [
+              "a) study",
+              "b) clean",
+              "c) cook",
+              "d) relax"
+            ],
+            "answer": "a) study",
+            "answer_word": "study"
+          },
+          {
+            "id": "ex-u5-c-3",
+            "word_id": "a1-u5-wake",
+            "num": 3,
+            "question": "to stop sleeping.",
+            "options": [
+              "a) wake",
+              "b) relax",
+              "c) dress",
+              "d) clean"
+            ],
+            "answer": "a) wake",
+            "answer_word": "wake"
+          },
+          {
+            "id": "ex-u5-c-4",
+            "word_id": "a1-u5-leave",
+            "num": 4,
+            "question": "to go away from a place.",
+            "options": [
+              "a) leave",
+              "b) dress",
+              "c) brush",
+              "d) clean"
+            ],
+            "answer": "a) leave",
+            "answer_word": "leave"
+          },
+          {
+            "id": "ex-u5-c-5",
+            "word_id": "a1-u5-brush",
+            "num": 5,
+            "question": "to clean with a brush.",
+            "options": [
+              "a) wash",
+              "b) relax",
+              "c) brush",
+              "d) study"
+            ],
+            "answer": "c) brush",
+            "answer_word": "brush"
+          },
+          {
+            "id": "ex-u5-c-6",
+            "word_id": "a1-u5-dress",
+            "num": 6,
+            "question": "to put clothes on.",
+            "options": [
+              "a) sleep",
+              "b) study",
+              "c) dress",
+              "d) wake"
+            ],
+            "answer": "c) dress",
+            "answer_word": "dress"
+          },
+          {
+            "id": "ex-u5-c-7",
+            "word_id": "a1-u5-sleep",
+            "num": 7,
+            "question": "to rest with your eyes closed at night.",
+            "options": [
+              "a) wake",
+              "b) sleep",
+              "c) wash",
+              "d) brush"
+            ],
+            "answer": "b) sleep",
+            "answer_word": "sleep"
+          },
+          {
+            "id": "ex-u5-c-8",
+            "word_id": "a1-u5-relax",
+            "num": 8,
+            "question": "to rest and feel calm.",
+            "options": [
+              "a) sleep",
+              "b) wash",
+              "c) relax",
+              "d) wake"
+            ],
+            "answer": "c) relax",
+            "answer_word": "relax"
+          },
+          {
+            "id": "ex-u5-c-9",
+            "word_id": "a1-u5-wash",
+            "num": 9,
+            "question": "to clean with water.",
+            "options": [
+              "a) relax",
+              "b) study",
+              "c) wash",
+              "d) dress"
+            ],
+            "answer": "c) wash",
+            "answer_word": "wash"
+          },
+          {
+            "id": "ex-u5-c-10",
+            "word_id": "a1-u5-cook",
+            "num": 10,
+            "question": "to prepare food with heat.",
+            "options": [
+              "a) relax",
+              "b) brush",
+              "c) dress",
+              "d) cook"
+            ],
+            "answer": "d) cook",
+            "answer_word": "cook"
+          }
+        ]
+      },
+      "D": {
+        "instruction": "Unscramble the letters to make words from this unit.",
+        "items": [
+          {
+            "id": "ex-u5-d-1",
+            "word_id": "a1-u5-study",
+            "num": 1,
+            "scrambled": "Y T D U S",
+            "hint": "(verb) to learn about a subject",
+            "answer": "study"
+          },
+          {
+            "id": "ex-u5-d-2",
+            "word_id": "a1-u5-dress",
+            "num": 2,
+            "scrambled": "E R D S S",
+            "hint": "(verb) to put clothes on",
+            "answer": "dress"
+          },
+          {
+            "id": "ex-u5-d-3",
+            "word_id": "a1-u5-brush",
+            "num": 3,
+            "scrambled": "U B H R S",
+            "hint": "(verb) to clean with a brush",
+            "answer": "brush"
+          },
+          {
+            "id": "ex-u5-d-4",
+            "word_id": "a1-u5-sleep",
+            "num": 4,
+            "scrambled": "E P L E S",
+            "hint": "(verb) to rest with your eyes closed at night",
+            "answer": "sleep"
+          },
+          {
+            "id": "ex-u5-d-5",
+            "word_id": "a1-u5-relax",
+            "num": 5,
+            "scrambled": "A E L X R",
+            "hint": "(verb) to rest and feel calm",
+            "answer": "relax"
+          },
+          {
+            "id": "ex-u5-d-6",
+            "word_id": "a1-u5-clean",
+            "num": 6,
+            "scrambled": "L E A C N",
+            "hint": "(verb) to remove dirt from a place",
+            "answer": "clean"
+          }
+        ]
+      },
+      "E": {
+        "id": "ex-u5-e-1",
+        "instruction": "Write your own sentences using three words from this unit.",
+        "prompts": [
+          "Write your own sentences using three words from this unit."
+        ]
+      }
+    },
+    {
+      "level": "A1",
+      "unit": 6,
+      "pages": [
+        20,
+        21
+      ],
+      "unit_meta": {
+        "level": "A1",
+        "unit": 6,
+        "title": "Time and Days",
+        "topic": "Thời gian & ngày tháng",
+        "study_tip": "Try to use each new word in a short conversation or message today.",
+        "page": 19
+      },
+      "A": {
+        "instruction": "Match each word with its meaning. Write the correct letter next to each word.",
+        "items": [
+          {
+            "id": "ex-u6-a-1",
+            "word_id": "a1-u6-morning",
+            "num": 1,
+            "word": "morning",
+            "definition": "a. the day each year when you were born",
+            "answer": "h. the early part of the day",
+            "answer_letter": "h"
+          },
+          {
+            "id": "ex-u6-a-2",
+            "word_id": "a1-u6-afternoon",
+            "num": 2,
+            "word": "afternoon",
+            "definition": "b. on the day after today",
+            "answer": "j. the time between lunch and evening",
+            "answer_letter": "j"
+          },
+          {
+            "id": "ex-u6-a-3",
+            "word_id": "a1-u6-evening",
+            "num": 3,
+            "word": "evening",
+            "definition": "c. a period of seven days",
+            "answer": "g. the time between afternoon and night",
+            "answer_letter": "g"
+          },
+          {
+            "id": "ex-u6-a-4",
+            "word_id": "a1-u6-week",
+            "num": 4,
+            "word": "week",
+            "definition": "d. on the day before today",
+            "answer": "c. a period of seven days",
+            "answer_letter": "c"
+          },
+          {
+            "id": "ex-u6-a-5",
+            "word_id": "a1-u6-today",
+            "num": 5,
+            "word": "today",
+            "definition": "e. one of the twelve parts of a year",
+            "answer": "i. on this day",
+            "answer_letter": "i"
+          },
+          {
+            "id": "ex-u6-a-6",
+            "word_id": "a1-u6-tomorrow",
+            "num": 6,
+            "word": "tomorrow",
+            "definition": "f. Saturday and Sunday",
+            "answer": "b. on the day after today",
+            "answer_letter": "b"
+          },
+          {
+            "id": "ex-u6-a-7",
+            "word_id": "a1-u6-yesterday",
+            "num": 7,
+            "word": "yesterday",
+            "definition": "g. the time between afternoon and night",
+            "answer": "d. on the day before today",
+            "answer_letter": "d"
+          },
+          {
+            "id": "ex-u6-a-8",
+            "word_id": "a1-u6-weekend",
+            "num": 8,
+            "word": "weekend",
+            "definition": "h. the early part of the day",
+            "answer": "f. Saturday and Sunday",
+            "answer_letter": "f"
+          },
+          {
+            "id": "ex-u6-a-9",
+            "word_id": "a1-u6-month",
+            "num": 9,
+            "word": "month",
+            "definition": "i. on this day",
+            "answer": "e. one of the twelve parts of a year",
+            "answer_letter": "e"
+          },
+          {
+            "id": "ex-u6-a-10",
+            "word_id": "a1-u6-birthday",
+            "num": 10,
+            "word": "birthday",
+            "definition": "j. the time between lunch and evening",
+            "answer": "a. the day each year when you were born",
+            "answer_letter": "a"
+          }
+        ]
+      },
+      "B": {
+        "instruction": "Complete each sentence with a word from the box.",
+        "word_bank": [
+          "afternoon",
+          "birthday",
+          "evening",
+          "month",
+          "morning",
+          "today",
+          "tomorrow",
+          "week",
+          "weekend",
+          "yesterday"
+        ],
+        "items": [
+          {
+            "id": "ex-u6-b-1",
+            "word_id": "a1-u6-evening",
+            "num": 1,
+            "sentence": "We eat dinner in the ____.",
+            "answer": "evening"
+          },
+          {
+            "id": "ex-u6-b-2",
+            "word_id": "a1-u6-month",
+            "num": 2,
+            "sentence": "January is the first ____ of the year.",
+            "answer": "month"
+          },
+          {
+            "id": "ex-u6-b-3",
+            "word_id": "a1-u6-morning",
+            "num": 3,
+            "sentence": "I drink coffee in the ____.",
+            "answer": "morning"
+          },
+          {
+            "id": "ex-u6-b-4",
+            "word_id": "a1-u6-tomorrow",
+            "num": 4,
+            "sentence": "I will see you ____.",
+            "answer": "tomorrow"
+          },
+          {
+            "id": "ex-u6-b-5",
+            "word_id": "a1-u6-birthday",
+            "num": 5,
+            "sentence": "Her ____ is in May.",
+            "answer": "birthday"
+          },
+          {
+            "id": "ex-u6-b-6",
+            "word_id": "a1-u6-today",
+            "num": 6,
+            "sentence": "____ is Monday.",
+            "answer": "today"
+          },
+          {
+            "id": "ex-u6-b-7",
+            "word_id": "a1-u6-week",
+            "num": 7,
+            "sentence": "There are seven days in a ____.",
+            "answer": "week"
+          },
+          {
+            "id": "ex-u6-b-8",
+            "word_id": "a1-u6-yesterday",
+            "num": 8,
+            "sentence": "____ it rained all day.",
+            "answer": "yesterday"
+          },
+          {
+            "id": "ex-u6-b-9",
+            "word_id": "a1-u6-afternoon",
+            "num": 9,
+            "sentence": "We play football in the ____.",
+            "answer": "afternoon"
+          },
+          {
+            "id": "ex-u6-b-10",
+            "word_id": "a1-u6-weekend",
+            "num": 10,
+            "sentence": "We go to the beach at the ____.",
+            "answer": "weekend"
+          }
+        ]
+      },
+      "C": {
+        "instruction": "Choose the word that matches the meaning.",
+        "items": [
+          {
+            "id": "ex-u6-c-1",
+            "word_id": "a1-u6-birthday",
+            "num": 1,
+            "question": "the day each year when you were born.",
+            "options": [
+              "a) month",
+              "b) birthday",
+              "c) yesterday",
+              "d) afternoon"
+            ],
+            "answer": "b) birthday",
+            "answer_word": "birthday"
+          },
+          {
+            "id": "ex-u6-c-2",
+            "word_id": "a1-u6-morning",
+            "num": 2,
+            "question": "the early part of the day.",
+            "options": [
+              "a) weekend",
+              "b) morning",
+              "c) birthday",
+              "d) yesterday"
+            ],
+            "answer": "b) morning",
+            "answer_word": "morning"
+          },
+          {
+            "id": "ex-u6-c-3",
+            "word_id": "a1-u6-today",
+            "num": 3,
+            "question": "on this day.",
+            "options": [
+              "a) morning",
+              "b) today",
+              "c) month",
+              "d) birthday"
+            ],
+            "answer": "b) today",
+            "answer_word": "today"
+          },
+          {
+            "id": "ex-u6-c-4",
+            "word_id": "a1-u6-tomorrow",
+            "num": 4,
+            "question": "on the day after today.",
+            "options": [
+              "a) weekend",
+              "b) today",
+              "c) afternoon",
+              "d) tomorrow"
+            ],
+            "answer": "d) tomorrow",
+            "answer_word": "tomorrow"
+          },
+          {
+            "id": "ex-u6-c-5",
+            "word_id": "a1-u6-month",
+            "num": 5,
+            "question": "one of the twelve parts of a year.",
+            "options": [
+              "a) evening",
+              "b) tomorrow",
+              "c) month",
+              "d) birthday"
+            ],
+            "answer": "c) month",
+            "answer_word": "month"
+          },
+          {
+            "id": "ex-u6-c-6",
+            "word_id": "a1-u6-weekend",
+            "num": 6,
+            "question": "Saturday and Sunday.",
+            "options": [
+              "a) today",
+              "b) afternoon",
+              "c) weekend",
+              "d) yesterday"
+            ],
+            "answer": "c) weekend",
+            "answer_word": "weekend"
+          },
+          {
+            "id": "ex-u6-c-7",
+            "word_id": "a1-u6-week",
+            "num": 7,
+            "question": "a period of seven days.",
+            "options": [
+              "a) evening",
+              "b) afternoon",
+              "c) week",
+              "d) morning"
+            ],
+            "answer": "c) week",
+            "answer_word": "week"
+          },
+          {
+            "id": "ex-u6-c-8",
+            "word_id": "a1-u6-afternoon",
+            "num": 8,
+            "question": "the time between lunch and evening.",
+            "options": [
+              "a) afternoon",
+              "b) evening",
+              "c) week",
+              "d) month"
+            ],
+            "answer": "a) afternoon",
+            "answer_word": "afternoon"
+          },
+          {
+            "id": "ex-u6-c-9",
+            "word_id": "a1-u6-yesterday",
+            "num": 9,
+            "question": "on the day before today.",
+            "options": [
+              "a) birthday",
+              "b) evening",
+              "c) yesterday",
+              "d) afternoon"
+            ],
+            "answer": "c) yesterday",
+            "answer_word": "yesterday"
+          },
+          {
+            "id": "ex-u6-c-10",
+            "word_id": "a1-u6-evening",
+            "num": 10,
+            "question": "the time between afternoon and night.",
+            "options": [
+              "a) today",
+              "b) evening",
+              "c) tomorrow",
+              "d) birthday"
+            ],
+            "answer": "b) evening",
+            "answer_word": "evening"
+          }
+        ]
+      },
+      "D": {
+        "instruction": "Unscramble the letters to make words from this unit.",
+        "items": [
+          {
+            "id": "ex-u6-d-1",
+            "word_id": "a1-u6-afternoon",
+            "num": 1,
+            "scrambled": "O N R O F N T E A",
+            "hint": "(noun) the time between lunch and evening",
+            "answer": "afternoon"
+          },
+          {
+            "id": "ex-u6-d-2",
+            "word_id": "a1-u6-morning",
+            "num": 2,
+            "scrambled": "G N O N M I R",
+            "hint": "(noun) the early part of the day",
+            "answer": "morning"
+          },
+          {
+            "id": "ex-u6-d-3",
+            "word_id": "a1-u6-tomorrow",
+            "num": 3,
+            "scrambled": "T R O O M R W O",
+            "hint": "(adv) on the day after today",
+            "answer": "tomorrow"
+          },
+          {
+            "id": "ex-u6-d-4",
+            "word_id": "a1-u6-yesterday",
+            "num": 4,
+            "scrambled": "S Y E A T E D R Y",
+            "hint": "(adv) on the day before today",
+            "answer": "yesterday"
+          },
+          {
+            "id": "ex-u6-d-5",
+            "word_id": "a1-u6-evening",
+            "num": 5,
+            "scrambled": "E G I N N E V",
+            "hint": "(noun) the time between afternoon and night",
+            "answer": "evening"
+          },
+          {
+            "id": "ex-u6-d-6",
+            "word_id": "a1-u6-birthday",
+            "num": 6,
+            "scrambled": "Y T H I D B R A",
+            "hint": "(noun) the day each year when you were born",
+            "answer": "birthday"
+          }
+        ]
+      },
+      "E": {
+        "id": "ex-u6-e-1",
+        "instruction": "Write your own sentences using three words from this unit.",
+        "prompts": [
+          "Write your own sentences using three words from this unit."
+        ]
+      }
+    },
+    {
+      "level": "A2",
+      "unit": 7,
+      "pages": [
+        24,
+        25
+      ],
+      "unit_meta": {
+        "level": "A2",
+        "unit": 7,
+        "title": "Unit 7 | Clothes and Shopping",
+        "topic": "Quần áo & mua sắm",
+        "study_tip": "Draw a quick picture next to a word. Images help memory.",
+        "page": 23
+      },
+      "A": {
+        "instruction": "Match each word with its meaning. Write the correct letter next to each word.",
+        "items": [
+          {
+            "id": "ex-u7-a-1",
+            "word_id": "a2-u7-jacket",
+            "num": 1,
+            "word": "jacket",
+            "definition": "a. a paper that shows you paid for something",
+            "answer": "j. a short coat",
+            "answer_letter": "j"
+          },
+          {
+            "id": "ex-u7-a-2",
+            "word_id": "a2-u7-trousers",
+            "num": 2,
+            "word": "trousers",
+            "definition": "b. costing a lot of money",
+            "answer": "h. clothing that covers your legs",
+            "answer_letter": "h"
+          },
+          {
+            "id": "ex-u7-a-3",
+            "word_id": "a2-u7-scarf",
+            "num": 3,
+            "word": "scarf",
+            "definition": "c. a small bag sewn into clothes",
+            "answer": "i. a long piece of cloth worn around the neck",
+            "answer_letter": "i"
+          },
+          {
+            "id": "ex-u7-a-4",
+            "word_id": "a2-u7-pocket",
+            "num": 4,
+            "word": "pocket",
+            "definition": "d. costing little money",
+            "answer": "c. a small bag sewn into clothes",
+            "answer_letter": "c"
+          },
+          {
+            "id": "ex-u7-a-5",
+            "word_id": "a2-u7-expensive",
+            "num": 5,
+            "word": "expensive",
+            "definition": "e. a person who buys things in a shop",
+            "answer": "b. costing a lot of money",
+            "answer_letter": "b"
+          },
+          {
+            "id": "ex-u7-a-6",
+            "word_id": "a2-u7-cheap",
+            "num": 6,
+            "word": "cheap",
+            "definition": "f. a reduction in the usual price",
+            "answer": "d. costing little money",
+            "answer_letter": "d"
+          },
+          {
+            "id": "ex-u7-a-7",
+            "word_id": "a2-u7-customer",
+            "num": 7,
+            "word": "customer",
+            "definition": "g. to be the right size for someone",
+            "answer": "e. a person who buys things in a shop",
+            "answer_letter": "e"
+          },
+          {
+            "id": "ex-u7-a-8",
+            "word_id": "a2-u7-receipt",
+            "num": 8,
+            "word": "receipt",
+            "definition": "h. clothing that covers your legs",
+            "answer": "a. a paper that shows you paid for something",
+            "answer_letter": "a"
+          },
+          {
+            "id": "ex-u7-a-9",
+            "word_id": "a2-u7-discount",
+            "num": 9,
+            "word": "discount",
+            "definition": "i. a long piece of cloth worn around the neck",
+            "answer": "f. a reduction in the usual price",
+            "answer_letter": "f"
+          },
+          {
+            "id": "ex-u7-a-10",
+            "word_id": "a2-u7-fit",
+            "num": 10,
+            "word": "fit",
+            "definition": "j. a short coat",
+            "answer": "g. to be the right size for someone",
+            "answer_letter": "g"
+          }
+        ]
+      },
+      "B": {
+        "instruction": "Complete each sentence with a word from the box.",
+        "word_bank": [
+          "cheap",
+          "customer",
+          "discount",
+          "expensive",
+          "fit",
+          "jacket",
+          "pocket",
+          "receipt",
+          "scarf",
+          "trousers"
+        ],
+        "items": [
+          {
+            "id": "ex-u7-b-1",
+            "word_id": "a2-u7-pocket",
+            "num": 1,
+            "sentence": "I put my keys in my ____.",
+            "answer": "pocket"
+          },
+          {
+            "id": "ex-u7-b-2",
+            "word_id": "a2-u7-fit",
+            "num": 2,
+            "sentence": "This shirt does not ____ me.",
+            "answer": "fit"
+          },
+          {
+            "id": "ex-u7-b-3",
+            "word_id": "a2-u7-expensive",
+            "num": 3,
+            "sentence": "That watch is too ____ for me.",
+            "answer": "expensive"
+          },
+          {
+            "id": "ex-u7-b-4",
+            "word_id": "a2-u7-jacket",
+            "num": 4,
+            "sentence": "Take a ____, it is cold outside.",
+            "answer": "jacket"
+          },
+          {
+            "id": "ex-u7-b-5",
+            "word_id": "a2-u7-trousers",
+            "num": 5,
+            "sentence": "These ____ are too long for me.",
+            "answer": "trousers"
+          },
+          {
+            "id": "ex-u7-b-6",
+            "word_id": "a2-u7-cheap",
+            "num": 6,
+            "sentence": "The tickets were ____, only five euros.",
+            "answer": "cheap"
+          },
+          {
+            "id": "ex-u7-b-7",
+            "word_id": "a2-u7-discount",
+            "num": 7,
+            "sentence": "They give a ten percent ____ to students.",
+            "answer": "discount"
+          },
+          {
+            "id": "ex-u7-b-8",
+            "word_id": "a2-u7-customer",
+            "num": 8,
+            "sentence": "The ____ asked for a bigger size.",
+            "answer": "customer"
+          },
+          {
+            "id": "ex-u7-b-9",
+            "word_id": "a2-u7-scarf",
+            "num": 9,
+            "sentence": "She wore a warm ____ in winter.",
+            "answer": "scarf"
+          },
+          {
+            "id": "ex-u7-b-10",
+            "word_id": "a2-u7-receipt",
+            "num": 10,
+            "sentence": "Keep the ____ in case you want to return it.",
+            "answer": "receipt"
+          }
+        ]
+      },
+      "C": {
+        "instruction": "Choose the word that matches the meaning.",
+        "items": [
+          {
+            "id": "ex-u7-c-1",
+            "word_id": "a2-u7-trousers",
+            "num": 1,
+            "question": "clothing that covers your legs.",
+            "options": [
+              "a) customer",
+              "b) cheap",
+              "c) receipt",
+              "d) trousers"
+            ],
+            "answer": "d) trousers",
+            "answer_word": "trousers"
+          },
+          {
+            "id": "ex-u7-c-2",
+            "word_id": "a2-u7-receipt",
+            "num": 2,
+            "question": "a paper that shows you paid for something.",
+            "options": [
+              "a) receipt",
+              "b) trousers",
+              "c) expensive",
+              "d) jacket"
+            ],
+            "answer": "a) receipt",
+            "answer_word": "receipt"
+          },
+          {
+            "id": "ex-u7-c-3",
+            "word_id": "a2-u7-cheap",
+            "num": 3,
+            "question": "costing little money.",
+            "options": [
+              "a) discount",
+              "b) cheap",
+              "c) customer",
+              "d) receipt"
+            ],
+            "answer": "b) cheap",
+            "answer_word": "cheap"
+          },
+          {
+            "id": "ex-u7-c-4",
+            "word_id": "a2-u7-scarf",
+            "num": 4,
+            "question": "a long piece of cloth worn around the neck.",
+            "options": [
+              "a) jacket",
+              "b) cheap",
+              "c) trousers",
+              "d) scarf"
+            ],
+            "answer": "d) scarf",
+            "answer_word": "scarf"
+          },
+          {
+            "id": "ex-u7-c-5",
+            "word_id": "a2-u7-jacket",
+            "num": 5,
+            "question": "a short coat.",
+            "options": [
+              "a) expensive",
+              "b) jacket",
+              "c) cheap",
+              "d) pocket"
+            ],
+            "answer": "b) jacket",
+            "answer_word": "jacket"
+          },
+          {
+            "id": "ex-u7-c-6",
+            "word_id": "a2-u7-fit",
+            "num": 6,
+            "question": "to be the right size for someone.",
+            "options": [
+              "a) receipt",
+              "b) expensive",
+              "c) scarf",
+              "d) fit"
+            ],
+            "answer": "d) fit",
+            "answer_word": "fit"
+          },
+          {
+            "id": "ex-u7-c-7",
+            "word_id": "a2-u7-customer",
+            "num": 7,
+            "question": "a person who buys things in a shop.",
+            "options": [
+              "a) expensive",
+              "b) discount",
+              "c) customer",
+              "d) pocket"
+            ],
+            "answer": "c) customer",
+            "answer_word": "customer"
+          },
+          {
+            "id": "ex-u7-c-8",
+            "word_id": "a2-u7-discount",
+            "num": 8,
+            "question": "a reduction in the usual price.",
+            "options": [
+              "a) discount",
+              "b) expensive",
+              "c) scarf",
+              "d) jacket"
+            ],
+            "answer": "a) discount",
+            "answer_word": "discount"
+          },
+          {
+            "id": "ex-u7-c-9",
+            "word_id": "a2-u7-pocket",
+            "num": 9,
+            "question": "a small bag sewn into clothes.",
+            "options": [
+              "a) pocket",
+              "b) fit",
+              "c) discount",
+              "d) cheap"
+            ],
+            "answer": "a) pocket",
+            "answer_word": "pocket"
+          },
+          {
+            "id": "ex-u7-c-10",
+            "word_id": "a2-u7-expensive",
+            "num": 10,
+            "question": "costing a lot of money.",
+            "options": [
+              "a) jacket",
+              "b) pocket",
+              "c) receipt",
+              "d) expensive"
+            ],
+            "answer": "d) expensive",
+            "answer_word": "expensive"
+          }
+        ]
+      },
+      "D": {
+        "instruction": "Unscramble the letters to make words from this unit.",
+        "items": [
+          {
+            "id": "ex-u7-d-1",
+            "word_id": "a2-u7-expensive",
+            "num": 1,
+            "scrambled": "N E E X S P V I E",
+            "hint": "(adj) costing a lot of money",
+            "answer": "expensive"
+          },
+          {
+            "id": "ex-u7-d-2",
+            "word_id": "a2-u7-trousers",
+            "num": 2,
+            "scrambled": "E S T S R R O U",
+            "hint": "(noun) clothing that covers your legs",
+            "answer": "trousers"
+          },
+          {
+            "id": "ex-u7-d-3",
+            "word_id": "a2-u7-jacket",
+            "num": 3,
+            "scrambled": "K E A J C T",
+            "hint": "(noun) a short coat",
+            "answer": "jacket"
+          },
+          {
+            "id": "ex-u7-d-4",
+            "word_id": "a2-u7-customer",
+            "num": 4,
+            "scrambled": "T M R C E U S O",
+            "hint": "(noun) a person who buys things in a shop",
+            "answer": "customer"
+          },
+          {
+            "id": "ex-u7-d-5",
+            "word_id": "a2-u7-discount",
+            "num": 5,
+            "scrambled": "N T I D C U O S",
+            "hint": "(noun) a reduction in the usual price",
+            "answer": "discount"
+          },
+          {
+            "id": "ex-u7-d-6",
+            "word_id": "a2-u7-receipt",
+            "num": 6,
+            "scrambled": "E C T P I E R",
+            "hint": "(noun) a paper that shows you paid for something",
+            "answer": "receipt"
+          }
+        ]
+      },
+      "E": {
+        "id": "ex-u7-e-1",
+        "instruction": "Write your own sentences using three words from this unit.",
+        "prompts": [
+          "Write your own sentences using three words from this unit."
+        ]
+      }
+    },
+    {
+      "level": "A2",
+      "unit": 8,
+      "pages": [
+        27,
+        28
+      ],
+      "unit_meta": {
+        "level": "A2",
+        "unit": 8,
+        "title": "Unit 8 | Travel and Transport",
+        "topic": "Du lịch & giao thông",
+        "study_tip": "Notice the part of speech: knowing noun, verb or adjective helps you use it correctly.",
+        "page": 26
+      },
+      "A": {
+        "instruction": "Match each word with its meaning. Write the correct letter next to each word.",
+        "items": [
+          {
+            "id": "ex-u8-a-1",
+            "word_id": "a2-u8-passport",
+            "num": 1,
+            "word": "passport",
+            "definition": "a. a place where planes arrive and leave",
+            "answer": "g. an official document that lets you travel to other countries",
+            "answer_letter": "g"
+          },
+          {
+            "id": "ex-u8-a-2",
+            "word_id": "a2-u8-ticket",
+            "num": 2,
+            "word": "ticket",
+            "definition": "b. the place in a station where you get on a train",
+            "answer": "c. a piece of paper that lets you travel or enter a place",
+            "answer_letter": "c"
+          },
+          {
+            "id": "ex-u8-a-3",
+            "word_id": "a2-u8-luggage",
+            "num": 3,
+            "word": "luggage",
+            "definition": "c. a piece of paper that lets you travel or enter a place",
+            "answer": "i. the bags you take when you travel",
+            "answer_letter": "i"
+          },
+          {
+            "id": "ex-u8-a-4",
+            "word_id": "a2-u8-airport",
+            "num": 4,
+            "word": "airport",
+            "definition": "d. an arrangement to keep a room or table for you",
+            "answer": "a. a place where planes arrive and leave",
+            "answer_letter": "a"
+          },
+          {
+            "id": "ex-u8-a-5",
+            "word_id": "a2-u8-platform",
+            "num": 5,
+            "word": "platform",
+            "definition": "e. a person who visits a place on holiday",
+            "answer": "b. the place in a station where you get on a train",
+            "answer_letter": "b"
+          },
+          {
+            "id": "ex-u8-a-6",
+            "word_id": "a2-u8-journey",
+            "num": 6,
+            "word": "journey",
+            "definition": "f. a trip from one place to another",
+            "answer": "f. a trip from one place to another",
+            "answer_letter": "f"
+          },
+          {
+            "id": "ex-u8-a-7",
+            "word_id": "a2-u8-delay",
+            "num": 7,
+            "word": "delay",
+            "definition": "g. an official document that lets you travel to other countries",
+            "answer": "h. a time when something happens later than planned",
+            "answer_letter": "h"
+          },
+          {
+            "id": "ex-u8-a-8",
+            "word_id": "a2-u8-reservation",
+            "num": 8,
+            "word": "reservation",
+            "definition": "h. a time when something happens later than planned",
+            "answer": "d. an arrangement to keep a room or table for you",
+            "answer_letter": "d"
+          },
+          {
+            "id": "ex-u8-a-9",
+            "word_id": "a2-u8-tourist",
+            "num": 9,
+            "word": "tourist",
+            "definition": "i. the bags you take when you travel",
+            "answer": "e. a person who visits a place on holiday",
+            "answer_letter": "e"
+          },
+          {
+            "id": "ex-u8-a-10",
+            "word_id": "a2-u8-map",
+            "num": 10,
+            "word": "map",
+            "definition": "j. a drawing of an area that shows roads and places",
+            "answer": "j. a drawing of an area that shows roads and places",
+            "answer_letter": "j"
+          }
+        ]
+      },
+      "B": {
+        "instruction": "Complete each sentence with a word from the box.",
+        "word_bank": [
+          "airport",
+          "delay",
+          "journey",
+          "luggage",
+          "map",
+          "passport",
+          "platform",
+          "reservation",
+          "ticket",
+          "tourist"
+        ],
+        "items": [
+          {
+            "id": "ex-u8-b-1",
+            "word_id": "a2-u8-map",
+            "num": 1,
+            "sentence": "We used a ____ to find the museum.",
+            "answer": "map"
+          },
+          {
+            "id": "ex-u8-b-2",
+            "word_id": "a2-u8-platform",
+            "num": 2,
+            "sentence": "The train leaves from ____ four.",
+            "answer": "platform"
+          },
+          {
+            "id": "ex-u8-b-3",
+            "word_id": "a2-u8-reservation",
+            "num": 3,
+            "sentence": "I made a ____ at the hotel.",
+            "answer": "reservation"
+          },
+          {
+            "id": "ex-u8-b-4",
+            "word_id": "a2-u8-passport",
+            "num": 4,
+            "sentence": "Don't forget your ____ at the airport.",
+            "answer": "passport"
+          },
+          {
+            "id": "ex-u8-b-5",
+            "word_id": "a2-u8-tourist",
+            "num": 5,
+            "sentence": "The ____ took photos of the old castle.",
+            "answer": "tourist"
+          },
+          {
+            "id": "ex-u8-b-6",
+            "word_id": "a2-u8-ticket",
+            "num": 6,
+            "sentence": "I bought a train ____ online.",
+            "answer": "ticket"
+          },
+          {
+            "id": "ex-u8-b-7",
+            "word_id": "a2-u8-airport",
+            "num": 7,
+            "sentence": "We arrived at the ____ two hours early.",
+            "answer": "airport"
+          },
+          {
+            "id": "ex-u8-b-8",
+            "word_id": "a2-u8-journey",
+            "num": 8,
+            "sentence": "The ____ to the coast takes three hours.",
+            "answer": "journey"
+          },
+          {
+            "id": "ex-u8-b-9",
+            "word_id": "a2-u8-luggage",
+            "num": 9,
+            "sentence": "Our ____ was very heavy.",
+            "answer": "luggage"
+          },
+          {
+            "id": "ex-u8-b-10",
+            "word_id": "a2-u8-delay",
+            "num": 10,
+            "sentence": "There was a long ____ because of the fog.",
+            "answer": "delay"
+          }
+        ]
+      },
+      "C": {
+        "instruction": "Choose the word that matches the meaning.",
+        "items": [
+          {
+            "id": "ex-u8-c-1",
+            "word_id": "a2-u8-map",
+            "num": 1,
+            "question": "a drawing of an area that shows roads and places.",
+            "options": [
+              "a) airport",
+              "b) map",
+              "c) reservation",
+              "d) tourist"
+            ],
+            "answer": "b) map",
+            "answer_word": "map"
+          },
+          {
+            "id": "ex-u8-c-2",
+            "word_id": "a2-u8-airport",
+            "num": 2,
+            "question": "a place where planes arrive and leave.",
+            "options": [
+              "a) map",
+              "b) tourist",
+              "c) journey",
+              "d) airport"
+            ],
+            "answer": "d) airport",
+            "answer_word": "airport"
+          },
+          {
+            "id": "ex-u8-c-3",
+            "word_id": "a2-u8-journey",
+            "num": 3,
+            "question": "a trip from one place to another.",
+            "options": [
+              "a) tourist",
+              "b) delay",
+              "c) luggage",
+              "d) journey"
+            ],
+            "answer": "d) journey",
+            "answer_word": "journey"
+          },
+          {
+            "id": "ex-u8-c-4",
+            "word_id": "a2-u8-ticket",
+            "num": 4,
+            "question": "a piece of paper that lets you travel or enter a place.",
+            "options": [
+              "a) delay",
+              "b) luggage",
+              "c) journey",
+              "d) ticket"
+            ],
+            "answer": "d) ticket",
+            "answer_word": "ticket"
+          },
+          {
+            "id": "ex-u8-c-5",
+            "word_id": "a2-u8-platform",
+            "num": 5,
+            "question": "the place in a station where you get on a train.",
+            "options": [
+              "a) platform",
+              "b) map",
+              "c) airport",
+              "d) delay"
+            ],
+            "answer": "a) platform",
+            "answer_word": "platform"
+          },
+          {
+            "id": "ex-u8-c-6",
+            "word_id": "a2-u8-reservation",
+            "num": 6,
+            "question": "an arrangement to keep a room or table for you.",
+            "options": [
+              "a) map",
+              "b) delay",
+              "c) ticket",
+              "d) reservation"
+            ],
+            "answer": "d) reservation",
+            "answer_word": "reservation"
+          },
+          {
+            "id": "ex-u8-c-7",
+            "word_id": "a2-u8-passport",
+            "num": 7,
+            "question": "an official document that lets you travel to other countries.",
+            "options": [
+              "a) map",
+              "b) passport",
+              "c) airport",
+              "d) delay"
+            ],
+            "answer": "b) passport",
+            "answer_word": "passport"
+          },
+          {
+            "id": "ex-u8-c-8",
+            "word_id": "a2-u8-tourist",
+            "num": 8,
+            "question": "a person who visits a place on holiday.",
+            "options": [
+              "a) luggage",
+              "b) tourist",
+              "c) journey",
+              "d) airport"
+            ],
+            "answer": "b) tourist",
+            "answer_word": "tourist"
+          },
+          {
+            "id": "ex-u8-c-9",
+            "word_id": "a2-u8-delay",
+            "num": 9,
+            "question": "a time when something happens later than planned.",
+            "options": [
+              "a) reservation",
+              "b) passport",
+              "c) delay",
+              "d) tourist"
+            ],
+            "answer": "c) delay",
+            "answer_word": "delay"
+          },
+          {
+            "id": "ex-u8-c-10",
+            "word_id": "a2-u8-luggage",
+            "num": 10,
+            "question": "the bags you take when you travel.",
+            "options": [
+              "a) luggage",
+              "b) journey",
+              "c) platform",
+              "d) tourist"
+            ],
+            "answer": "a) luggage",
+            "answer_word": "luggage"
+          }
+        ]
+      },
+      "D": {
+        "instruction": "Unscramble the letters to make words from this unit.",
+        "items": [
+          {
+            "id": "ex-u8-d-1",
+            "word_id": "a2-u8-journey",
+            "num": 1,
+            "scrambled": "J N E Y O U R",
+            "hint": "(noun) a trip from one place to another",
+            "answer": "journey"
+          },
+          {
+            "id": "ex-u8-d-2",
+            "word_id": "a2-u8-platform",
+            "num": 2,
+            "scrambled": "F T P L O M R A",
+            "hint": "(noun) the place in a station where you get on a train",
+            "answer": "platform"
+          },
+          {
+            "id": "ex-u8-d-3",
+            "word_id": "a2-u8-reservation",
+            "num": 3,
+            "scrambled": "E S A I R O E T V N R",
+            "hint": "(noun) an arrangement to keep a room or table for you",
+            "answer": "reservation"
+          },
+          {
+            "id": "ex-u8-d-4",
+            "word_id": "a2-u8-luggage",
+            "num": 4,
+            "scrambled": "U A G L G G E",
+            "hint": "(noun) the bags you take when you travel",
+            "answer": "luggage"
+          },
+          {
+            "id": "ex-u8-d-5",
+            "word_id": "a2-u8-airport",
+            "num": 5,
+            "scrambled": "R P A R T O I",
+            "hint": "(noun) a place where planes arrive and leave",
+            "answer": "airport"
+          },
+          {
+            "id": "ex-u8-d-6",
+            "word_id": "a2-u8-passport",
+            "num": 6,
+            "scrambled": "T A P S P O R S",
+            "hint": "(noun) an official document that lets you travel to other countries",
+            "answer": "passport"
+          }
+        ]
+      },
+      "E": {
+        "id": "ex-u8-e-1",
+        "instruction": "Write your own sentences using three words from this unit.",
+        "prompts": [
+          "Write your own sentences using three words from this unit."
+        ]
+      }
+    },
+    {
+      "level": "A2",
+      "unit": 9,
+      "pages": [
+        30,
+        31
+      ],
+      "unit_meta": {
+        "level": "A2",
+        "unit": 9,
+        "title": "Unit 9 | Weather and Seasons",
+        "topic": "Thời tiết & các mùa",
+        "study_tip": "Read a short text on this topic and underline the new words you meet.",
+        "page": 29
+      },
+      "A": {
+        "instruction": "Match each word with its meaning. Write the correct letter next to each word.",
+        "items": [
+          {
+            "id": "ex-u9-a-1",
+            "word_id": "a2-u9-sunny",
+            "num": 1,
+            "word": "sunny",
+            "definition": "a. extremely cold",
+            "answer": "f. with a lot of sun",
+            "answer_letter": "f"
+          },
+          {
+            "id": "ex-u9-a-2",
+            "word_id": "a2-u9-cloudy",
+            "num": 2,
+            "word": "cloudy",
+            "definition": "b. with a lot of wind",
+            "answer": "j. covered with clouds",
+            "answer_letter": "j"
+          },
+          {
+            "id": "ex-u9-a-3",
+            "word_id": "a2-u9-windy",
+            "num": 3,
+            "word": "windy",
+            "definition": "c. how hot or cold something is",
+            "answer": "b. with a lot of wind",
+            "answer_letter": "b"
+          },
+          {
+            "id": "ex-u9-a-4",
+            "word_id": "a2-u9-rainy",
+            "num": 4,
+            "word": "rainy",
+            "definition": "d. one of the four parts of the year",
+            "answer": "e. with a lot of rain",
+            "answer_letter": "e"
+          },
+          {
+            "id": "ex-u9-a-5",
+            "word_id": "a2-u9-storm",
+            "num": 5,
+            "word": "storm",
+            "definition": "e. with a lot of rain",
+            "answer": "g. very bad weather with strong wind and rain",
+            "answer_letter": "g"
+          },
+          {
+            "id": "ex-u9-a-6",
+            "word_id": "a2-u9-temperature",
+            "num": 6,
+            "word": "temperature",
+            "definition": "f. with a lot of sun",
+            "answer": "c. how hot or cold something is",
+            "answer_letter": "c"
+          },
+          {
+            "id": "ex-u9-a-7",
+            "word_id": "a2-u9-freezing",
+            "num": 7,
+            "word": "freezing",
+            "definition": "g. very bad weather with strong wind and rain",
+            "answer": "a. extremely cold",
+            "answer_letter": "a"
+          },
+          {
+            "id": "ex-u9-a-8",
+            "word_id": "a2-u9-umbrella",
+            "num": 8,
+            "word": "umbrella",
+            "definition": "h. a report about what the weather will be",
+            "answer": "i. an object that keeps rain off you",
+            "answer_letter": "i"
+          },
+          {
+            "id": "ex-u9-a-9",
+            "word_id": "a2-u9-forecast",
+            "num": 9,
+            "word": "forecast",
+            "definition": "i. an object that keeps rain off you",
+            "answer": "h. a report about what the weather will be",
+            "answer_letter": "h"
+          },
+          {
+            "id": "ex-u9-a-10",
+            "word_id": "a2-u9-season",
+            "num": 10,
+            "word": "season",
+            "definition": "j. covered with clouds",
+            "answer": "d. one of the four parts of the year",
+            "answer_letter": "d"
+          }
+        ]
+      },
+      "B": {
+        "instruction": "Complete each sentence with a word from the box.",
+        "word_bank": [
+          "cloudy",
+          "forecast",
+          "freezing",
+          "rainy",
+          "season",
+          "storm",
+          "sunny",
+          "temperature",
+          "umbrella",
+          "windy"
+        ],
+        "items": [
+          {
+            "id": "ex-u9-b-1",
+            "word_id": "a2-u9-temperature",
+            "num": 1,
+            "sentence": "The ____ fell below zero last night.",
+            "answer": "temperature"
+          },
+          {
+            "id": "ex-u9-b-2",
+            "word_id": "a2-u9-sunny",
+            "num": 2,
+            "sentence": "It is a ____ day, let's go outside.",
+            "answer": "sunny"
+          },
+          {
+            "id": "ex-u9-b-3",
+            "word_id": "a2-u9-umbrella",
+            "num": 3,
+            "sentence": "Take an ____ because it may rain.",
+            "answer": "umbrella"
+          },
+          {
+            "id": "ex-u9-b-4",
+            "word_id": "a2-u9-windy",
+            "num": 4,
+            "sentence": "It was too ____ to fly a kite.",
+            "answer": "windy"
+          },
+          {
+            "id": "ex-u9-b-5",
+            "word_id": "a2-u9-freezing",
+            "num": 5,
+            "sentence": "It is ____ outside, so wear gloves.",
+            "answer": "freezing"
+          },
+          {
+            "id": "ex-u9-b-6",
+            "word_id": "a2-u9-season",
+            "num": 6,
+            "sentence": "Summer is my favourite ____.",
+            "answer": "season"
+          },
+          {
+            "id": "ex-u9-b-7",
+            "word_id": "a2-u9-forecast",
+            "num": 7,
+            "sentence": "The ____ says snow tomorrow.",
+            "answer": "forecast"
+          },
+          {
+            "id": "ex-u9-b-8",
+            "word_id": "a2-u9-rainy",
+            "num": 8,
+            "sentence": "Bring a coat on a ____ day.",
+            "answer": "rainy"
+          },
+          {
+            "id": "ex-u9-b-9",
+            "word_id": "a2-u9-storm",
+            "num": 9,
+            "sentence": "The ____ broke several trees.",
+            "answer": "storm"
+          },
+          {
+            "id": "ex-u9-b-10",
+            "word_id": "a2-u9-cloudy",
+            "num": 10,
+            "sentence": "The sky is ____ this morning.",
+            "answer": "cloudy"
+          }
+        ]
+      },
+      "C": {
+        "instruction": "Choose the word that matches the meaning.",
+        "items": [
+          {
+            "id": "ex-u9-c-1",
+            "word_id": "a2-u9-sunny",
+            "num": 1,
+            "question": "with a lot of sun.",
+            "options": [
+              "a) windy",
+              "b) umbrella",
+              "c) sunny",
+              "d) freezing"
+            ],
+            "answer": "c) sunny",
+            "answer_word": "sunny"
+          },
+          {
+            "id": "ex-u9-c-2",
+            "word_id": "a2-u9-windy",
+            "num": 2,
+            "question": "with a lot of wind.",
+            "options": [
+              "a) sunny",
+              "b) freezing",
+              "c) windy",
+              "d) temperature"
+            ],
+            "answer": "c) windy",
+            "answer_word": "windy"
+          },
+          {
+            "id": "ex-u9-c-3",
+            "word_id": "a2-u9-rainy",
+            "num": 3,
+            "question": "with a lot of rain.",
+            "options": [
+              "a) rainy",
+              "b) forecast",
+              "c) umbrella",
+              "d) temperature"
+            ],
+            "answer": "a) rainy",
+            "answer_word": "rainy"
+          },
+          {
+            "id": "ex-u9-c-4",
+            "word_id": "a2-u9-umbrella",
+            "num": 4,
+            "question": "an object that keeps rain off you.",
+            "options": [
+              "a) cloudy",
+              "b) umbrella",
+              "c) windy",
+              "d) storm"
+            ],
+            "answer": "b) umbrella",
+            "answer_word": "umbrella"
+          },
+          {
+            "id": "ex-u9-c-5",
+            "word_id": "a2-u9-freezing",
+            "num": 5,
+            "question": "extremely cold.",
+            "options": [
+              "a) cloudy",
+              "b) temperature",
+              "c) umbrella",
+              "d) freezing"
+            ],
+            "answer": "d) freezing",
+            "answer_word": "freezing"
+          },
+          {
+            "id": "ex-u9-c-6",
+            "word_id": "a2-u9-temperature",
+            "num": 6,
+            "question": "how hot or cold something is.",
+            "options": [
+              "a) season",
+              "b) cloudy",
+              "c) storm",
+              "d) temperature"
+            ],
+            "answer": "d) temperature",
+            "answer_word": "temperature"
+          },
+          {
+            "id": "ex-u9-c-7",
+            "word_id": "a2-u9-season",
+            "num": 7,
+            "question": "one of the four parts of the year.",
+            "options": [
+              "a) umbrella",
+              "b) season",
+              "c) forecast",
+              "d) windy"
+            ],
+            "answer": "b) season",
+            "answer_word": "season"
+          },
+          {
+            "id": "ex-u9-c-8",
+            "word_id": "a2-u9-cloudy",
+            "num": 8,
+            "question": "covered with clouds.",
+            "options": [
+              "a) cloudy",
+              "b) sunny",
+              "c) freezing",
+              "d) season"
+            ],
+            "answer": "a) cloudy",
+            "answer_word": "cloudy"
+          },
+          {
+            "id": "ex-u9-c-9",
+            "word_id": "a2-u9-forecast",
+            "num": 9,
+            "question": "a report about what the weather will be.",
+            "options": [
+              "a) forecast",
+              "b) freezing",
+              "c) rainy",
+              "d) temperature"
+            ],
+            "answer": "a) forecast",
+            "answer_word": "forecast"
+          },
+          {
+            "id": "ex-u9-c-10",
+            "word_id": "a2-u9-storm",
+            "num": 10,
+            "question": "very bad weather with strong wind and rain.",
+            "options": [
+              "a) umbrella",
+              "b) season",
+              "c) storm",
+              "d) sunny"
+            ],
+            "answer": "c) storm",
+            "answer_word": "storm"
+          }
+        ]
+      },
+      "D": {
+        "instruction": "Unscramble the letters to make words from this unit.",
+        "items": [
+          {
+            "id": "ex-u9-d-1",
+            "word_id": "a2-u9-cloudy",
+            "num": 1,
+            "scrambled": "L D O Y C U",
+            "hint": "(adj) covered with clouds",
+            "answer": "cloudy"
+          },
+          {
+            "id": "ex-u9-d-2",
+            "word_id": "a2-u9-season",
+            "num": 2,
+            "scrambled": "S A S O E N",
+            "hint": "(noun) one of the four parts of the year",
+            "answer": "season"
+          },
+          {
+            "id": "ex-u9-d-3",
+            "word_id": "a2-u9-forecast",
+            "num": 3,
+            "scrambled": "R C E S O F T A",
+            "hint": "(noun) a report about what the weather will be",
+            "answer": "forecast"
+          },
+          {
+            "id": "ex-u9-d-4",
+            "word_id": "a2-u9-freezing",
+            "num": 4,
+            "scrambled": "R N E Z G F E I",
+            "hint": "(adj) extremely cold",
+            "answer": "freezing"
+          },
+          {
+            "id": "ex-u9-d-5",
+            "word_id": "a2-u9-umbrella",
+            "num": 5,
+            "scrambled": "M L A U B L R E",
+            "hint": "(noun) an object that keeps rain off you",
+            "answer": "umbrella"
+          },
+          {
+            "id": "ex-u9-d-6",
+            "word_id": "a2-u9-temperature",
+            "num": 6,
+            "scrambled": "P A T T E R E M R E U",
+            "hint": "(noun) how hot or cold something is",
+            "answer": "temperature"
+          }
+        ]
+      },
+      "E": {
+        "id": "ex-u9-e-1",
+        "instruction": "Write your own sentences using three words from this unit.",
+        "prompts": [
+          "Write your own sentences using three words from this unit."
+        ]
+      }
+    },
+    {
+      "level": "A2",
+      "unit": 10,
+      "pages": [
+        33,
+        34
+      ],
+      "unit_meta": {
+        "level": "A2",
+        "unit": 10,
+        "title": "Unit 10 | Body and Health",
+        "topic": "Cơ thể & sức khỏe",
+        "study_tip": "Test yourself by covering the meaning column and recalling each definition.",
+        "page": 32
+      },
+      "A": {
+        "instruction": "Match each word with its meaning. Write the correct letter next to each word.",
+        "items": [
+          {
+            "id": "ex-u10-a-1",
+            "word_id": "a2-u10-headache",
+            "num": 1,
+            "word": "headache",
+            "definition": "a. a high body temperature when you are ill",
+            "answer": "j. a pain in your head",
+            "answer_letter": "j"
+          },
+          {
+            "id": "ex-u10-a-2",
+            "word_id": "a2-u10-fever",
+            "num": 2,
+            "word": "fever",
+            "definition": "b. good for your body",
+            "answer": "a. a high body temperature when you are ill",
+            "answer_letter": "a"
+          },
+          {
+            "id": "ex-u10-a-3",
+            "word_id": "a2-u10-cough",
+            "num": 3,
+            "word": "cough",
+            "definition": "c. needing rest or sleep",
+            "answer": "f. to push air out of your throat with a noise",
+            "answer_letter": "f"
+          },
+          {
+            "id": "ex-u10-a-4",
+            "word_id": "a2-u10-medicine",
+            "num": 4,
+            "word": "medicine",
+            "definition": "d. a shop that sells medicine",
+            "answer": "g. something you take to get better",
+            "answer_letter": "g"
+          },
+          {
+            "id": "ex-u10-a-5",
+            "word_id": "a2-u10-pharmacy",
+            "num": 5,
+            "word": "pharmacy",
+            "definition": "e. a planned time to see a doctor",
+            "answer": "d. a shop that sells medicine",
+            "answer_letter": "d"
+          },
+          {
+            "id": "ex-u10-a-6",
+            "word_id": "a2-u10-appointment",
+            "num": 6,
+            "word": "appointment",
+            "definition": "f. to push air out of your throat with a noise",
+            "answer": "e. a planned time to see a doctor",
+            "answer_letter": "e"
+          },
+          {
+            "id": "ex-u10-a-7",
+            "word_id": "a2-u10-healthy",
+            "num": 7,
+            "word": "healthy",
+            "definition": "g. something you take to get better",
+            "answer": "b. good for your body",
+            "answer_letter": "b"
+          },
+          {
+            "id": "ex-u10-a-8",
+            "word_id": "a2-u10-exercise",
+            "num": 8,
+            "word": "exercise",
+            "definition": "h. physical activity that keeps you fit",
+            "answer": "h. physical activity that keeps you fit",
+            "answer_letter": "h"
+          },
+          {
+            "id": "ex-u10-a-9",
+            "word_id": "a2-u10-tired",
+            "num": 9,
+            "word": "tired",
+            "definition": "i. the part of your body where food goes",
+            "answer": "c. needing rest or sleep",
+            "answer_letter": "c"
+          },
+          {
+            "id": "ex-u10-a-10",
+            "word_id": "a2-u10-stomach",
+            "num": 10,
+            "word": "stomach",
+            "definition": "j. a pain in your head",
+            "answer": "i. the part of your body where food goes",
+            "answer_letter": "i"
+          }
+        ]
+      },
+      "B": {
+        "instruction": "Complete each sentence with a word from the box.",
+        "word_bank": [
+          "appointment",
+          "cough",
+          "exercise",
+          "fever",
+          "headache",
+          "healthy",
+          "medicine",
+          "pharmacy",
+          "stomach",
+          "tired"
+        ],
+        "items": [
+          {
+            "id": "ex-u10-b-1",
+            "word_id": "a2-u10-appointment",
+            "num": 1,
+            "sentence": "I have an ____ at ten.",
+            "answer": "appointment"
+          },
+          {
+            "id": "ex-u10-b-2",
+            "word_id": "a2-u10-healthy",
+            "num": 2,
+            "sentence": "Fruit is a ____ snack.",
+            "answer": "healthy"
+          },
+          {
+            "id": "ex-u10-b-3",
+            "word_id": "a2-u10-fever",
+            "num": 3,
+            "sentence": "The child has a ____ and needs rest.",
+            "answer": "fever"
+          },
+          {
+            "id": "ex-u10-b-4",
+            "word_id": "a2-u10-medicine",
+            "num": 4,
+            "sentence": "Take this ____ twice a day.",
+            "answer": "medicine"
+          },
+          {
+            "id": "ex-u10-b-5",
+            "word_id": "a2-u10-pharmacy",
+            "num": 5,
+            "sentence": "The ____ closes at six.",
+            "answer": "pharmacy"
+          },
+          {
+            "id": "ex-u10-b-6",
+            "word_id": "a2-u10-exercise",
+            "num": 6,
+            "sentence": "Daily ____ is good for your heart.",
+            "answer": "exercise"
+          },
+          {
+            "id": "ex-u10-b-7",
+            "word_id": "a2-u10-stomach",
+            "num": 7,
+            "sentence": "My ____ hurts after dinner.",
+            "answer": "stomach"
+          },
+          {
+            "id": "ex-u10-b-8",
+            "word_id": "a2-u10-tired",
+            "num": 8,
+            "sentence": "I feel ____ after the long walk.",
+            "answer": "tired"
+          },
+          {
+            "id": "ex-u10-b-9",
+            "word_id": "a2-u10-cough",
+            "num": 9,
+            "sentence": "He began to ____ at night.",
+            "answer": "cough"
+          },
+          {
+            "id": "ex-u10-b-10",
+            "word_id": "a2-u10-headache",
+            "num": 10,
+            "sentence": "I have a ____, so I am going to lie down.",
+            "answer": "headache"
+          }
+        ]
+      },
+      "C": {
+        "instruction": "Choose the word that matches the meaning.",
+        "items": [
+          {
+            "id": "ex-u10-c-1",
+            "word_id": "a2-u10-healthy",
+            "num": 1,
+            "question": "good for your body.",
+            "options": [
+              "a) healthy",
+              "b) fever",
+              "c) appointment",
+              "d) cough"
+            ],
+            "answer": "a) healthy",
+            "answer_word": "healthy"
+          },
+          {
+            "id": "ex-u10-c-2",
+            "word_id": "a2-u10-fever",
+            "num": 2,
+            "question": "a high body temperature when you are ill.",
+            "options": [
+              "a) fever",
+              "b) headache",
+              "c) stomach",
+              "d) exercise"
+            ],
+            "answer": "a) fever",
+            "answer_word": "fever"
+          },
+          {
+            "id": "ex-u10-c-3",
+            "word_id": "a2-u10-pharmacy",
+            "num": 3,
+            "question": "a shop that sells medicine.",
+            "options": [
+              "a) stomach",
+              "b) pharmacy",
+              "c) medicine",
+              "d) headache"
+            ],
+            "answer": "b) pharmacy",
+            "answer_word": "pharmacy"
+          },
+          {
+            "id": "ex-u10-c-4",
+            "word_id": "a2-u10-medicine",
+            "num": 4,
+            "question": "something you take to get better.",
+            "options": [
+              "a) medicine",
+              "b) exercise",
+              "c) cough",
+              "d) healthy"
+            ],
+            "answer": "a) medicine",
+            "answer_word": "medicine"
+          },
+          {
+            "id": "ex-u10-c-5",
+            "word_id": "a2-u10-stomach",
+            "num": 5,
+            "question": "the part of your body where food goes.",
+            "options": [
+              "a) fever",
+              "b) cough",
+              "c) stomach",
+              "d) appointment"
+            ],
+            "answer": "c) stomach",
+            "answer_word": "stomach"
+          },
+          {
+            "id": "ex-u10-c-6",
+            "word_id": "a2-u10-appointment",
+            "num": 6,
+            "question": "a planned time to see a doctor.",
+            "options": [
+              "a) medicine",
+              "b) healthy",
+              "c) appointment",
+              "d) headache"
+            ],
+            "answer": "c) appointment",
+            "answer_word": "appointment"
+          },
+          {
+            "id": "ex-u10-c-7",
+            "word_id": "a2-u10-tired",
+            "num": 7,
+            "question": "needing rest or sleep.",
+            "options": [
+              "a) fever",
+              "b) tired",
+              "c) headache",
+              "d) exercise"
+            ],
+            "answer": "b) tired",
+            "answer_word": "tired"
+          },
+          {
+            "id": "ex-u10-c-8",
+            "word_id": "a2-u10-exercise",
+            "num": 8,
+            "question": "physical activity that keeps you fit.",
+            "options": [
+              "a) pharmacy",
+              "b) cough",
+              "c) appointment",
+              "d) exercise"
+            ],
+            "answer": "d) exercise",
+            "answer_word": "exercise"
+          },
+          {
+            "id": "ex-u10-c-9",
+            "word_id": "a2-u10-headache",
+            "num": 9,
+            "question": "a pain in your head.",
+            "options": [
+              "a) headache",
+              "b) exercise",
+              "c) medicine",
+              "d) pharmacy"
+            ],
+            "answer": "a) headache",
+            "answer_word": "headache"
+          },
+          {
+            "id": "ex-u10-c-10",
+            "word_id": "a2-u10-cough",
+            "num": 10,
+            "question": "to push air out of your throat with a noise.",
+            "options": [
+              "a) fever",
+              "b) cough",
+              "c) tired",
+              "d) appointment"
+            ],
+            "answer": "b) cough",
+            "answer_word": "cough"
+          }
+        ]
+      },
+      "D": {
+        "instruction": "Unscramble the letters to make words from this unit.",
+        "items": [
+          {
+            "id": "ex-u10-d-1",
+            "word_id": "a2-u10-medicine",
+            "num": 1,
+            "scrambled": "M N E I D C E I",
+            "hint": "(noun) something you take to get better",
+            "answer": "medicine"
+          },
+          {
+            "id": "ex-u10-d-2",
+            "word_id": "a2-u10-healthy",
+            "num": 2,
+            "scrambled": "L T H A H E Y",
+            "hint": "(adj) good for your body",
+            "answer": "healthy"
+          },
+          {
+            "id": "ex-u10-d-3",
+            "word_id": "a2-u10-appointment",
+            "num": 3,
+            "scrambled": "N O P N A M P E T T I",
+            "hint": "(noun) a planned time to see a doctor",
+            "answer": "appointment"
+          },
+          {
+            "id": "ex-u10-d-4",
+            "word_id": "a2-u10-pharmacy",
+            "num": 4,
+            "scrambled": "P H R A Y A M C",
+            "hint": "(noun) a shop that sells medicine",
+            "answer": "pharmacy"
+          },
+          {
+            "id": "ex-u10-d-5",
+            "word_id": "a2-u10-exercise",
+            "num": 5,
+            "scrambled": "C X I E E S R E",
+            "hint": "(noun) physical activity that keeps you fit",
+            "answer": "exercise"
+          },
+          {
+            "id": "ex-u10-d-6",
+            "word_id": "a2-u10-headache",
+            "num": 6,
+            "scrambled": "A E D H H E C A",
+            "hint": "(noun) a pain in your head",
+            "answer": "headache"
+          }
+        ]
+      },
+      "E": {
+        "id": "ex-u10-e-1",
+        "instruction": "Write your own sentences using three words from this unit.",
+        "prompts": [
+          "Write your own sentences using three words from this unit."
+        ]
+      }
+    },
+    {
+      "level": "A2",
+      "unit": 11,
+      "pages": [
+        36,
+        37
+      ],
+      "unit_meta": {
+        "level": "A2",
+        "unit": 11,
+        "title": "Unit 11 | Hobbies and Free Time",
+        "topic": "Sở thích & thời gian rảnh",
+        "study_tip": "Say each new word three times aloud, then use it in a sentence about your own life.",
+        "page": 35
+      },
+      "A": {
+        "instruction": "Match each word with its meaning. Write the correct letter next to each word.",
+        "items": [
+          {
+            "id": "ex-u11-a-1",
+            "word_id": "a2-u11-hobby",
+            "num": 1,
+            "word": "hobby",
+            "definition": "a. to gather things you like",
+            "answer": "g. something you enjoy doing in your free time",
+            "answer_letter": "g"
+          },
+          {
+            "id": "ex-u11-a-2",
+            "word_id": "a2-u11-collect",
+            "num": 2,
+            "word": "collect",
+            "definition": "b. a live music performance",
+            "answer": "a. to gather things you like",
+            "answer_letter": "a"
+          },
+          {
+            "id": "ex-u11-a-3",
+            "word_id": "a2-u11-paint",
+            "num": 3,
+            "word": "paint",
+            "definition": "c. a place where you do exercise",
+            "answer": "h. to make a picture with colours",
+            "answer_letter": "h"
+          },
+          {
+            "id": "ex-u11-a-4",
+            "word_id": "a2-u11-concert",
+            "num": 4,
+            "word": "concert",
+            "definition": "d. a special event with music or food",
+            "answer": "b. a live music performance",
+            "answer_letter": "b"
+          },
+          {
+            "id": "ex-u11-a-5",
+            "word_id": "a2-u11-gym",
+            "num": 5,
+            "word": "gym",
+            "definition": "e. a game between two teams",
+            "answer": "c. a place where you do exercise",
+            "answer_letter": "c"
+          },
+          {
+            "id": "ex-u11-a-6",
+            "word_id": "a2-u11-swimming",
+            "num": 6,
+            "word": "swimming",
+            "definition": "f. a picture made with a camera",
+            "answer": "j. the sport of moving through water",
+            "answer_letter": "j"
+          },
+          {
+            "id": "ex-u11-a-7",
+            "word_id": "a2-u11-invite",
+            "num": 7,
+            "word": "invite",
+            "definition": "g. something you enjoy doing in your free time",
+            "answer": "i. to ask someone to come to an event",
+            "answer_letter": "i"
+          },
+          {
+            "id": "ex-u11-a-8",
+            "word_id": "a2-u11-match",
+            "num": 8,
+            "word": "match",
+            "definition": "h. to make a picture with colours",
+            "answer": "e. a game between two teams",
+            "answer_letter": "e"
+          },
+          {
+            "id": "ex-u11-a-9",
+            "word_id": "a2-u11-photograph",
+            "num": 9,
+            "word": "photograph",
+            "definition": "i. to ask someone to come to an event",
+            "answer": "f. a picture made with a camera",
+            "answer_letter": "f"
+          },
+          {
+            "id": "ex-u11-a-10",
+            "word_id": "a2-u11-festival",
+            "num": 10,
+            "word": "festival",
+            "definition": "j. the sport of moving through water",
+            "answer": "d. a special event with music or food",
+            "answer_letter": "d"
+          }
+        ]
+      },
+      "B": {
+        "instruction": "Complete each sentence with a word from the box.",
+        "word_bank": [
+          "collect",
+          "concert",
+          "festival",
+          "gym",
+          "hobby",
+          "invite",
+          "match",
+          "paint",
+          "photograph",
+          "swimming"
+        ],
+        "items": [
+          {
+            "id": "ex-u11-b-1",
+            "word_id": "a2-u11-hobby",
+            "num": 1,
+            "sentence": "My ____ is photography.",
+            "answer": "hobby"
+          },
+          {
+            "id": "ex-u11-b-2",
+            "word_id": "a2-u11-photograph",
+            "num": 2,
+            "sentence": "This ____ shows our trip to Rome.",
+            "answer": "photograph"
+          },
+          {
+            "id": "ex-u11-b-3",
+            "word_id": "a2-u11-paint",
+            "num": 3,
+            "sentence": "She likes to ____ landscapes.",
+            "answer": "paint"
+          },
+          {
+            "id": "ex-u11-b-4",
+            "word_id": "a2-u11-swimming",
+            "num": 4,
+            "sentence": "____ is good for your back.",
+            "answer": "swimming"
+          },
+          {
+            "id": "ex-u11-b-5",
+            "word_id": "a2-u11-invite",
+            "num": 5,
+            "sentence": "I want to ____ you to my party.",
+            "answer": "invite"
+          },
+          {
+            "id": "ex-u11-b-6",
+            "word_id": "a2-u11-collect",
+            "num": 6,
+            "sentence": "He likes to ____ old coins.",
+            "answer": "collect"
+          },
+          {
+            "id": "ex-u11-b-7",
+            "word_id": "a2-u11-concert",
+            "num": 7,
+            "sentence": "We went to a ____ last night.",
+            "answer": "concert"
+          },
+          {
+            "id": "ex-u11-b-8",
+            "word_id": "a2-u11-festival",
+            "num": 8,
+            "sentence": "The town has a music ____ every summer.",
+            "answer": "festival"
+          },
+          {
+            "id": "ex-u11-b-9",
+            "word_id": "a2-u11-match",
+            "num": 9,
+            "sentence": "The ____ starts at three.",
+            "answer": "match"
+          },
+          {
+            "id": "ex-u11-b-10",
+            "word_id": "a2-u11-gym",
+            "num": 10,
+            "sentence": "I go to the ____ after work.",
+            "answer": "gym"
+          }
+        ]
+      },
+      "C": {
+        "instruction": "Choose the word that matches the meaning.",
+        "items": [
+          {
+            "id": "ex-u11-c-1",
+            "word_id": "a2-u11-paint",
+            "num": 1,
+            "question": "to make a picture with colours.",
+            "options": [
+              "a) paint",
+              "b) hobby",
+              "c) festival",
+              "d) collect"
+            ],
+            "answer": "a) paint",
+            "answer_word": "paint"
+          },
+          {
+            "id": "ex-u11-c-2",
+            "word_id": "a2-u11-photograph",
+            "num": 2,
+            "question": "a picture made with a camera.",
+            "options": [
+              "a) paint",
+              "b) concert",
+              "c) match",
+              "d) photograph"
+            ],
+            "answer": "d) photograph",
+            "answer_word": "photograph"
+          },
+          {
+            "id": "ex-u11-c-3",
+            "word_id": "a2-u11-hobby",
+            "num": 3,
+            "question": "something you enjoy doing in your free time.",
+            "options": [
+              "a) concert",
+              "b) paint",
+              "c) hobby",
+              "d) match"
+            ],
+            "answer": "c) hobby",
+            "answer_word": "hobby"
+          },
+          {
+            "id": "ex-u11-c-4",
+            "word_id": "a2-u11-collect",
+            "num": 4,
+            "question": "to gather things you like.",
+            "options": [
+              "a) concert",
+              "b) invite",
+              "c) collect",
+              "d) gym"
+            ],
+            "answer": "c) collect",
+            "answer_word": "collect"
+          },
+          {
+            "id": "ex-u11-c-5",
+            "word_id": "a2-u11-gym",
+            "num": 5,
+            "question": "a place where you do exercise.",
+            "options": [
+              "a) concert",
+              "b) invite",
+              "c) gym",
+              "d) festival"
+            ],
+            "answer": "c) gym",
+            "answer_word": "gym"
+          },
+          {
+            "id": "ex-u11-c-6",
+            "word_id": "a2-u11-invite",
+            "num": 6,
+            "question": "to ask someone to come to an event.",
+            "options": [
+              "a) invite",
+              "b) match",
+              "c) photograph",
+              "d) gym"
+            ],
+            "answer": "a) invite",
+            "answer_word": "invite"
+          },
+          {
+            "id": "ex-u11-c-7",
+            "word_id": "a2-u11-swimming",
+            "num": 7,
+            "question": "the sport of moving through water.",
+            "options": [
+              "a) festival",
+              "b) photograph",
+              "c) paint",
+              "d) swimming"
+            ],
+            "answer": "d) swimming",
+            "answer_word": "swimming"
+          },
+          {
+            "id": "ex-u11-c-8",
+            "word_id": "a2-u11-match",
+            "num": 8,
+            "question": "a game between two teams.",
+            "options": [
+              "a) match",
+              "b) concert",
+              "c) photograph",
+              "d) festival"
+            ],
+            "answer": "a) match",
+            "answer_word": "match"
+          },
+          {
+            "id": "ex-u11-c-9",
+            "word_id": "a2-u11-festival",
+            "num": 9,
+            "question": "a special event with music or food.",
+            "options": [
+              "a) match",
+              "b) collect",
+              "c) swimming",
+              "d) festival"
+            ],
+            "answer": "d) festival",
+            "answer_word": "festival"
+          },
+          {
+            "id": "ex-u11-c-10",
+            "word_id": "a2-u11-concert",
+            "num": 10,
+            "question": "a live music performance.",
+            "options": [
+              "a) swimming",
+              "b) paint",
+              "c) concert",
+              "d) collect"
+            ],
+            "answer": "c) concert",
+            "answer_word": "concert"
+          }
+        ]
+      },
+      "D": {
+        "instruction": "Unscramble the letters to make words from this unit.",
+        "items": [
+          {
+            "id": "ex-u11-d-1",
+            "word_id": "a2-u11-swimming",
+            "num": 1,
+            "scrambled": "M G I M I W N S",
+            "hint": "(noun) the sport of moving through water",
+            "answer": "swimming"
+          },
+          {
+            "id": "ex-u11-d-2",
+            "word_id": "a2-u11-photograph",
+            "num": 2,
+            "scrambled": "A O G P O R T P H H",
+            "hint": "(noun) a picture made with a camera",
+            "answer": "photograph"
+          },
+          {
+            "id": "ex-u11-d-3",
+            "word_id": "a2-u11-concert",
+            "num": 3,
+            "scrambled": "C C R T O N E",
+            "hint": "(noun) a live music performance",
+            "answer": "concert"
+          },
+          {
+            "id": "ex-u11-d-4",
+            "word_id": "a2-u11-collect",
+            "num": 4,
+            "scrambled": "T E C L L C O",
+            "hint": "(verb) to gather things you like",
+            "answer": "collect"
+          },
+          {
+            "id": "ex-u11-d-5",
+            "word_id": "a2-u11-invite",
+            "num": 5,
+            "scrambled": "I V N E T I",
+            "hint": "(verb) to ask someone to come to an event",
+            "answer": "invite"
+          },
+          {
+            "id": "ex-u11-d-6",
+            "word_id": "a2-u11-festival",
+            "num": 6,
+            "scrambled": "E I L T F V S A",
+            "hint": "(noun) a special event with music or food",
+            "answer": "festival"
+          }
+        ]
+      },
+      "E": {
+        "id": "ex-u11-e-1",
+        "instruction": "Write your own sentences using three words from this unit.",
+        "prompts": [
+          "Write your own sentences using three words from this unit."
+        ]
+      }
+    },
+    {
+      "level": "A2",
+      "unit": 12,
+      "pages": [
+        39,
+        40
+      ],
+      "unit_meta": {
+        "level": "A2",
+        "unit": 12,
+        "title": "Unit 12 | Town and Directions",
+        "topic": "Phố xá & chỉ đường",
+        "study_tip": "Write new words on small cards: the word on one side, the meaning on the other.",
+        "page": 38
+      },
+      "A": {
+        "instruction": "Match each word with its meaning. Write the correct letter next to each word.",
+        "items": [
+          {
+            "id": "ex-u12-a-1",
+            "word_id": "a2-u12-corner",
+            "num": 1,
+            "word": "corner",
+            "definition": "a. a structure that lets you cross a river",
+            "answer": "h. the place where two streets meet",
+            "answer_letter": "h"
+          },
+          {
+            "id": "ex-u12-a-2",
+            "word_id": "a2-u12-crossroads",
+            "num": 2,
+            "word": "crossroads",
+            "definition": "b. close to where you are",
+            "answer": "c. a place where two roads cross",
+            "answer_letter": "c"
+          },
+          {
+            "id": "ex-u12-a-3",
+            "word_id": "a2-u5-bridge",
+            "num": 3,
+            "word": "bridge",
+            "definition": "c. a place where two roads cross",
+            "answer": "a. a structure that lets you cross a river",
+            "answer_letter": "a"
+          },
+          {
+            "id": "ex-u12-a-4",
+            "word_id": "a2-u12-traffic",
+            "num": 4,
+            "word": "traffic",
+            "definition": "d. in a line without turning",
+            "answer": "g. cars and other vehicles on a road",
+            "answer_letter": "g"
+          },
+          {
+            "id": "ex-u12-a-5",
+            "word_id": "a2-u12-pavement",
+            "num": 5,
+            "word": "pavement",
+            "definition": "e. on the other side of",
+            "answer": "f. the path at the side of a road",
+            "answer_letter": "f"
+          },
+          {
+            "id": "ex-u12-a-6",
+            "word_id": "a2-u12-straight",
+            "num": 6,
+            "word": "straight",
+            "definition": "f. the path at the side of a road",
+            "answer": "d. in a line without turning",
+            "answer_letter": "d"
+          },
+          {
+            "id": "ex-u12-a-7",
+            "word_id": "a2-u12-opposite",
+            "num": 7,
+            "word": "opposite",
+            "definition": "g. cars and other vehicles on a road",
+            "answer": "e. on the other side of",
+            "answer_letter": "e"
+          },
+          {
+            "id": "ex-u12-a-8",
+            "word_id": "a2-u12-nearby",
+            "num": 8,
+            "word": "nearby",
+            "definition": "h. the place where two streets meet",
+            "answer": "b. close to where you are",
+            "answer_letter": "b"
+          },
+          {
+            "id": "ex-u12-a-9",
+            "word_id": "a2-u12-direction",
+            "num": 9,
+            "word": "direction",
+            "definition": "i. the way you go to reach a place",
+            "answer": "i. the way you go to reach a place",
+            "answer_letter": "i"
+          },
+          {
+            "id": "ex-u12-a-10",
+            "word_id": "a2-u12-suburb",
+            "num": 10,
+            "word": "suburb",
+            "definition": "j. an area of houses on the edge of a city",
+            "answer": "j. an area of houses on the edge of a city",
+            "answer_letter": "j"
+          }
+        ]
+      },
+      "B": {
+        "instruction": "Complete each sentence with a word from the box.",
+        "word_bank": [
+          "bridge",
+          "corner",
+          "crossroads",
+          "direction",
+          "nearby",
+          "opposite",
+          "pavement",
+          "straight",
+          "suburb",
+          "traffic"
+        ],
+        "items": [
+          {
+            "id": "ex-u12-b-1",
+            "word_id": "a2-u12-corner",
+            "num": 1,
+            "sentence": "Turn left at the ____.",
+            "answer": "corner"
+          },
+          {
+            "id": "ex-u12-b-2",
+            "word_id": "a2-u12-nearby",
+            "num": 2,
+            "sentence": "Is there a bank ____?",
+            "answer": "nearby"
+          },
+          {
+            "id": "ex-u12-b-3",
+            "word_id": "a2-u12-suburb",
+            "num": 3,
+            "sentence": "They live in a quiet ____.",
+            "answer": "suburb"
+          },
+          {
+            "id": "ex-u12-b-4",
+            "word_id": "a2-u12-crossroads",
+            "num": 4,
+            "sentence": "Stop at the ____ and look both ways.",
+            "answer": "crossroads"
+          },
+          {
+            "id": "ex-u12-b-5",
+            "word_id": "a2-u12-direction",
+            "num": 5,
+            "sentence": "We went in the wrong ____.",
+            "answer": "direction"
+          },
+          {
+            "id": "ex-u12-b-6",
+            "word_id": "a2-u5-bridge",
+            "num": 6,
+            "sentence": "The ____ connects the two parts of town.",
+            "answer": "bridge"
+          },
+          {
+            "id": "ex-u12-b-7",
+            "word_id": "a2-u12-traffic",
+            "num": 7,
+            "sentence": "The ____ is terrible at eight o'clock.",
+            "answer": "traffic"
+          },
+          {
+            "id": "ex-u12-b-8",
+            "word_id": "a2-u12-opposite",
+            "num": 8,
+            "sentence": "The bank is ____ the post office.",
+            "answer": "opposite"
+          },
+          {
+            "id": "ex-u12-b-9",
+            "word_id": "a2-u12-pavement",
+            "num": 9,
+            "sentence": "Walk on the ____, not in the road.",
+            "answer": "pavement"
+          },
+          {
+            "id": "ex-u12-b-10",
+            "word_id": "a2-u12-straight",
+            "num": 10,
+            "sentence": "Go ____ for two hundred metres.",
+            "answer": "straight"
+          }
+        ]
+      },
+      "C": {
+        "instruction": "Choose the word that matches the meaning.",
+        "items": [
+          {
+            "id": "ex-u12-c-1",
+            "word_id": "a2-u12-corner",
+            "num": 1,
+            "question": "the place where two streets meet.",
+            "options": [
+              "a) suburb",
+              "b) straight",
+              "c) corner",
+              "d) nearby"
+            ],
+            "answer": "c) corner",
+            "answer_word": "corner"
+          },
+          {
+            "id": "ex-u12-c-2",
+            "word_id": "a2-u12-traffic",
+            "num": 2,
+            "question": "cars and other vehicles on a road.",
+            "options": [
+              "a) pavement",
+              "b) suburb",
+              "c) traffic",
+              "d) opposite"
+            ],
+            "answer": "c) traffic",
+            "answer_word": "traffic"
+          },
+          {
+            "id": "ex-u12-c-3",
+            "word_id": "a2-u12-straight",
+            "num": 3,
+            "question": "in a line without turning.",
+            "options": [
+              "a) corner",
+              "b) straight",
+              "c) direction",
+              "d) crossroads"
+            ],
+            "answer": "b) straight",
+            "answer_word": "straight"
+          },
+          {
+            "id": "ex-u12-c-4",
+            "word_id": "a2-u12-nearby",
+            "num": 4,
+            "question": "close to where you are.",
+            "options": [
+              "a) nearby",
+              "b) corner",
+              "c) direction",
+              "d) opposite"
+            ],
+            "answer": "a) nearby",
+            "answer_word": "nearby"
+          },
+          {
+            "id": "ex-u12-c-5",
+            "word_id": "a2-u12-pavement",
+            "num": 5,
+            "question": "the path at the side of a road.",
+            "options": [
+              "a) crossroads",
+              "b) corner",
+              "c) pavement",
+              "d) opposite"
+            ],
+            "answer": "c) pavement",
+            "answer_word": "pavement"
+          },
+          {
+            "id": "ex-u12-c-6",
+            "word_id": "a2-u12-opposite",
+            "num": 6,
+            "question": "on the other side of.",
+            "options": [
+              "a) opposite",
+              "b) corner",
+              "c) suburb",
+              "d) pavement"
+            ],
+            "answer": "a) opposite",
+            "answer_word": "opposite"
+          },
+          {
+            "id": "ex-u12-c-7",
+            "word_id": "a2-u12-direction",
+            "num": 7,
+            "question": "the way you go to reach a place.",
+            "options": [
+              "a) suburb",
+              "b) direction",
+              "c) opposite",
+              "d) straight"
+            ],
+            "answer": "b) direction",
+            "answer_word": "direction"
+          },
+          {
+            "id": "ex-u12-c-8",
+            "word_id": "a2-u5-bridge",
+            "num": 8,
+            "question": "a structure that lets you cross a river.",
+            "options": [
+              "a) bridge",
+              "b) pavement",
+              "c) nearby",
+              "d) corner"
+            ],
+            "answer": "a) bridge",
+            "answer_word": "bridge"
+          },
+          {
+            "id": "ex-u12-c-9",
+            "word_id": "a2-u12-crossroads",
+            "num": 9,
+            "question": "a place where two roads cross.",
+            "options": [
+              "a) pavement",
+              "b) traffic",
+              "c) crossroads",
+              "d) opposite"
+            ],
+            "answer": "c) crossroads",
+            "answer_word": "crossroads"
+          },
+          {
+            "id": "ex-u12-c-10",
+            "word_id": "a2-u12-suburb",
+            "num": 10,
+            "question": "an area of houses on the edge of a city.",
+            "options": [
+              "a) nearby",
+              "b) suburb",
+              "c) straight",
+              "d) pavement"
+            ],
+            "answer": "b) suburb",
+            "answer_word": "suburb"
+          }
+        ]
+      },
+      "D": {
+        "instruction": "Unscramble the letters to make words from this unit.",
+        "items": [
+          {
+            "id": "ex-u12-d-1",
+            "word_id": "a2-u12-pavement",
+            "num": 1,
+            "scrambled": "A T V N E P E M",
+            "hint": "(noun) the path at the side of a road",
+            "answer": "pavement"
+          },
+          {
+            "id": "ex-u12-d-2",
+            "word_id": "a2-u12-traffic",
+            "num": 2,
+            "scrambled": "I F R A F T C",
+            "hint": "(noun) cars and other vehicles on a road",
+            "answer": "traffic"
+          },
+          {
+            "id": "ex-u12-d-3",
+            "word_id": "a2-u12-direction",
+            "num": 3,
+            "scrambled": "D I E C O T R N I",
+            "hint": "(noun) the way you go to reach a place",
+            "answer": "direction"
+          },
+          {
+            "id": "ex-u12-d-4",
+            "word_id": "a2-u12-straight",
+            "num": 4,
+            "scrambled": "S H T I G R T A",
+            "hint": "(adv) in a line without turning",
+            "answer": "straight"
+          },
+          {
+            "id": "ex-u12-d-5",
+            "word_id": "a2-u12-opposite",
+            "num": 5,
+            "scrambled": "P P S I O E T O",
+            "hint": "(prep) on the other side of",
+            "answer": "opposite"
+          },
+          {
+            "id": "ex-u12-d-6",
+            "word_id": "a2-u12-crossroads",
+            "num": 6,
+            "scrambled": "R R O A O C S S S D",
+            "hint": "(noun) a place where two roads cross",
+            "answer": "crossroads"
+          }
+        ]
+      },
+      "E": {
+        "id": "ex-u12-e-1",
+        "instruction": "Write your own sentences using three words from this unit.",
+        "prompts": [
+          "Write your own sentences using three words from this unit."
+        ]
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "level": "A1",
+      "page": 22,
+      "title": "Level 1 Review | Beginner",
+      "word_bank": [
+        "bathroom",
+        "cheese",
+        "dress",
+        "father",
+        "goodbye",
+        "grandmother",
+        "kitchen",
+        "month",
+        "rice",
+        "sleep",
+        "thanks",
+        "yesterday"
+      ],
+      "items": [
+        {
+          "id": "ex-rev-a1-1",
+          "word_id": "a1-u1-goodbye",
+          "num": 1,
+          "sentence": "____! See you tomorrow.",
+          "answer": "goodbye"
+        },
+        {
+          "id": "ex-rev-a1-2",
+          "word_id": "a1-u6-yesterday",
+          "num": 2,
+          "sentence": "____ it rained all day.",
+          "answer": "yesterday"
+        },
+        {
+          "id": "ex-rev-a1-3",
+          "word_id": "a1-u3-cheese",
+          "num": 3,
+          "sentence": "Do you want ____ on your pizza?",
+          "answer": "cheese"
+        },
+        {
+          "id": "ex-rev-a1-4",
+          "word_id": "a1-u2-father",
+          "num": 4,
+          "sentence": "My ____ drives to work.",
+          "answer": "father"
+        },
+        {
+          "id": "ex-rev-a1-5",
+          "word_id": "a1-u5-dress",
+          "num": 5,
+          "sentence": "The children ____ before breakfast.",
+          "answer": "dress"
+        },
+        {
+          "id": "ex-rev-a1-6",
+          "word_id": "a2-u6-grandmother",
+          "num": 6,
+          "sentence": "My ____ tells great stories.",
+          "answer": "grandmother"
+        },
+        {
+          "id": "ex-rev-a1-7",
+          "word_id": "a1-u6-month",
+          "num": 7,
+          "sentence": "January is the first ____ of the year.",
+          "answer": "month"
+        },
+        {
+          "id": "ex-rev-a1-8",
+          "word_id": "a1-u3-rice",
+          "num": 8,
+          "sentence": "We have chicken and ____ for lunch.",
+          "answer": "rice"
+        },
+        {
+          "id": "ex-rev-a1-9",
+          "word_id": "a1-u4-kitchen",
+          "num": 9,
+          "sentence": "We cook dinner in the ____.",
+          "answer": "kitchen"
+        },
+        {
+          "id": "ex-rev-a1-10",
+          "word_id": "a1-u1-thanks",
+          "num": 10,
+          "sentence": "____ for your help.",
+          "answer": "thanks"
+        },
+        {
+          "id": "ex-rev-a1-11",
+          "word_id": "a1-u5-sleep",
+          "num": 11,
+          "sentence": "Babies ____ a lot.",
+          "answer": "sleep"
+        },
+        {
+          "id": "ex-rev-a1-12",
+          "word_id": "a1-u4-bathroom",
+          "num": 12,
+          "sentence": "There is a shower in the ____.",
+          "answer": "bathroom"
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "page": 41,
+      "title": "Level 2 Review | Elementary",
+      "word_bank": [
+        "airport",
+        "concert",
+        "fit",
+        "healthy",
+        "jacket",
+        "journey",
+        "pavement",
+        "photograph",
+        "season",
+        "stomach",
+        "traffic",
+        "windy"
+      ],
+      "items": [
+        {
+          "id": "ex-rev-a2-1",
+          "word_id": "a2-u10-healthy",
+          "num": 1,
+          "sentence": "Fruit is a ____ snack.",
+          "answer": "healthy"
+        },
+        {
+          "id": "ex-rev-a2-2",
+          "word_id": "a2-u9-season",
+          "num": 2,
+          "sentence": "Summer is my favourite ____.",
+          "answer": "season"
+        },
+        {
+          "id": "ex-rev-a2-3",
+          "word_id": "a2-u10-stomach",
+          "num": 3,
+          "sentence": "My ____ hurts after dinner.",
+          "answer": "stomach"
+        },
+        {
+          "id": "ex-rev-a2-4",
+          "word_id": "a2-u8-journey",
+          "num": 4,
+          "sentence": "The ____ to the coast takes three hours.",
+          "answer": "journey"
+        },
+        {
+          "id": "ex-rev-a2-5",
+          "word_id": "a2-u8-airport",
+          "num": 5,
+          "sentence": "We arrived at the ____ two hours early.",
+          "answer": "airport"
+        },
+        {
+          "id": "ex-rev-a2-6",
+          "word_id": "a2-u9-windy",
+          "num": 6,
+          "sentence": "It was too ____ to fly a kite.",
+          "answer": "windy"
+        },
+        {
+          "id": "ex-rev-a2-7",
+          "word_id": "a2-u11-photograph",
+          "num": 7,
+          "sentence": "This ____ shows our trip to Rome.",
+          "answer": "photograph"
+        },
+        {
+          "id": "ex-rev-a2-8",
+          "word_id": "a2-u7-fit",
+          "num": 8,
+          "sentence": "This shirt does not ____ me.",
+          "answer": "fit"
+        },
+        {
+          "id": "ex-rev-a2-9",
+          "word_id": "a2-u7-jacket",
+          "num": 9,
+          "sentence": "Take a ____, it is cold outside.",
+          "answer": "jacket"
+        },
+        {
+          "id": "ex-rev-a2-10",
+          "word_id": "a2-u12-pavement",
+          "num": 10,
+          "sentence": "Walk on the ____, not in the road.",
+          "answer": "pavement"
+        },
+        {
+          "id": "ex-rev-a2-11",
+          "word_id": "a2-u12-traffic",
+          "num": 11,
+          "sentence": "The ____ is terrible at eight o'clock.",
+          "answer": "traffic"
+        },
+        {
+          "id": "ex-rev-a2-12",
+          "word_id": "a2-u11-concert",
+          "num": 12,
+          "sentence": "We went to a ____ last night.",
+          "answer": "concert"
+        }
+      ]
+    }
+  ]
+}
