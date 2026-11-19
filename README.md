@@ -144,28 +144,28 @@ Gồm hai khóa gốc:
 
 ## Hướng dẫn Deploy lên GitHub Pages (miễn phí)
 
-Toàn bộ đường dẫn trong ứng dụng (`./css/...`, `./js/...`, `./data/...`, hash route `#/...`) đều là đường dẫn tương đối nên chạy mượt trên mọi đường dẫn con `https://<username>.github.io/<repo-name>/`.
+Toàn bộ đường dẫn trong ứng dụng (`./css/...`, `./js/...`, `./data/...`, hash route `#/...`) đều là đường dẫn tương đối nên chạy mượt trên mọi đường dẫn con `https://kit646.github.io/tu-vung-tieng-anh/`.
 
-1. **Tạo repository mới trên GitHub:**
-   - Truy cập <https://github.com/new>, đặt tên repository (ví dụ `vocab-a1-a2`), chọn **Public** (hoặc Private nếu dùng gói trả phí), **không** tích chọn tạo sẵn README / `.gitignore`.
+1. **Repository trên GitHub:**
+   - Repo: <https://github.com/kit646/tu-vung-tieng-anh> (chọn **Public** để dùng GitHub Pages miễn phí).
 2. **Kiểm tra & commit các thay đổi ở local (trong `D:\downloads\Tổng Hợp Từ Vựng\vocab-app`):**
    ```powershell
    cd "D:\downloads\Tổng Hợp Từ Vựng\vocab-app"
    git status
    git add .
-   git commit -m "feat: complete vocab-app A1-A2 web application"
+   git commit -m "docs: update deploy guide for tu-vung-tieng-anh"
    ```
 3. **Liên kết remote và đẩy code lên GitHub:**
    ```powershell
    git branch -M main
-   git remote add origin https://github.com/<ten-tai-khoan>/<ten-repo>.git
+   git remote add origin https://github.com/kit646/tu-vung-tieng-anh.git
    git push -u origin main
    ```
 4. **Bật GitHub Pages trong phần Settings của repository:**
-   - Mở repository trên GitHub → vào tab **Settings** → chọn mục **Pages** ở thanh bên trái.
+   - Mở <https://github.com/kit646/tu-vung-tieng-anh/settings/pages> (hoặc **Settings** → **Pages** ở thanh bên trái).
    - Ở phần **Build and deployment → Source**, chọn **Deploy from a branch**.
    - Ở phần **Branch**, chọn nhánh **`main`** và thư mục **`/ (root)`**, rồi bấm **Save**.
 5. **Chờ 1–2 phút và truy cập:**
-   - GitHub sẽ hiển thị liên kết ở đầu trang **Settings → Pages** theo dạng:
-     `https://<ten-tai-khoan>.github.io/<ten-repo>/`
+   - GitHub sẽ hiển thị liên kết ở đầu trang **Settings → Pages**:
+     <https://kit646.github.io/tu-vung-tieng-anh/>
    - Mở thử các đường dẫn `#/home`, `#/library`, `#/flashcards`, `#/practice`, `#/test`, `#/progress` trên cả điện thoại và máy tính để kiểm tra.
