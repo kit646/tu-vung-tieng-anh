@@ -238,6 +238,17 @@ function setupGlobalShortcuts() {
         event.preventDefault();
         speakBtn.click();
       }
+      return;
+    }
+
+    if (currentRoute?.name === "word-detail" && (event.key === "ArrowLeft" || event.key === "ArrowRight")) {
+      const targetEl = document.getElementById(
+        event.key === "ArrowLeft" ? "word-prev-link" : "word-next-link"
+      );
+      if (targetEl && targetEl.tagName === "A") {
+        event.preventDefault();
+        targetEl.click();
+      }
     }
   });
 }

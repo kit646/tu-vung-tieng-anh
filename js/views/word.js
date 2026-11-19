@@ -3,9 +3,17 @@
  * Hiển thị IPA, định nghĩa EN, nghĩa VI, tất cả câu ví dụ, nút phát âm (1.0x / 0.8x) và trạng thái SRS.
  */
 import { I18N, formatText } from "../i18n.js";
-import { iconArrowLeft, iconVolume } from "../icons.js";
+import { iconArrowLeft, iconArrowRight, iconVolume } from "../icons.js";
+import { parseRoute } from "../router.js";
 import { isSpeechSupported, speakText } from "../speech.js";
-import { getTodayIso, getWordById, getWordSrs, markWordDueToday } from "../store.js";
+import {
+  getCachedData,
+  getTodayIso,
+  getWordById,
+  getWordSrs,
+  getWordsForUnit,
+  markWordDueToday,
+} from "../store.js";
 import {
   escapeHtml,
   formatUnitLabel,
@@ -24,6 +32,38 @@ function formatDueText(srs) {
   const diffMs = new Date(srs.due) - new Date(today);
   const diffDays = Math.max(1, Math.round(diffMs / 86400000));
   return formatText(I18N.srs.dueInDays, { days: diffDays });
+}
+
+function getSiblingContext(word, backHash) {
+  let list = [];
+  if (backHash && backHash.startsWith("#/library/")) {
+    const backRoute = parseRoute(backHash);
+    if (backRoute.name === "library-unit") {
+      const source = backRoute.query.get("source") || "all";
+      list = getWordsForUnit(backRoute.params.level, backRoute.params.unit, source);
+    }
+  }
+  if (!list.length) {
+    list = getWordsForUnit(word.level, word.unit, "all");
+  }
+  if (!list.length) {
+    list = getCachedData()?.vocab || [];
+  }
+  const index = list.findIndex((item) => item.id === word.id);
+  if (index === -1 || list.length <= 1) {
+    return { prevWord: null, nextWord: null, index: 0, total: list.length };
+  }
+  return {
+    prevWord: index > 0 ? list[index - 1] : null,
+    nextWord: index < list.length - 1 ? list[index + 1] : null,
+    index,
+    total: list.length,
+  };
+}
+
+function buildWordHref(wordId, backHash) {
+  const backParam = backHash ? `?back=${encodeURIComponent(backHash)}` : "";
+  return `#/word/${encodeURIComponent(wordId)}${backParam}`;
 }
 
 export function renderWordDetailView(container, route) {
@@ -61,6 +101,45 @@ export function renderWordDetailView(container, route) {
       })
     : I18N.controls.backToLibrary;
 
+  const { prevWord, nextWord, index, total } = getSiblingContext(word, backHash);
+  const pagerHtml =
+    total > 1
+      ? `
+        <nav class="word-pager" aria-label="${escapeHtml(I18N.wordDetail.nextWord)}">
+          ${
+            prevWord
+              ? `<a id="word-prev-link" class="btn btn-secondary" href="${escapeHtml(
+                  buildWordHref(prevWord.id, backHash)
+                )}" title="${escapeHtml(prevWord.word)}">
+                  ${iconArrowLeft(18)}
+                  <span>${escapeHtml(I18N.wordDetail.prevWord)}</span>
+                  <kbd class="kbd-hint">←</kbd>
+                </a>`
+              : `<button type="button" id="word-prev-link" class="btn btn-secondary" disabled>
+                  ${iconArrowLeft(18)}
+                  <span>${escapeHtml(I18N.wordDetail.prevWord)}</span>
+                </button>`
+          }
+          <span class="word-pager-count tabular-nums">${escapeHtml(
+            formatText(I18N.wordDetail.wordPosition, { current: index + 1, total })
+          )}</span>
+          ${
+            nextWord
+              ? `<a id="word-next-link" class="btn btn-secondary" href="${escapeHtml(
+                  buildWordHref(nextWord.id, backHash)
+                )}" title="${escapeHtml(nextWord.word)}">
+                  <span>${escapeHtml(I18N.wordDetail.nextWord)}</span>
+                  <kbd class="kbd-hint">→</kbd>
+                  ${iconArrowRight(18)}
+                </a>`
+              : `<button type="button" id="word-next-link" class="btn btn-secondary" disabled>
+                  <span>${escapeHtml(I18N.wordDetail.nextWord)}</span>
+                  ${iconArrowRight(18)}
+                </button>`
+          }
+        </nav>`
+      : "";
+
   const audioButtonsHtml = speechAvailable
     ? `
       <div class="badge-row">
@@ -91,12 +170,13 @@ export function renderWordDetailView(container, route) {
 
   container.innerHTML = `
     <div class="page-stack">
-      <div>
+      <div class="word-nav-bar">
         <a id="word-back-link" class="btn btn-ghost" href="${escapeHtml(backHash)}">
           ${iconArrowLeft(18)}
           <span>${escapeHtml(backLabel)}</span>
           <kbd class="kbd-hint">Esc</kbd>
         </a>
+        ${pagerHtml}
       </div>
 
       <div class="word-detail-grid">

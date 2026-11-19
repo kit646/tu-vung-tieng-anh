@@ -697,6 +697,27 @@
 }
 
 /* Word Detail Layout */
+.word-nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.word-pager {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.word-pager-count {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 0 var(--space-2);
+}
+
 .word-detail-grid {
   display: grid;
   grid-template-columns: 1fr;
