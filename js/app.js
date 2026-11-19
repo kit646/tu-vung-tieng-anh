@@ -65,6 +65,13 @@ function applyTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme === "dark" ? "dark" : "light");
 }
 
+function syncHeaderHeightVar() {
+  const headerEl = document.getElementById("app-header");
+  if (headerEl && headerEl.offsetHeight > 0) {
+    document.documentElement.style.setProperty("--app-header-h", `${headerEl.offsetHeight}px`);
+  }
+}
+
 function renderShell(activeNavKey) {
   const headerEl = document.getElementById("app-header");
   const mobileNavEl = document.getElementById("mobile-nav");
@@ -141,6 +148,15 @@ function renderShell(activeNavKey) {
   headerEl.querySelector("#header-sync-btn")?.addEventListener("click", () => {
     syncWithGist();
   });
+
+  syncHeaderHeightVar();
+  const desktopNavEl = headerEl.querySelector(".desktop-nav");
+  const activeNavEl = desktopNavEl?.querySelector('[aria-current="page"]');
+  if (desktopNavEl && activeNavEl) {
+    const targetLeft =
+      activeNavEl.offsetLeft - desktopNavEl.clientWidth / 2 + activeNavEl.clientWidth / 2;
+    desktopNavEl.scrollLeft = Math.max(0, targetLeft);
+  }
 }
 
 function renderLoading(mainEl) {
@@ -258,6 +274,7 @@ async function boot() {
   applyTheme(getSettings().theme);
   initSpeech();
   setupGlobalShortcuts();
+  window.addEventListener("resize", syncHeaderHeightVar);
 
   const mainEl = document.getElementById("app-main");
   renderShell("home");
