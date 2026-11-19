@@ -26,8 +26,9 @@ export function normalizeSrsState(state) {
   const rawEase = Number(state.ease);
   const rawInterval = Number(state.interval);
   const rawLapses = Number(state.lapses);
+  const rawUpdatedAt = Number(state.updatedAt);
 
-  return {
+  const normalized = {
     box: Number.isFinite(rawBox) ? Math.min(MAX_BOX, Math.max(0, Math.round(rawBox))) : 0,
     ease: Number.isFinite(rawEase)
       ? Math.min(MAX_EASE, Math.max(MIN_EASE, Number(rawEase.toFixed(2))))
@@ -36,6 +37,11 @@ export function normalizeSrsState(state) {
     due: typeof state.due === "string" && state.due ? state.due : null,
     lapses: Number.isFinite(rawLapses) ? Math.max(0, Math.round(rawLapses)) : 0,
   };
+
+  if (Number.isFinite(rawUpdatedAt) && rawUpdatedAt > 0) {
+    normalized.updatedAt = Math.round(rawUpdatedAt);
+  }
+  return normalized;
 }
 
 export function addDaysIso(isoDate, days) {

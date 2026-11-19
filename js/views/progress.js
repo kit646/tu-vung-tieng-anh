@@ -7,15 +7,17 @@
  * - Xuất / Nhập file JSON sao lưu và Đặt lại toàn bộ tiến độ (kèm hộp thoại xác nhận).
  */
 import { I18N, formatText } from "../i18n.js";
-import { iconFlame, iconVolume } from "../icons.js";
+import { iconCopy, iconFlame, iconSync, iconVolume } from "../icons.js";
 import { navigateTo } from "../router.js";
 import { isSpeechSupported, speakText } from "../speech.js";
 import {
+  clearSyncConfig,
   exportProgressPayload,
   getAllSrs,
   getLast14DaysActivity,
   getOverallStats,
   getStreak,
+  getSyncConfig,
   getTodayIso,
   getUnitDirectory,
   getUnitStats,
@@ -23,7 +25,17 @@ import {
   importProgressPayload,
   markWordDueToday,
   resetAllProgress,
+  updateSyncConfig,
 } from "../store.js";
+import {
+  applyTransferCode,
+  buildQuickSetupUrl,
+  buildQuickTransferUrl,
+  decodeSetupConfig,
+  encodeTransferCode,
+  onSyncStatusChange,
+  syncWithGist,
+} from "../sync.js";
 import { escapeHtml, formatUnitLabel } from "../utils.js";
 
 function render14DaySvgChart(days) {
@@ -98,12 +110,108 @@ function render14DaySvgChart(days) {
   `;
 }
 
-export function renderProgressView(container) {
+function formatSyncStatusBadge(syncCfg) {
+  if (!syncCfg.token) {
+    return {
+      cls: "badge-srs-new",
+      text: I18N.sync.statusDisconnected,
+    };
+  }
+  if (syncCfg.lastStatus === "syncing") {
+    return {
+      cls: "badge-srs-learning",
+      text: I18N.sync.statusSyncing,
+    };
+  }
+  if (syncCfg.lastStatus === "error") {
+    return {
+      cls: "badge-srs-learning",
+      text: formatText(I18N.sync.statusError, { error: syncCfg.lastError || "?" }),
+    };
+  }
+  if (syncCfg.lastSyncAt) {
+    const dt = new Date(syncCfg.lastSyncAt);
+    const hh = String(dt.getHours()).padStart(2, "0");
+    const mm = String(dt.getMinutes()).padStart(2, "0");
+    return {
+      cls: "badge-srs-mastered",
+      text: formatText(I18N.sync.statusSynced, { time: `${hh}:${mm}` }),
+    };
+  }
+  return {
+    cls: "badge-srs-new",
+    text: I18N.sync.statusDisconnected,
+  };
+}
+
+async function copyText(text) {
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+  } catch {
+    // fallback below
+  }
+  return false;
+}
+
+export function renderProgressView(container, route) {
   let notice = null; // { type: "success" | "error", text: string }
+  let transferText = "";
+
+  const incomingSyncData = route?.query?.get("syncData");
+  const incomingSyncConfig = route?.query?.get("syncConfig");
+
+  if (incomingSyncData) {
+    window.history?.replaceState?.(null, "", "#/progress");
+    applyTransferCode(incomingSyncData)
+      .then((res) => {
+        notice = {
+          type: "success",
+          text: formatText(I18N.sync.transferAppliedMsg, {
+            words: res.wordCount,
+            tests: res.testCount,
+          }),
+        };
+        render();
+      })
+      .catch(() => {
+        notice = { type: "error", text: I18N.sync.transferErrorMsg };
+        render();
+      });
+  } else if (incomingSyncConfig) {
+    window.history?.replaceState?.(null, "", "#/progress");
+    try {
+      const cfg = decodeSetupConfig(incomingSyncConfig);
+      updateSyncConfig({
+        token: cfg.token,
+        gistId: cfg.gistId,
+        autoSync: true,
+        lastError: "",
+      });
+      render();
+      syncWithGist().then((res) => {
+        if (res.ok) {
+          notice = {
+            type: "success",
+            text: formatText(I18N.sync.setupAppliedMsg, { words: res.wordCount }),
+          };
+        } else {
+          notice = { type: "error", text: res.error || I18N.sync.setupInvalidMsg };
+        }
+        render();
+      });
+    } catch {
+      notice = { type: "error", text: I18N.sync.setupInvalidMsg };
+    }
+  }
 
   function render() {
     const stats = getOverallStats();
     const streak = getStreak();
+    const syncCfg = getSyncConfig();
+    const syncBadge = formatSyncStatusBadge(syncCfg);
     const days14 = getLast14DaysActivity();
     const total14 = days14.reduce((sum, d) => sum + d.count, 0);
     const allWeak = getWeakWords();
@@ -270,6 +378,124 @@ export function renderProgressView(container) {
           <ul class="unit-progress-list">${unitsHtml}</ul>
         </section>
 
+        <section class="panel" id="sync-panel">
+          <div class="panel-header">
+            <h2 class="section-title">${escapeHtml(I18N.sync.panelTitle)}</h2>
+            <span class="badge ${syncBadge.cls}">${escapeHtml(syncBadge.text)}</span>
+          </div>
+          <p class="page-subtitle">${escapeHtml(I18N.sync.panelDesc)}</p>
+
+          <div class="sync-section-divider page-stack" style="gap: var(--space-3)">
+            <h3 class="section-title">${escapeHtml(I18N.sync.gistSectionTitle)}</h3>
+            <details class="sync-guide">
+              <summary>${escapeHtml(I18N.sync.gistGuideSummary)}</summary>
+              <ol class="sync-guide-steps">
+                <li>
+                  ${escapeHtml(I18N.sync.gistStep1)}
+                  <div style="margin-top: var(--space-1)">
+                    <a
+                      href="https://github.com/settings/tokens/new?scopes=gist&description=Vocab+A1-A2+Sync"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >${escapeHtml(I18N.sync.gistCreateTokenLink)}</a>
+                  </div>
+                </li>
+                <li>${escapeHtml(I18N.sync.gistStep2)}</li>
+                <li>${escapeHtml(I18N.sync.gistStep3)}</li>
+              </ol>
+            </details>
+
+            <div class="sync-form-grid">
+              <div class="filter-group">
+                <label for="sync-token-input" class="filter-label">${escapeHtml(
+                  I18N.sync.tokenLabel
+                )}</label>
+                <input
+                  id="sync-token-input"
+                  class="text-answer-input"
+                  type="password"
+                  autocomplete="off"
+                  placeholder="${escapeHtml(I18N.sync.tokenPlaceholder)}"
+                  value="${escapeHtml(syncCfg.token || "")}"
+                />
+              </div>
+              <div class="filter-group">
+                <label for="sync-gist-input" class="filter-label">${escapeHtml(
+                  I18N.sync.gistIdLabel
+                )}</label>
+                <input
+                  id="sync-gist-input"
+                  class="text-answer-input"
+                  type="text"
+                  autocomplete="off"
+                  placeholder="${escapeHtml(I18N.sync.gistIdPlaceholder)}"
+                  value="${escapeHtml(syncCfg.gistId || "")}"
+                />
+              </div>
+            </div>
+
+            <label class="checkbox-row" for="sync-auto-checkbox">
+              <input
+                id="sync-auto-checkbox"
+                type="checkbox"
+                ${syncCfg.autoSync ? "checked" : ""}
+              />
+              <span>${escapeHtml(I18N.sync.autoSyncLabel)}</span>
+            </label>
+
+            <div class="btn-row" style="margin-top: 0">
+              <button type="button" id="sync-save-btn" class="btn btn-primary">
+                ${iconSync(18)}
+                <span>${escapeHtml(I18N.sync.saveSyncBtn)}</span>
+              </button>
+              ${
+                syncCfg.token
+                  ? `<button type="button" id="sync-copy-setup-btn" class="btn btn-secondary">
+                      ${iconCopy(18)}
+                      <span>${escapeHtml(I18N.sync.copySetupLinkBtn)}</span>
+                    </button>
+                    <button type="button" id="sync-disconnect-btn" class="btn btn-ghost">
+                      ${escapeHtml(I18N.sync.disconnectBtn)}
+                    </button>`
+                  : ""
+              }
+            </div>
+            ${
+              syncCfg.token
+                ? `<p class="unit-item-meta">${escapeHtml(I18N.sync.setupLinkWarning)}</p>`
+                : ""
+            }
+          </div>
+
+          <div class="sync-section-divider page-stack" style="gap: var(--space-3)">
+            <h3 class="section-title">${escapeHtml(I18N.sync.quickSectionTitle)}</h3>
+            <p class="page-subtitle" style="margin: 0">${escapeHtml(
+              I18N.sync.quickSectionDesc
+            )}</p>
+            <div class="btn-row" style="margin-top: 0">
+              <button type="button" id="sync-generate-transfer-btn" class="btn btn-secondary">
+                ${iconCopy(18)}
+                <span>${escapeHtml(I18N.sync.generateTransferBtn)}</span>
+              </button>
+            </div>
+            <div class="filter-group">
+              <label for="sync-transfer-box" class="filter-label">${escapeHtml(
+                I18N.sync.transferCodeLabel
+              )}</label>
+              <textarea
+                id="sync-transfer-box"
+                class="sync-code-box"
+                placeholder="${escapeHtml(I18N.sync.transferCodePlaceholder)}"
+              >${escapeHtml(transferText)}</textarea>
+            </div>
+            <div class="btn-row" style="margin-top: 0">
+              <button type="button" id="sync-apply-transfer-btn" class="btn btn-secondary">
+                ${escapeHtml(I18N.sync.applyTransferBtn)}
+              </button>
+            </div>
+          </div>
+        </section>
+
         <section class="panel">
           <div class="panel-header">
             <h2 class="section-title">${escapeHtml(I18N.progress.backupTitle)}</h2>
@@ -395,7 +621,118 @@ export function renderProgressView(container) {
       notice = { type: "success", text: I18N.progress.resetSuccess };
       render();
     });
+
+    // Cloud Gist Sync handlers
+    container.querySelector("#sync-save-btn")?.addEventListener("click", async () => {
+      const token = (container.querySelector("#sync-token-input")?.value || "").trim();
+      const gistId = (container.querySelector("#sync-gist-input")?.value || "").trim();
+      const autoSync = Boolean(container.querySelector("#sync-auto-checkbox")?.checked);
+
+      if (!token) {
+        notice = { type: "error", text: I18N.sync.needTokenMsg };
+        render();
+        return;
+      }
+
+      updateSyncConfig({ token, gistId, autoSync, lastError: "" });
+      const res = await syncWithGist();
+      if (res.ok) {
+        notice = {
+          type: "success",
+          text: formatText(I18N.sync.syncedSuccessMsg, {
+            words: res.wordCount,
+            tests: res.testCount,
+          }),
+        };
+      } else {
+        notice = { type: "error", text: res.error };
+      }
+      render();
+    });
+
+    container.querySelector("#sync-copy-setup-btn")?.addEventListener("click", async () => {
+      const cfg = getSyncConfig();
+      const url = buildQuickSetupUrl({ token: cfg.token, gistId: cfg.gistId });
+      const copied = await copyText(url);
+      if (!copied) {
+        transferText = url;
+      }
+      notice = {
+        type: copied ? "success" : "error",
+        text: copied ? I18N.sync.copySuccessMsg : I18N.sync.copyFailMsg,
+      };
+      render();
+    });
+
+    container.querySelector("#sync-disconnect-btn")?.addEventListener("click", () => {
+      clearSyncConfig();
+      notice = { type: "success", text: I18N.sync.disconnectedMsg };
+      render();
+    });
+
+    // Quick Transfer Code & Link handlers
+    const transferBox = container.querySelector("#sync-transfer-box");
+    transferBox?.addEventListener("input", () => {
+      transferText = transferBox.value;
+    });
+
+    container.querySelector("#sync-generate-transfer-btn")?.addEventListener("click", async () => {
+      try {
+        const code = await encodeTransferCode();
+        transferText = code;
+        const url = buildQuickTransferUrl(code);
+        const copied = await copyText(url);
+        notice = {
+          type: "success",
+          text: copied ? I18N.sync.transferCopiedMsg : I18N.sync.copyFailMsg,
+        };
+      } catch {
+        notice = { type: "error", text: I18N.sync.transferErrorMsg };
+      }
+      render();
+    });
+
+    container.querySelector("#sync-apply-transfer-btn")?.addEventListener("click", async () => {
+      const rawInput = (container.querySelector("#sync-transfer-box")?.value || "").trim();
+      let code = rawInput;
+      if (rawInput.includes("syncData=")) {
+        try {
+          const match = rawInput.match(/syncData=([^&#]+)/);
+          if (match) code = decodeURIComponent(match[1]);
+        } catch {
+          // keep rawInput
+        }
+      }
+      try {
+        const summary = await applyTransferCode(code);
+        transferText = "";
+        notice = {
+          type: "success",
+          text: formatText(I18N.sync.transferAppliedMsg, {
+            words: summary.wordCount,
+            tests: summary.testCount,
+          }),
+        };
+      } catch {
+        notice = { type: "error", text: I18N.sync.transferErrorMsg };
+      }
+      render();
+    });
   }
 
+  const unsubSync = onSyncStatusChange((statusObj) => {
+    if (statusObj.dataChanged) {
+      render();
+    } else {
+      const badge = container.querySelector("#sync-panel .panel-header .badge");
+      if (badge) {
+        const info = formatSyncStatusBadge(getSyncConfig());
+        badge.className = `badge ${info.cls}`;
+        badge.textContent = info.text;
+      }
+    }
+  });
+
   render();
+  return () => unsubSync();
 }

@@ -4,6 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/srs.test.js tests/exercises.test.js"
+    "test": "node --test tests/srs.test.js tests/exercises.test.js tests/sync.test.js"
   }
 }

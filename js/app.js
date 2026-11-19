@@ -11,10 +11,12 @@ import {
   iconHome,
   iconMoon,
   iconSun,
+  iconSync,
 } from "./icons.js";
 import { navigateTo, startRouter } from "./router.js";
 import { initSpeech, isSpeechSupported } from "./speech.js";
-import { getSettings, loadAppData, updateSettings } from "./store.js";
+import { getSettings, getSyncConfig, loadAppData, updateSettings } from "./store.js";
+import { initAutoSync, onSyncStatusChange, syncWithGist } from "./sync.js";
 import { escapeHtml } from "./utils.js";
 import { renderFlashcardsView } from "./views/flashcards.js";
 import { renderHomeView } from "./views/home.js";
@@ -76,6 +78,16 @@ function renderShell(activeNavKey) {
       )}">${rate.toFixed(1)}x</button>`
     : "";
 
+  const syncCfg = getSyncConfig();
+  const isSyncing = syncCfg.lastStatus === "syncing";
+  const syncButtonHtml = syncCfg.token
+    ? `<button type="button" id="header-sync-btn" class="btn-icon ${
+        isSyncing ? "is-syncing" : ""
+      }" aria-label="${escapeHtml(I18N.sync.headerSyncLabel)}" title="${escapeHtml(
+        I18N.sync.headerSyncLabel
+      )}">${iconSync(18)}</button>`
+    : "";
+
   headerEl.innerHTML = `
     <div class="header-inner">
       <a class="brand-link" href="#/home">
@@ -91,6 +103,7 @@ function renderShell(activeNavKey) {
         ).join("")}
       </nav>
       <div class="header-controls">
+        ${syncButtonHtml}
         ${speedButtonHtml}
         <button
           type="button"
@@ -123,6 +136,10 @@ function renderShell(activeNavKey) {
     const nextRate = getSettings().speechRate === 0.8 ? 1.0 : 0.8;
     updateSettings({ speechRate: nextRate });
     renderShell(currentRoute?.navKey || "home");
+  });
+
+  headerEl.querySelector("#header-sync-btn")?.addEventListener("click", () => {
+    syncWithGist();
   });
 }
 
@@ -238,7 +255,16 @@ async function boot() {
   const initData = async () => {
     try {
       await loadAppData();
+      onSyncStatusChange((statusObj) => {
+        if (currentRoute) {
+          renderShell(currentRoute.navKey);
+          if (statusObj.dataChanged && currentRoute.name !== "progress") {
+            renderRoute(currentRoute);
+          }
+        }
+      });
       startRouter(renderRoute);
+      initAutoSync();
     } catch {
       renderError(mainEl, () => {
         renderLoading(mainEl);

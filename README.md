@@ -10,7 +10,7 @@
 - **Flashcard & Lặp lại ngắt quãng (`#/flashcards`):** Thuật toán SM-2 rút gọn kết hợp 5 hộp Leitner (`{ box, ease, interval, due, lapses }`), chọn nguồn (đến hạn hôm nay / theo Unit / từ hay sai / từ mới), tối đa 20 thẻ/phiên, hỗ trợ chiều `EN → VI` và `VI → EN`, tóm tắt cuối phiên.
 - **Bài tập thực hành (`#/practice`):** Dùng bài gốc từ `data/exercises.json` cho 12 Unit sách và tự sinh bài tập từ `data/vocab.json` cho các Unit Wordlist với 5 dạng bài: *Nối từ* (kéo thả + chạm chọn), *Điền từ* (word bank), *Trắc nghiệm* (3 đáp án nhiễu cùng từ loại/Unit), *Xếp chữ* (chạm thẻ chữ cái), và *Nghe – viết*. Từ làm sai tự động tăng `lapses + 1` trong SRS.
 - **Kiểm tra & Review (`#/test`):** Đề kiểm tra 20 câu trộn theo Unit hoặc theo Level (`A1`/`A2`), kèm 2 bài *Level 1 Review* (trang 22) và *Level 2 Review* (trang 41), xem lại câu sai và lưu lịch sử điểm.
-- **Tiến độ & Sao lưu (`#/progress`):** Thống kê *Đã thuộc / Đang học / Chưa học*, biểu đồ cột 14 ngày gần nhất bằng SVG thuần, % hoàn thành từng Unit, Top 10 từ hay sai kèm nút `"Ôn ngay"`, Xuất/Nhập tiến độ ra tệp `.json` và Đặt lại tiến độ có hộp thoại xác nhận.
+- **Tiến độ, Đồng bộ & Sao lưu (`#/progress`):** Thống kê *Đã thuộc / Đang học / Chưa học*, biểu đồ cột 14 ngày gần nhất bằng SVG thuần, % hoàn thành từng Unit, Top 10 từ hay sai kèm nút `"Ôn ngay"`, đồng bộ tự động 2 chiều qua GitHub Secret Gist (kèm Link/Mã chuyển nhanh không cần token), Xuất/Nhập tiến độ ra tệp `.json` và Đặt lại tiến độ có hộp thoại xác nhận.
 - **Giao diện Sáng/Tối & Phím tắt:** Hỗ trợ Dark mode, đạt chuẩn WCAG AA, mobile-first và phím tắt trên desktop (`Space` lật thẻ, `1/2/3` chấm điểm SRS, `1–4` trắc nghiệm, `Enter` kiểm tra/tiếp tục, `R` nghe lại, `/` tìm kiếm, `Esc` quay lại).
 
 ---
@@ -34,8 +34,8 @@ Hoặc mở thư mục `vocab-app` trong VS Code và bấm **Go Live** (tiện �
 
 ### Chạy kiểm thử tự động & kiểm tra dữ liệu
 ```powershell
-# Unit test thuật toán SRS, bộ sinh bài tập và sao lưu/khôi phục tiến độ
-node --test tests/srs.test.js tests/exercises.test.js
+# Unit test thuật toán SRS, bộ sinh bài tập, sao lưu và đồng bộ đa thiết bị
+node --test tests/srs.test.js tests/exercises.test.js tests/sync.test.js
 
 # Kiểm tra tính toàn vẹn của data/vocab.json và data/exercises.json
 .\scripts\.venv\Scripts\python.exe scripts\validate_data.py
@@ -60,6 +60,7 @@ vocab-app/
 │   ├── router.js              # Hash router (#/home, #/library, #/word/:id, ...)
 │   ├── store.js               # Cache JSON và quản lý localStorage (tiền tố "vocab:")
 │   ├── srs.js                 # Thuật toán SM-2 rút gọn / 5 hộp Leitner
+│   ├── sync.js                # Đồng bộ 2 chiều qua GitHub Gist, Smart Merge & Mã chuyển nhanh
 │   ├── speech.js              # Web Speech API (ưu tiên giọng en-GB)
 │   ├── exercises.js           # Chuyển đổi bài sách & sinh bài tập/đề kiểm tra
 │   ├── utils.js               # Tiện ích escape HTML và badge
@@ -78,7 +79,8 @@ vocab-app/
 │   └── requirements.txt       # Thư viện Python cho thư mục scripts/.venv
 └── tests/
     ├── srs.test.js            # Unit test cho SRS và sao lưu tiến độ
-    └── exercises.test.js      # Unit test cho bộ sinh bài tập & đề kiểm tra
+    ├── exercises.test.js      # Unit test cho bộ sinh bài tập & đề kiểm tra
+    └── sync.test.js           # Unit test cho Smart Merge, Transfer Code và GitHub Gist Sync
 ```
 
 ### Schema `data/vocab.json`
@@ -113,10 +115,11 @@ Gồm hai khóa gốc:
 - `reviews`: Mảng 2 bài ôn tập tổng hợp từ sách (`Level 1 Review` trang 22 và `Level 2 Review` trang 41), mỗi bài gồm 12 câu điền từ kèm `word_bank` và `word_id`.
 
 ### Các key `localStorage`
-- `vocab:srs`: Trạng thái ghi nhớ của từng từ (`{ box, ease, interval, due, lapses }`).
+- `vocab:srs`: Trạng thái ghi nhớ của từng từ (`{ box, ease, interval, due, lapses, updatedAt }`).
 - `vocab:streak`: Chuỗi ngày học liên tiếp (`count`, `lastDate`, `history` theo `YYYY-MM-DD`).
 - `vocab:settings`: Cài đặt giao diện (`theme`, `speechRate`, `cardDirection`).
 - `vocab:tests`: Lịch sử tối đa 50 lần làm bài kiểm tra / Review gần nhất.
+- `vocab:sync`: Cấu hình đồng bộ GitHub Gist (`token`, `gistId`, `autoSync`, `lastSyncAt`, `lastStatus`, `lastError`).
 
 ---
 
@@ -131,7 +134,7 @@ Gồm hai khóa gốc:
    .\scripts\.venv\Scripts\python.exe scripts\validate_data.py
    ```
    Đảm bảo `validate_data.py` báo `VALIDATION PASSED: 0 errors`.
-4. Chạy lại unit test (`node --test tests/srs.test.js tests/exercises.test.js`) và tải lại trang web — ứng dụng sẽ tự nhận diện các từ/Unit mới mà không cần sửa code JS.
+4. Chạy lại unit test (`node --test tests/srs.test.js tests/exercises.test.js tests/sync.test.js`) và tải lại trang web — ứng dụng sẽ tự nhận diện các từ/Unit mới mà không cần sửa code JS.
 
 ### Cách 2: Chỉnh sửa nhanh trực tiếp trong `data/vocab.json`
 1. Thêm bản ghi mới vào `data/vocab.json` tuân thủ đầy đủ các trường bắt buộc: `id` duy nhất theo mẫu `{level}-u{unit}-{slug}` (chữ thường, ví dụ `a2-u7-passport`), `word`, `pos`, `ipa`, `definition_en`, `meaning_vi`, `example`, `examples` (mảng không rỗng), `level` (`"A1"` hoặc `"A2"`), `source`, `sources`, `unit` (số nguyên), `page` (số nguyên), `topic`, `tags` (mảng không rỗng).
@@ -139,6 +142,19 @@ Gồm hai khóa gốc:
    ```powershell
    .\scripts\.venv\Scripts\python.exe scripts\validate_data.py
    ```
+
+---
+
+## Đồng bộ giữa máy tính & điện thoại
+
+Vì ứng dụng chạy hoàn toàn tĩnh trên trình duyệt (`localStorage` riêng theo từng máy), bạn có hai cách đồng bộ dữ liệu trong mục **Tiến độ (`#/progress`)**:
+
+1. **Tự động 2 chiều qua GitHub Secret Gist (khuyên dùng):**
+   - Tạo một GitHub Personal Access Token chỉ cấp duy nhất quyền **`gist`** và dán vào mục **Đồng bộ giữa máy tính & điện thoại** trên máy tính, rồi bấm **Lưu & Đồng bộ ngay** (ứng dụng tự tạo một Secret Gist tên `vocab-app-sync.json`).
+   - Sao chép **Link cài nhanh 1 chạm** (`#/progress?syncConfig=...`) gửi sang điện thoại và mở trên trình duyệt điện thoại để tự gắn token + Gist ID. *(Lưu ý: chỉ gửi link này cho chính bạn vì link chứa token quyền `gist`.)*
+   - Khi học/ôn tập trên bất kỳ thiết bị nào, ứng dụng tự động đồng bộ sau 2 giây, khi mở lại tab, hoặc khi bấm nút **Đồng bộ** trên thanh tiêu đề; dữ liệu hai máy được gộp thông minh (`Smart Merge`) theo mốc `updatedAt` từng từ, tổng hợp streak và lịch sử kiểm tra thay vì ghi đè.
+2. **Chuyển nhanh không cần token (Link / Mã chuyển nhanh):**
+   - Bấm **Tạo Link / Mã chuyển nhanh** để nén dữ liệu hiện tại thành mã `V1.z.` hoặc link `#/progress?syncData=...`, gửi sang máy kia để mở hoặc dán vào ô nhận — dữ liệu hai bên cũng được gộp thông minh mà không cần đăng nhập hay nhập token GitHub.
 
 ---
 

@@ -10,6 +10,7 @@ export const STORAGE_KEYS = {
   STREAK: "vocab:streak",
   SETTINGS: "vocab:settings",
   TESTS: "vocab:tests",
+  SYNC: "vocab:sync",
 };
 
 const DEFAULT_SETTINGS = {
@@ -23,6 +24,32 @@ const DEFAULT_STREAK = {
   lastDate: null,
   history: {},
 };
+
+const DEFAULT_SYNC_CONFIG = {
+  token: "",
+  gistId: "",
+  autoSync: true,
+  lastSyncAt: null,
+  lastStatus: "idle",
+  lastError: "",
+};
+
+const progressListeners = new Set();
+
+export function onProgressChange(listener) {
+  progressListeners.add(listener);
+  return () => progressListeners.delete(listener);
+}
+
+function notifyProgressChange(reason = "mutate") {
+  for (const listener of progressListeners) {
+    try {
+      listener(reason);
+    } catch {
+      // ignore subscriber errors
+    }
+  }
+}
 
 const WORDLIST_TOPICS = {
   1: "Quốc gia & tính cách",
@@ -123,8 +150,10 @@ export function markWordDueToday(wordId) {
     ...current,
     box: Math.max(1, current.box),
     due: today,
+    updatedAt: Date.now(),
   };
   writeStorage(STORAGE_KEYS.SRS, all);
+  notifyProgressChange("mutate");
   return all[wordId];
 }
 
@@ -333,12 +362,7 @@ export function getNewWords() {
   return cacheData.vocab.filter((w) => !allSrs[w.id] || allSrs[w.id].box === 0);
 }
 
-export function recordCardReview(wordId, grade, todayIso = getTodayIso()) {
-  const allSrs = getAllSrs();
-  const nextSrs = reviewCard(normalizeSrsState(allSrs[wordId]), grade, todayIso);
-  allSrs[wordId] = nextSrs;
-  writeStorage(STORAGE_KEYS.SRS, allSrs);
-
+function bumpStreak(todayIso) {
   const streak = getStreak();
   const history = { ...(streak.history || {}) };
   history[todayIso] = (history[todayIso] || 0) + 1;
@@ -358,6 +382,20 @@ export function recordCardReview(wordId, grade, todayIso = getTodayIso()) {
     history,
   };
   writeStorage(STORAGE_KEYS.STREAK, nextStreak);
+  return nextStreak;
+}
+
+export function recordCardReview(wordId, grade, todayIso = getTodayIso()) {
+  const allSrs = getAllSrs();
+  const nextSrs = {
+    ...reviewCard(normalizeSrsState(allSrs[wordId]), grade, todayIso),
+    updatedAt: Date.now(),
+  };
+  allSrs[wordId] = nextSrs;
+  writeStorage(STORAGE_KEYS.SRS, allSrs);
+
+  const nextStreak = bumpStreak(todayIso);
+  notifyProgressChange("mutate");
   return { srs: nextSrs, streak: nextStreak };
 }
 
@@ -367,19 +405,8 @@ export function recordExerciseAnswer(wordId, isCorrect, todayIso = getTodayIso()
     return recordCardReview(wordId, "again", todayIso);
   }
 
-  const streak = getStreak();
-  const history = { ...(streak.history || {}) };
-  history[todayIso] = (history[todayIso] || 0) + 1;
-  let nextCount = streak.count || 0;
-  if (streak.lastDate === todayIso) {
-    nextCount = Math.max(1, nextCount);
-  } else if (streak.lastDate === addDaysIso(todayIso, -1)) {
-    nextCount += 1;
-  } else {
-    nextCount = 1;
-  }
-  const nextStreak = { count: nextCount, lastDate: todayIso, history };
-  writeStorage(STORAGE_KEYS.STREAK, nextStreak);
+  const nextStreak = bumpStreak(todayIso);
+  notifyProgressChange("mutate");
   return { srs: getWordSrs(wordId), streak: nextStreak };
 }
 
@@ -392,6 +419,7 @@ export function saveTestResult(entry) {
   const list = getTestHistory();
   const next = [entry, ...list].slice(0, 50);
   writeStorage(STORAGE_KEYS.TESTS, next);
+  notifyProgressChange("mutate");
   return next;
 }
 
@@ -563,6 +591,7 @@ export function importProgressPayload(payload) {
     updateSettings(rawSettings);
   }
 
+  notifyProgressChange("mutate");
   return {
     wordCount: Object.keys(cleanedSrs).length,
     testCount: cleanedTests.length,
@@ -573,4 +602,35 @@ export function resetAllProgress() {
   removeStorage(STORAGE_KEYS.SRS);
   removeStorage(STORAGE_KEYS.STREAK);
   removeStorage(STORAGE_KEYS.TESTS);
+  notifyProgressChange("reset");
+}
+
+export function getSyncConfig() {
+  return readStorage(STORAGE_KEYS.SYNC, DEFAULT_SYNC_CONFIG);
+}
+
+export function updateSyncConfig(patch) {
+  const next = { ...getSyncConfig(), ...patch };
+  writeStorage(STORAGE_KEYS.SYNC, next);
+  return next;
+}
+
+export function clearSyncConfig() {
+  removeStorage(STORAGE_KEYS.SYNC);
+}
+
+/**
+ * Ghi dữ liệu đã gộp (từ đồng bộ/mã chuyển) mà không kích hoạt lại auto-sync để tránh vòng lặp.
+ */
+export function applyMergedData(mergedData) {
+  if (!mergedData || typeof mergedData !== "object") return;
+  if (mergedData[STORAGE_KEYS.SRS] && typeof mergedData[STORAGE_KEYS.SRS] === "object") {
+    writeStorage(STORAGE_KEYS.SRS, mergedData[STORAGE_KEYS.SRS]);
+  }
+  if (mergedData[STORAGE_KEYS.STREAK] && typeof mergedData[STORAGE_KEYS.STREAK] === "object") {
+    writeStorage(STORAGE_KEYS.STREAK, mergedData[STORAGE_KEYS.STREAK]);
+  }
+  if (Array.isArray(mergedData[STORAGE_KEYS.TESTS])) {
+    writeStorage(STORAGE_KEYS.TESTS, mergedData[STORAGE_KEYS.TESTS]);
+  }
 }
